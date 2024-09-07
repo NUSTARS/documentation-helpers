@@ -7,7 +7,7 @@ def generate_latex_table(data, table_name, table_ref):
     # Iterate through each row in the DataFrame and convert to LaTeX format
     for index, row in data.iterrows():
 
-        risk = str(row['Risk'])
+        risk = str(row['Hazard/Risk'])
         description = str(row['Cause'])
         effect = str(row['Effect'])
         pre_rac = str(row['Pre-RAC'])
@@ -35,6 +35,8 @@ def parse_excel_file(file_path):
         if sheet_name != "IGNORE":
             
             df = pd.read_excel(xls, sheet_name=sheet_name)
+
+            # print(df.head())
     
             table_name = df["metadata"][0]
             table_ref = df["metadata"][1]
