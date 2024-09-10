@@ -16,7 +16,7 @@ def generate_latex_table_fmea(data, table_name, table_ref):
         post_rac = str(row['Post-RAC'])
         
         latex_row = f"{risk}&{description}&{effect}&\{pre_rac}&{mitigation}&{verification}&\{post_rac}\\\\\hline "
-        latex_row = latex_row.replace('\n', '').replace('%', '\\%').replace('$', '\\$').replace('#', '\\#')
+        latex_row = latex_row.replace('\n', '').replace('%', '\\%').replace('$', '\\$').replace('#', '\\#').replace('^', '\\^')
         latex_table += latex_row
 
     
@@ -33,8 +33,8 @@ def generate_latex_table_nasa_requirements_proposal(data, table_name, table_ref)
         description = str(row['Description'])
         justification = str(row['Specification'])
         
-        latex_row = f"{item}&{description}&{justification}\\\\\hline"
-        latex_row = latex_row.replace('\n', '').replace('%', '\\%').replace('$', '\\$').replace('#', '\\#')
+        latex_row = f"{item}&{description}&{justification}\\\\\hline "
+        latex_row = latex_row.replace('\n', '').replace('%', '\\%').replace('$', '\\$').replace('#', '\\#').replace('^', '\\^')
         latex_table += latex_row
     
     latex_table += f"}}{{{table_name}}}{{{table_ref}}}\n"
@@ -55,7 +55,7 @@ def generate_latex_table_risks(data, table_name, table_ref):
         post_rac = str(row['Post-RAC'])
         
         latex_row = f"{risk}&{description}&{effect}&\{pre_rac}&{mitigation}&{verification}&\{post_rac}\\\\\hline "
-        latex_row = latex_row.replace('\n', '').replace('%', '\\%').replace('$', '\\$').replace('#', '\\#')
+        latex_row = latex_row.replace('\n', '').replace('%', '\\%').replace('$', '\\$').replace('#', '\\#').replace('^', '\\^')
         latex_table += latex_row
     
     latex_table += f"}}{{{table_name}}}{{{table_ref}}}\n"
@@ -73,8 +73,8 @@ def generate_latex_table_team_requirements(data, table_name, table_ref):
         verification_status = str(row['Verification Status'])
         section = str(row['Section'])
         
-        latex_row = f"{item}&{description}&{verification_method}&{verification_status}&{section}\\\\\hline"
-        latex_row = latex_row.replace('\n', '').replace('%', '\\%').replace('$', '\\$').replace('#', '\\#')
+        latex_row = f"{item}&{description}&{verification_method}&{verification_status}&{section}\\\\\hline "
+        latex_row = latex_row.replace('\n', '').replace('%', '\\%').replace('$', '\\$').replace('#', '\\#').replace('^', '\\^')
         latex_table += latex_row
     
     latex_table += f"}}{{{table_name}}}{{{table_ref}}}\n"
@@ -92,8 +92,8 @@ def generate_latex_table_nasa_requirements(data, table_name, table_ref):
         verification_status = str(row['Verification Status'])
         section = str(row['Section'])
         
-        latex_row = f"{item}&{description}&{verification_method}&{verification_status}&{section}\\\\\hline"
-        latex_row = latex_row.replace('\n', '').replace('%', '\\%').replace('$', '\\$').replace('#', '\\#')
+        latex_row = f"{item}&{description}&{verification_method}&{verification_status}&{section}\\\\\hline "
+        latex_row = latex_row.replace('\n', '').replace('%', '\\%').replace('$', '\\$').replace('#', '\\#').replace('^', '\\^')
         latex_table += latex_row
     
     latex_table += f"}}{{{table_name}}}{{{table_ref}}}\n"
@@ -110,7 +110,7 @@ def generate_latex_table_overallBudget(data, table_name, table_ref):
         
         latex_row = f"{project}&{total}\\\\\hline "
         # latex_row = latex_row.replace('\n', '').replace('%', '\\%').replace('$', '\\$').replace('#', '\\#')
-        latex_row = latex_row.replace('\n', '').replace('%', '\\%').replace('#', '\\#')
+        latex_row = latex_row.replace('\n', '').replace('%', '\\%').replace('$', '\\$').replace('#', '\\#').replace('^', '\\^')
         latex_table += latex_row
     
     latex_table += f"}}{{{table_name}}}{{{table_ref}}}\n"
@@ -130,7 +130,7 @@ def generate_latex_table_itemizedBudget(data, table_name, table_ref):
         total = str(row['Total'])
         
         latex_row = f"{item}&{description}&{vendor}&{unit_cost}&{count}&{total}\\\\\hline "
-        latex_row = latex_row.replace('\n', '').replace('%', '\\%').replace('$', '\\$').replace('#', '\\#')
+        latex_row = latex_row.replace('\n', '').replace('%', '\\%').replace('$', '\\$').replace('#', '\\#').replace('^', '\\^')
         latex_table += latex_row
     
     latex_table += f"}}{{{table_name}}}{{{table_ref}}}\n"
@@ -146,7 +146,7 @@ def generate_latex_table_challenges_solutions(data, table_name, table_ref):
         solution = str(row['Solution'])
         
         latex_row = f"{challenge}&{solution}\\\\\hline "
-        latex_row = latex_row.replace('\n', '').replace('%', '\\%').replace('$', '\\$').replace('#', '\\#')
+        latex_row = latex_row.replace('\n', '').replace('%', '\\%').replace('$', '\\$').replace('#', '\\#').replace('^', '\\^')
         latex_table += latex_row
     
     latex_table += f"}}{{{table_name}}}{{{table_ref}}}\n"
@@ -173,18 +173,21 @@ def parse_excel_file(file_path_header, file_path):
                     latex_table = generate_latex_table_overallBudget(df, table_name, table_ref)
                 else:
                     latex_table = generate_latex_table_itemizedBudget(df, table_name, table_ref)
-            if "fmea" in file_path:
+            elif "fmea" in file_path:
                     latex_table = generate_latex_table_fmea(df, table_name, table_ref)
-            if "nasa_requirements_proposal" in file_path:
+            elif "nasa_requirements_proposal" in file_path:
                     latex_table = generate_latex_table_nasa_requirements_proposal(df, table_name, table_ref)
-            if "nasa_requirements" in file_path:
+            elif "nasa_requirements" in file_path:
                     latex_table = generate_latex_table_nasa_requirements(df, table_name, table_ref)
-            if "risks" in file_path:
+            elif "risks" in file_path:
                     latex_table = generate_latex_table_risks(df, table_name, table_ref)
-            if "team_requirements" in file_path:
+            elif "team_requirements" in file_path:
                     latex_table = generate_latex_table_team_requirements(df, table_name, table_ref)
-            if "challenges_solutions" in file_path:
+            elif "challenges_solutions" in file_path:
                     latex_table = generate_latex_table_challenges_solutions(df, table_name, table_ref)
+            else:
+                print("Error: File not recognized")
+                return
      
             # Generate the LaTeX table string
             
