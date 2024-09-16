@@ -19,7 +19,6 @@ def generate_latex_table_fmea(data, table_name, table_ref):
         latex_row = latex_row.replace('\n', '').replace('%', '\\%').replace('$', '\\$').replace('#', '\\#').replace('^', '\\^')
         latex_table += latex_row
 
-    
     latex_table += f"}}{{{table_name}}}{{{table_ref}}}\n"
     return latex_table
 
@@ -137,7 +136,7 @@ def generate_latex_table_itemizedBudget(data, table_name, table_ref):
     return latex_table
 
 def generate_latex_table_challenges_solutions(data, table_name, table_ref):
-    latex_table = f"\\challenges_solutions{{"
+    latex_table = f"\\challengesSolutions{{"
 
     # Iterate through each row in the DataFrame and convert to LaTeX format
     for index, row in data.iterrows():
@@ -146,6 +145,24 @@ def generate_latex_table_challenges_solutions(data, table_name, table_ref):
         solution = str(row['Solution'])
         
         latex_row = f"{challenge}&{solution}\\\\\hline "
+        latex_row = latex_row.replace('\n', '').replace('%', '\\%').replace('$', '\\$').replace('#', '\\#').replace('^', '\\^')
+        latex_table += latex_row
+    
+    latex_table += f"}}{{{table_name}}}{{{table_ref}}}\n"
+    return latex_table
+    
+def generate_latex_table_changes(data, table_name, table_ref):
+    latex_table = f"\\changes{{"
+
+    # Iterate through each row in the DataFrame and convert to LaTeX format
+    for index, row in data.iterrows():
+
+        criteria = str(row['Criteria'])
+        previous = str(row['Previous Report'])
+        current = str(row['Current'])
+
+        
+        latex_row = f"{criteria}&{previous}&{current}\\\\\hline "
         latex_row = latex_row.replace('\n', '').replace('%', '\\%').replace('$', '\\$').replace('#', '\\#').replace('^', '\\^')
         latex_table += latex_row
     
@@ -185,31 +202,34 @@ def parse_excel_file(file_path_header, file_path):
                     latex_table = generate_latex_table_team_requirements(df, table_name, table_ref)
             elif "challenges_solutions" in file_path:
                     latex_table = generate_latex_table_challenges_solutions(df, table_name, table_ref)
+            elif "changes" in file_path:
+                    latex_table = generate_latex_table_changes(df, table_name, table_ref)
             else:
                 print("Error: File not recognized")
                 return
      
             # Generate the LaTeX table string
-            
             print("Generating LaTeX table for:", table_name)
         
-        # print(latex_table)
-        all_tables += latex_table + "\n"
+            # print(latex_table)
+            all_tables += latex_table + "\n"
 
     all_tables = all_tables.replace('nan', '') # empty values
 
     with open(file_path_header + file_path + ".txt", 'w') as file:
         file.write(all_tables)
+    
 
 file_path_header = '/Users/andrewwehmeyer/Downloads/'
-files = ['budget', 'fmea', 'nasa_requirements_proposal', 'nasa_requirements', 'risks', 'team_requirements', 'challenges_solutions']
+files = ['budget', 'fmea', 'nasa_requirements_proposal', 'nasa_requirements', 'risks', 'team_requirements', 'challenges_solutions', 'changes']
 
 for file in files:
     file_path = os.path.join(file_path_header, file + '.xlsx')  # Assuming the files are .xlsx
     if os.path.exists(file_path):
         parse_excel_file(file_path_header, file)
     else:
-        print(f"File {file} not found. Skipping...")
+        # print(f"File {file} not found. Skipping...")
+        pass
 
 #  .----------------.  .----------------.  .----------------.  .----------------.  .----------------. 
 # | .--------------. || .--------------. || .--------------. || .--------------. || .--------------. |
