@@ -1,6 +1,8 @@
 import pandas as pd
 import os
 
+# Test update from github
+
 def generate_latex_table_fmea(data, table_name, table_ref):
     latex_table = f"\\fmeaCDR{{"
     
