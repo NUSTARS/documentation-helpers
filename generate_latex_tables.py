@@ -15,7 +15,7 @@ def generate_latex_table_fmea(data, table_name, table_ref):
         verification = str(row['Verification'])
         post_rac = str(row['Post-RAC'])
         
-        latex_row = f"{risk}&{description}&{effect}&\{pre_rac}&{mitigation}&{verification}&\{post_rac}\\\\\hline "
+        latex_row = f"{risk}&{description}&{effect}&\{pre_rac}&{mitigation}&{verification}&\{post_rac}\\\\hline "
         latex_row = latex_row.replace('\n', '').replace('%', '\\%').replace('$', '\\$').replace('#', '\\#').replace('^', '\\^')
         latex_table += latex_row
 
@@ -173,8 +173,6 @@ def parse_excel_file(file_path_header, file_path):
     # Read the Excel file
     xls = pd.ExcelFile(file_path_header + file_path + ".xlsx")
 
-    all_tables = ""
-
     # Iterate through each sheet in the workbook
     for sheet_name in xls.sheet_names:
 
@@ -207,17 +205,26 @@ def parse_excel_file(file_path_header, file_path):
             else:
                 print("Error: File not recognized")
                 return
-     
+
             # Generate the LaTeX table string
             print("Generating LaTeX table for:", table_name)
-        
-            # print(latex_table)
-            all_tables += latex_table + "\n"
 
-    all_tables = all_tables.replace('nan', '') # empty values
+            # Replace 'nan' values with empty strings
+            latex_table = latex_table.replace('nan', '') 
 
-    with open(file_path_header + file_path + ".txt", 'w') as file:
-        file.write(all_tables)
+            # For FMEA and risks, save each sheet as a separate .txt file
+            # if "fmea" in file_path or "risks" in file_path:
+            #     sheet_file_path = file_path_header + f"{file_path}_{sheet_name}.txt"
+            #     with open(sheet_file_path, 'w') as file:
+            #         file.write(latex_table)
+            # else:
+            #     # Save to a single file for other cases
+            #     with open(file_path_header + file_path + ".txt", 'w') as file:
+            #         file.write(latex_table)
+
+            sheet_file_path = file_path_header + f"{file_path}_{sheet_name}.txt" 
+            with open(sheet_file_path, 'w') as file:
+                     file.write(latex_table)
     
 
 file_path_header = '/Users/andrewwehmeyer/Downloads/'
