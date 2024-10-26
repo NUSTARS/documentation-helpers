@@ -160,9 +160,10 @@ def generate_latex_table_changes(data, table_name, table_ref):
         criteria = str(row['Criteria'])
         previous = str(row['Previous Report'])
         current = str(row['Current'])
+        justification = str(row['Justification'])
 
         
-        latex_row = f"{criteria}&{previous}&{current}\\\\\hline "
+        latex_row = f"{criteria}&{previous}&{current}&{justification}\\\\\hline "
         latex_row = latex_row.replace('\n', '').replace('%', '\\%').replace('$', '\\$').replace('#', '\\#').replace('^', '\\^')
         latex_table += latex_row
     
@@ -212,20 +213,15 @@ def parse_excel_file(file_path_header, file_path):
             # Replace 'nan' values with empty strings
             latex_table = latex_table.replace('nan', '') 
 
-            # For FMEA and risks, save each sheet as a separate .txt file
-            # if "fmea" in file_path or "risks" in file_path:
-            #     sheet_file_path = file_path_header + f"{file_path}_{sheet_name}.txt"
-            #     with open(sheet_file_path, 'w') as file:
-            #         file.write(latex_table)
-            # else:
-            #     # Save to a single file for other cases
-            #     with open(file_path_header + file_path + ".txt", 'w') as file:
-            #         file.write(latex_table)
+            tables_folder = os.path.join(file_path_header, "spreadsheets")
+            os.makedirs(tables_folder, exist_ok=True)
 
-            sheet_file_path = file_path_header + f"{file_path}_{sheet_name}.txt" 
+            # Define the file path for the sheet file
+            sheet_file_path = os.path.join(tables_folder, f"{file_path}_{sheet_name}.tex")
+
+            # Write LaTeX table content to the file in the figures folder
             with open(sheet_file_path, 'w') as file:
-                     file.write(latex_table)
-    
+                file.write(latex_table)    
 
 file_path_header = '/Users/andrewwehmeyer/Downloads/'
 files = ['budget', 'fmea', 'nasa_requirements_proposal', 'nasa_requirements', 'risks', 'team_requirements', 'challenges_solutions', 'changes']
