@@ -132,7 +132,7 @@ def main(root_folder, output_file):
 
     for tex_file in src_files:
         labels = extract_labels_from_tex(tex_file, r'\\label\{(.*?)\}')
-        all_labels.extend([{"Label_Type": "Label", "Text": label} for label in labels])
+        all_labels.extend([{"Label_Type": "Label", "Text": f"\\ref{{{label}}}"} for label in labels])
         print(f"Extracted {len(labels)} labels from {tex_file}")
 
     # Extract {tab: ...} from all .tex files in any "spreadsheets" folder
@@ -141,7 +141,7 @@ def main(root_folder, output_file):
 
     for tex_file in spreadsheet_files:
         table_labels = extract_labels_from_tex(tex_file, r'\{tab:(.*?)\}')
-        all_labels.extend([{"Label_Type": "Table", "Text": "tab:" + label} for label in table_labels])
+        all_labels.extend([{"Label_Type": "Table", "Text": f"\\ref{{tab:{label}}}"} for label in table_labels])
         print(f"Extracted {len(table_labels)} table labels from {tex_file}")
 
     # Save to Excel file
