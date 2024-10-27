@@ -72,7 +72,8 @@ def generate_latex_table_team_requirements(data, table_name, table_ref):
         verification_status = str(row['Verification Status'])
         section = str(row['Section'])
         
-        latex_row = f"{item}&{description}&{verification_method}&{verification_status}&{section}\\\\\hline "
+        # latex_row = f"{item}&{description}&{verification_method}&{verification_status}&\\ref{section}\\\\\hline "
+        latex_row = f"{item}&{description}&{verification_method}&{verification_status}&\\ref{{{section}}}\\\\\\hline "
         latex_row = latex_row.replace('\n', '').replace('%', '\\%').replace('$', '\\$').replace('#', '\\#').replace('^', '\\^')
         latex_table += latex_row
     
