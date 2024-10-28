@@ -2,7 +2,7 @@ import pandas as pd
 import os
 
 def generate_latex_table_fmea(data, table_name, table_ref):
-    latex_table = f"\\fmeaCDR{{"
+    latex_table = f"\\fmeaPDR{{"
     
     # Iterate through each row in the DataFrame and convert to LaTeX format
     for index, row in data.iterrows():
@@ -12,15 +12,76 @@ def generate_latex_table_fmea(data, table_name, table_ref):
         effect = str(row['Effect'])
         pre_rac = str(row['Pre-RAC'])
         mitigation = str(row['Mitigation'])
-        verification = str(row['Verification'])
         post_rac = str(row['Post-RAC'])
         
-        latex_row = f"{risk}&{description}&{effect}&\{pre_rac}&{mitigation}&{verification}&\{post_rac}\\\\\hline "
+        latex_row = f"{risk}&{description}&{effect}&\{pre_rac}&{mitigation}&\{post_rac}\\\\\hline "
         latex_row = latex_row.replace('\n', '').replace('%', '\\%').replace('$', '\\$').replace('#', '\\#').replace('^', '\\^')
         latex_table += latex_row
 
     latex_table += f"}}{{{table_name}}}{{{table_ref}}}\n"
     return latex_table
+
+def generate_latex_table_risks(data, table_name, table_ref):
+    latex_table = f"\\risksPDR{{"
+    
+    # Iterate through each row in the DataFrame and convert to LaTeX format
+    for index, row in data.iterrows():
+
+        risk = str(row['Hazard/Risk'])
+        description = str(row['Cause'])
+        effect = str(row['Effect'])
+        pre_rac = str(row['Pre-RAC'])
+        mitigation = str(row['Mitigation'])
+        post_rac = str(row['Post-RAC'])
+        latex_row = f"{risk}&{description}&{effect}&\{pre_rac}&{mitigation}&\{post_rac}\\\\\hline "
+        latex_row = latex_row.replace('\n', '').replace('%', '\\%').replace('$', '\\$').replace('#', '\\#').replace('^', '\\^')
+        latex_table += latex_row
+    
+    latex_table += f"}}{{{table_name}}}{{{table_ref}}}\n"
+    return latex_table
+
+# def generate_latex_table_risks(data, table_name, table_ref):
+#     latex_table = f"\\risksCDR{{"
+    
+#     # Iterate through each row in the DataFrame and convert to LaTeX format
+#     for index, row in data.iterrows():
+
+#         risk = str(row['Hazard/Risk'])
+#         description = str(row['Cause'])
+#         effect = str(row['Effect'])
+#         pre_rac = str(row['Pre-RAC'])
+#         mitigation = str(row['Mitigation'])
+#         verification = str(row['Verification'])
+#         post_rac = str(row['Post-RAC'])
+#         latex_row = f"{risk}&{description}&{effect}&\{pre_rac}&{mitigation}&{verification}&\{post_rac}\\\\\hline "
+#         latex_row = latex_row.replace('\n', '').replace('%', '\\%').replace('$', '\\$').replace('#', '\\#').replace('^', '\\^')
+#         latex_table += latex_row
+    
+#     latex_table += f"}}{{{table_name}}}{{{table_ref}}}\n"
+#     return latex_table
+
+
+
+# def generate_latex_table_fmea(data, table_name, table_ref):
+#     latex_table = f"\\fmeaCDR{{"
+    
+#     # Iterate through each row in the DataFrame and convert to LaTeX format
+#     for index, row in data.iterrows():
+
+#         risk = str(row['Failure Mode'])
+#         description = str(row['Cause'])
+#         effect = str(row['Effect'])
+#         pre_rac = str(row['Pre-RAC'])
+#         mitigation = str(row['Mitigation'])
+#         verification = str(row['Verification'])
+#         post_rac = str(row['Post-RAC'])
+        
+#         latex_row = f"{risk}&{description}&{effect}&\{pre_rac}&{mitigation}&{verification}&\{post_rac}\\\\\hline "
+#         latex_row = latex_row.replace('\n', '').replace('%', '\\%').replace('$', '\\$').replace('#', '\\#').replace('^', '\\^')
+#         latex_table += latex_row
+
+#     latex_table += f"}}{{{table_name}}}{{{table_ref}}}\n"
+#     return latex_table
 
 def generate_latex_table_nasa_requirements_proposal(data, table_name, table_ref):
     latex_table = f"\\requirementsPROPOSAL{{"
@@ -33,27 +94,6 @@ def generate_latex_table_nasa_requirements_proposal(data, table_name, table_ref)
         justification = str(row['Specification'])
         
         latex_row = f"{item}&{description}&{justification}\\\\\hline "
-        latex_row = latex_row.replace('\n', '').replace('%', '\\%').replace('$', '\\$').replace('#', '\\#').replace('^', '\\^')
-        latex_table += latex_row
-    
-    latex_table += f"}}{{{table_name}}}{{{table_ref}}}\n"
-    return latex_table
-
-def generate_latex_table_risks(data, table_name, table_ref):
-    latex_table = f"\\risksCDR{{"
-    
-    # Iterate through each row in the DataFrame and convert to LaTeX format
-    for index, row in data.iterrows():
-
-        risk = str(row['Hazard/Risk'])
-        description = str(row['Cause'])
-        effect = str(row['Effect'])
-        pre_rac = str(row['Pre-RAC'])
-        mitigation = str(row['Mitigation'])
-        verification = str(row['Verification'])
-        post_rac = str(row['Post-RAC'])
-        
-        latex_row = f"{risk}&{description}&{effect}&\{pre_rac}&{mitigation}&{verification}&\{post_rac}\\\\\hline "
         latex_row = latex_row.replace('\n', '').replace('%', '\\%').replace('$', '\\$').replace('#', '\\#').replace('^', '\\^')
         latex_table += latex_row
     
