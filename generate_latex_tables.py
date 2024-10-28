@@ -15,7 +15,7 @@ def generate_latex_table_fmea(data, table_name, table_ref):
         verification = str(row['Verification'])
         post_rac = str(row['Post-RAC'])
         
-        latex_row = f"{risk}&{description}&{effect}&\{pre_rac}&{mitigation}&{verification}&\{post_rac}\\\\hline "
+        latex_row = f"{risk}&{description}&{effect}&\{pre_rac}&{mitigation}&{verification}&\{post_rac}\\\\\hline "
         latex_row = latex_row.replace('\n', '').replace('%', '\\%').replace('$', '\\$').replace('#', '\\#').replace('^', '\\^')
         latex_table += latex_row
 
@@ -214,6 +214,8 @@ def parse_excel_file(file_path_header, file_path):
 
             # Generate the LaTeX table string
             print("Generating LaTeX table for:", table_name)
+
+            # print(sheet_name)
 
             # Replace 'nan' values with empty strings
             latex_table = latex_table.replace('nan', '') 
