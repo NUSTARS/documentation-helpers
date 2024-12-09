@@ -33,8 +33,10 @@ response = requests.get(
 print(response.status_code)
 json_data = response.json()
 
-# output_file = "subscale_procedure.json"
-output_file = "chat_teaching.json"
+output_dir = 'epsilon3/'
+os.makedirs(output_dir, exist_ok=True)  # Ensure the directory exists
+output_file = os.path.join(output_dir, "full_scale.json")
 
+# Save the JSON response to the file
 with open(output_file, "w") as file:
     json.dump(json_data, file, indent=4)  # Pretty print with 4-space indentation

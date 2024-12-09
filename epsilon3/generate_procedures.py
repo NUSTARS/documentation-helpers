@@ -1,7 +1,7 @@
 import json
 
 # Read the JSON data from a file
-with open('fullscale_procedure.json', 'r') as file:
+with open('epsilon3/full_scale.json', 'r') as file:
     json_data = json.load(file)
 
 # Initialize section and subsection counters
@@ -50,7 +50,7 @@ for section in json_data['sections']:
     print("\n")
 
 # Write the LaTeX code to a text file named after the section name
-output_filename = "all_procedures.tex"
+output_filename = "epsilon3/all_procedures.tex"
 with open(output_filename, 'w') as output_file:
     output_file.write(latex_code)
 
