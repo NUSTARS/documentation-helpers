@@ -1,0 +1,76 @@
+{
+    "_id": "OSkODboL2gPoBFCY7AOfTc",
+    "_rev": "1-7156badce48a0619528c4d050c4fb256",
+    "code": "CHAT",
+    "name": "CHAT INSTRUCTIONS",
+    "description": "",
+    "headers": [],
+    "version": "2024.12.08",
+    "archived": false,
+    "editedUserId": "andywehmeyer2025@u.northwestern.edu",
+    "sections": [
+        {
+            "id": "sctn_fusIOPJ5gx",
+            "steps": [
+                {
+                    "id": "step_aMotniZGgk",
+                    "name": "This is a step",
+                    "content": [
+                        {
+                            "type": "alert",
+                            "subtype": "caution",
+                            "text": "This is a caution",
+                            "id": "ct_GNZC3TXCaavd5iQkTjJs",
+                            "tokens": [
+                                {
+                                    "type": "text",
+                                    "value": "This is a caution"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "alert",
+                            "subtype": "warning",
+                            "text": "This is a warning",
+                            "id": "ct_Ul4kt9uCyebJuviZlooY",
+                            "tokens": [
+                                {
+                                    "type": "text",
+                                    "value": "This is a warning"
+                                }
+                            ]
+                        }
+                    ],
+                    "signoffs": [
+                        {
+                            "id": "so_YiMbwZwZn8",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                }
+            ],
+            "name": "This is a section header"
+        }
+    ],
+    "owner": "andywehmeyer2025@u.northwestern.edu",
+    "reviewer_groups": [
+        {
+            "reviewers": [],
+            "actions": [],
+            "id": "rg_jwj28DmshFyedIDASiiFU6"
+        }
+    ],
+    "reviewer_actions_history": [],
+    "end_run_signoffs_groups": [],
+    "start_run_signoffs_groups": [],
+    "auto_procedure_id_enabled": false,
+    "state": "released",
+    "skip_step_enabled": true,
+    "repeat_step_enabled": true,
+    "step_suggest_edits_enabled": true,
+    "procedure_rev_num": 6,
+    "editedAt": "2024-12-09T04:37:11.437Z",
+    "comments": [],
+    "risks": []
+}

@@ -1,0 +1,5 @@
+\launchchecklist{
+    1.1 & \lccritical Caution & Gloves & CE & \checkbox This is a step\\\hline
+    1.2 & \lccritical Warning & Gloves & CE & \checkbox This is a step\\\hline
+}
+{section_name} & {label_name}
