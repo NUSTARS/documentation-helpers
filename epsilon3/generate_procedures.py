@@ -37,7 +37,7 @@ for section in json_data['sections']:
     # End the launch checklist command for the current section
     latex_output.append("}")
 
-    latex_output.append(f"{{section_name}} & {{label_name}}")
+    latex_output.append(f"{{{section_name}}} & {{{label_name}}}")
 
     # Increment section number after processing each section
     section_counter += 1
