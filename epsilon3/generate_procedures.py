@@ -1,7 +1,12 @@
 import json
+from pathlib import Path
+
+project_root = Path(__file__).parent  # Gets the current directory where the script is located
+read_path = project_root / "full_scale.json"
+write_path = project_root / "full_scale_procedures.tex"
 
 # Read the JSON data from a file
-with open('epsilon3/full_scale.json', 'r') as file:
+with open(read_path, 'r') as file:
     json_data = json.load(file)
 
 # Initialize section and subsection counters
@@ -25,33 +30,39 @@ for section in json_data['sections']:
     for step in section['steps']:
         step_name = step['name']
         
-        for alert in step['content']:
-            if alert['type'] == 'alert' and alert['subtype'] in ['warning', 'caution']:
-                # Construct the LaTeX row for each step, including step number, step name, alert type, PPE, and personnel
-                latex_row = f"    {section_counter}.{subsection_counter} & \\lccritical {alert['subtype'].capitalize()} & Gloves & CE & \\checkbox {step_name}\\\\\\hline"
-                latex_output.append(latex_row)
+        # for alert in step['content']:
+        #     if alert['type'] == 'alert' and alert['subtype'] in ['warning', 'caution']:
+        #         # Construct the LaTeX row for each step, including step number, step name, alert type, PPE, and personnel
+        #         latex_row = f"    {section_counter}.{subsection_counter} & \\lccritical {alert['subtype'].capitalize()} & Gloves & CE & \\checkbox {step_name}\\\\\\hline"
+        #         latex_output.append(latex_row)
 
-                # Increment the subsection counter for each new step
-                subsection_counter += 1
+        #         # Increment the subsection counter for each new step
+        
+        latex_row = f"    {section_counter}.{subsection_counter} & \\lccritical & Gloves & CE & \\checkbox {step_name}\\\\\\hline"
+        latex_output.append(latex_row)
+
+        subsection_counter += 1
+    
+    subsection_counter = 1
 
     # End the launch checklist command for the current section
     latex_output.append("}")
 
-    latex_output.append(f"{{{section_name}}} & {{{label_name}}}")
+    latex_output.append(f"{{{section_name}}}{{{label_name}}}\n\n")
 
     # Increment section number after processing each section
     section_counter += 1
     # Reset subsection counter for the next section
 
+    print(latex_output)
+
     # Join all the LaTeX lines together into one string
-    latex_code = "\n".join(latex_output)
-    latex_code += "\n"
+    latex_code = "".join(latex_output)
     print("Completed section:", section['name'])
     print("\n")
 
 # Write the LaTeX code to a text file named after the section name
-output_filename = "epsilon3/all_procedures.tex"
-with open(output_filename, 'w') as output_file:
+with open(write_path, 'w') as output_file:
     output_file.write(latex_code)
 
-print(f"LaTeX code has been written to {output_filename}")
+print(f"LaTeX code has been written to {write_path}")

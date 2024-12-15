@@ -1,56 +1,2276 @@
 {
-    "_id": "OSkODboL2gPoBFCY7AOfTc",
-    "_rev": "1-7156badce48a0619528c4d050c4fb256",
-    "code": "CHAT",
-    "name": "CHAT INSTRUCTIONS",
+    "_id": "zXpyGHRlJSGR2H70eNVqlB",
+    "_rev": "1-2f0fc7e64240f2f3748cec832188f914",
+    "code": "USLI25",
+    "name": "Launch Procedures",
     "description": "",
     "headers": [],
-    "version": "2024.12.08",
+    "version": "1",
     "archived": false,
     "editedUserId": "andywehmeyer2025@u.northwestern.edu",
     "sections": [
         {
-            "id": "sctn_fusIOPJ5gx",
+            "id": "sctn_6tl6Ki7QZQ",
             "steps": [
                 {
-                    "id": "step_aMotniZGgk",
-                    "name": "This is a step",
+                    "id": "step_lYfCBsZVGU",
+                    "name": "Remove tape on drogue parachute, shroud lines, and shock cord.",
                     "content": [
                         {
                             "type": "alert",
                             "subtype": "caution",
-                            "text": "This is a caution",
-                            "id": "ct_GNZC3TXCaavd5iQkTjJs",
-                            "tokens": [
-                                {
-                                    "type": "text",
-                                    "value": "This is a caution"
-                                }
-                            ]
+                            "text": "Restricting the parachute, shroud lines, and shock cord can result in the vehicle falling without any method to slow down, leading to a failed recovery.",
+                            "id": "ct_BZPQewOwRW1yESPmcqk0"
+                        }
+                    ],
+                    "signoffs": [
+                        {
+                            "id": "so_n9lVRx32gG",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_4HmFHJTfeX",
+                    "name": "Verify the parachute, shroud lines, and shock cord are free of damage.",
+                    "content": [
+                        {
+                            "type": "alert",
+                            "subtype": "note",
+                            "text": "Damage constitutes tears, rips, stiffened areas, burns, or singes.",
+                            "id": "ct_FcyBDZCYHBHrY8VM5NGF"
+                        }
+                    ],
+                    "signoffs": [
+                        {
+                            "id": "so_dxX5gTmVNG",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_z8NMc3M9CH",
+                    "name": "Untangle parachute shroud lines",
+                    "content": [
+                        {
+                            "type": "alert",
+                            "subtype": "caution",
+                            "text": "Improper storage of the drogue parachute shroud lines can result in the parachute failing to open fully after deployment. This could produce unexpectedly high descent velocities and lead to a failed recovery.",
+                            "id": "ct_kJN2uyscNbjZqJCosfd2"
+                        }
+                    ],
+                    "signoffs": [
+                        {
+                            "id": "so_frDNeG50yc",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_LEODeJGsqJ",
+                    "name": "Z-fold the parachute",
+                    "content": [
+                        {
+                            "type": "alert",
+                            "subtype": "caution",
+                            "text": "Improper folding can result in the parachute failing to eject or open fully after deployment. This could produce unexpectedly high descent velocities and lead to a failed recovery.",
+                            "id": "ct_TsPtidAHU8Me9xP0ilDg"
+                        }
+                    ],
+                    "signoffs": [
+                        {
+                            "id": "so_seJHEK8hFR",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_jRqqbPsiYG",
+                    "name": "Wrap parachute with the small square of nomex",
+                    "content": [
+                        {
+                            "type": "alert",
+                            "subtype": "caution",
+                            "text": "If Nomex does not fully cover the parachute, black powder combustion may burn holes in the parachute. This could produce unexpectedly high descent velocities and lead to a failed recovery",
+                            "id": "ct_nL84Tz3BHWOBWWr2eotd"
+                        }
+                    ],
+                    "signoffs": [
+                        {
+                            "id": "so_QprVlRFxTb",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_qFvRGAmSnf",
+                    "name": "Connect the eye-bolt to the nomex with a quick link.",
+                    "content": [
+                        {
+                            "type": "alert",
+                            "subtype": "caution",
+                            "text": "If Nomex is not attached at the base of the shroud lines, it may lift up along the shroud lines and reef the parachute resulting in high descent velocities and a failed recovery.",
+                            "id": "ct_cIyAw2RgUDOxBx1uQchv"
+                        }
+                    ],
+                    "signoffs": [
+                        {
+                            "id": "so_R5Rie1kaJh",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_dPTdFouiw9",
+                    "name": "Verify that the drogue shock cord has a loop for parachute attachment.",
+                    "content": [
+                        {
+                            "type": "alert",
+                            "subtype": "note",
+                            "text": "The parachute should be connected roughly 2/3 along the shock cord from the forward end.",
+                            "id": "ct_XpavcnoVm4XJpziYpq4U"
                         },
                         {
                             "type": "alert",
-                            "subtype": "warning",
-                            "text": "This is a warning",
-                            "id": "ct_Ul4kt9uCyebJuviZlooY",
+                            "subtype": "caution",
+                            "text": "Improperly attached quick link may result in the drogue parachute separating from the launch vehicle and cause failed recovery",
+                            "id": "ct_UfwmkCx2IkkBEAA5mJAC"
+                        }
+                    ],
+                    "signoffs": [
+                        {
+                            "id": "so_Ul0foZqamJ",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_JAaho10oId",
+                    "name": "Cover the 3 ft closest to the avionics bay with a shock cord protector.",
+                    "content": [
+                        {
+                            "type": "alert",
+                            "subtype": "caution",
+                            "text": "Nomex should cover the majority of the area to prevent black powder combustion from reaching parts of the parachute",
+                            "id": "ct_apanV597zKRyvHoA8ijp"
+                        }
+                    ],
+                    "signoffs": [
+                        {
+                            "id": "so_JwoHAAxohT",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_fHLX3KQcH1",
+                    "name": "Apply duct tape to both ends of the shock cord protector.",
+                    "content": [
+                        {
+                            "type": "alert",
+                            "subtype": "caution",
+                            "text": "If Nomex slips, the region holding the parachute may be exposed to black powder ccombustion",
+                            "id": "ct_XAE08aKQvu2jqm7ExZdt"
+                        }
+                    ],
+                    "signoffs": [
+                        {
+                            "id": "so_Bxd2jYeMF0",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_p6Nmp3t012",
+                    "name": "Form bundles of shock cord every 12\" along the length of the shock cord.",
+                    "content": [
+                        {
+                            "type": "alert",
+                            "subtype": "note",
+                            "text": "Secure bundles with masking tape. Ensure that the bundles are not too tight or sparse.",
+                            "id": "ct_36O3HcdJyDPLNtrYRu57"
+                        },
+                        {
+                            "type": "alert",
+                            "subtype": "caution",
+                            "text": "Bundles that are too tight will inhibit shock cord from fully expanding; bundles that are too sparse will not be effective in absorbing force",
+                            "id": "ct_HWmAkpWFOkG3VxkEia7o"
+                        }
+                    ],
+                    "signoffs": [
+                        {
+                            "id": "so_5NiJlRhhsM",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_2APHBMwdYm",
+                    "name": "Attach a quick link to the forward end of the shock cord.",
+                    "content": [],
+                    "signoffs": [
+                        {
+                            "id": "so_f1mlDV6Zw5",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_NmLEuxxEpJ",
+                    "name": "Attach a quick link to the aft end of the shock cord.",
+                    "content": [],
+                    "signoffs": [
+                        {
+                            "id": "so_yVQpuSbjDR",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_3gXWpa4vFE",
+                    "name": "Attach the drogue parachute to the shock cord.",
+                    "content": [
+                        {
+                            "type": "alert",
+                            "subtype": "note",
+                            "text": "This connection and others on the harness will be re-verified before flight.",
+                            "id": "ct_avBBLGTc6ikfQ8t8ngxz"
+                        }
+                    ],
+                    "signoffs": [
+                        {
+                            "id": "so_c0KbFBP96e",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_PGG4p222MK",
+                    "name": "Set aside the completed parachute and recovery harness.",
+                    "timing": "10:00:00",
+                    "content": [
+                        {
+                            "type": "alert",
+                            "subtype": "caution",
+                            "text": "If missing any part of the completed drogue parachute assembly, the parachute will not deploy properly, leading to failed recovery.",
+                            "id": "ct_qdU2Y2tDEwWu3VwvWK9Y"
+                        }
+                    ],
+                    "signoffs": [
+                        {
+                            "id": "so_4xzXowW8MI",
+                            "operators": [
+                                "CE"
+                            ]
+                        },
+                        {
+                            "id": "so_od929G6ysm",
+                            "operators": [
+                                "SO"
+                            ]
+                        }
+                    ],
+                    "dependencies": []
+                }
+            ],
+            "headers": [],
+            "name": "L-1 Drogue Parachute Preparation"
+        },
+        {
+            "id": "sctn_73cTppFFAf",
+            "steps": [
+                {
+                    "id": "step_hD7J4GXUMZ",
+                    "name": "Remove tape on main parachute, shroud lines, and shock cord.",
+                    "content": [
+                        {
+                            "type": "alert",
+                            "subtype": "caution",
+                            "text": "Restricting the main parachute, shroud lines, and shock cord can result in the vehicle falling without any method to slow down, leading to a failed recovery.",
+                            "id": "ct_Aga9PRMmYV3Iij5QFltX"
+                        }
+                    ],
+                    "signoffs": [
+                        {
+                            "id": "so_n9lVRx32gG",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_9HqkM57MVM",
+                    "name": "Verify the parachute, shroud lines, and shock cord are free of damage.",
+                    "content": [
+                        {
+                            "type": "alert",
+                            "subtype": "note",
+                            "text": "Damage constitutes tears, rips, stiffened areas, burns, or singes.",
+                            "id": "ct_TVEGGR9xQ6XPOK5TDm0w"
+                        }
+                    ],
+                    "signoffs": [
+                        {
+                            "id": "so_dxX5gTmVNG",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_bJmRaGPrS4",
+                    "name": "Untangle parachute shroud lines",
+                    "content": [
+                        {
+                            "type": "alert",
+                            "subtype": "caution",
+                            "text": "Improper storage of the parachute shroud lines can result in the parachute failing to open fully after deployment. This could produce unexpectedly high descent velocities and lead to a failed recovery.",
+                            "id": "ct_MUu292atX183qy9nwROG"
+                        }
+                    ],
+                    "signoffs": [
+                        {
+                            "id": "so_frDNeG50yc",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_RLfpmPS54Q",
+                    "name": "Z-fold the parachute",
+                    "content": [
+                        {
+                            "type": "alert",
+                            "subtype": "caution",
+                            "text": "Improper folding can result in the parachute failing to eject or open fully after deployment. This could produce unexpectedly high descent velocities and lead to a failed recovery.",
+                            "id": "ct_ihZ3v9YrKg6VbWDDZ4PZ"
+                        }
+                    ],
+                    "signoffs": [
+                        {
+                            "id": "so_seJHEK8hFR",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_oW2dn3APjP",
+                    "name": "Wrap parachute with the small square of nomex",
+                    "content": [
+                        {
+                            "type": "alert",
+                            "subtype": "caution",
+                            "text": "If Nomex does not fully cover the parachute, black powder combustion may burn holes in the parachute. This could produce unexpectedly high descent velocities and lead to a failed recovery",
+                            "id": "ct_teBFV7Nvrw011OA5rYeE"
+                        }
+                    ],
+                    "signoffs": [
+                        {
+                            "id": "so_QprVlRFxTb",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_30beaxcRjP",
+                    "name": "Connect the eye-bolt to the nomex with a quick link.",
+                    "content": [
+                        {
+                            "type": "alert",
+                            "subtype": "caution",
+                            "text": "If Nomex is not attached at the base of the shroud lines, it may lift up along the shroud lines and reef the parachute resulting in high descent velocities and a failed recovery.",
+                            "id": "ct_SpF1UCFnjmDbRNr3lXAw"
+                        }
+                    ],
+                    "signoffs": [
+                        {
+                            "id": "so_R5Rie1kaJh",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_lKEMi1dw11",
+                    "name": "Verify that the drogue shock cord has a loop for parachute attachment.",
+                    "content": [
+                        {
+                            "type": "alert",
+                            "subtype": "note",
+                            "text": "The parachute should be connected roughly 2/3 along the shock cord from the forward end.",
+                            "id": "ct_NMreoXBaBqriOoAgYZZY"
+                        },
+                        {
+                            "type": "alert",
+                            "subtype": "caution",
+                            "text": "Improperly attached quick link may result in the drogue parachute separating from the launch vehicle and cause failed recovery",
+                            "id": "ct_rSE2JBCfVevsm58bgMIL"
+                        }
+                    ],
+                    "signoffs": [
+                        {
+                            "id": "so_Ul0foZqamJ",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_gVU75xR816",
+                    "name": "Cover the 3 ft closest to the avionics bay with a shock cord protector.",
+                    "content": [
+                        {
+                            "type": "alert",
+                            "subtype": "caution",
+                            "text": "Nomex should cover the majority of the area to prevent black powder combustion from reaching parts of the parachute",
+                            "id": "ct_Ze1QGfGadeC74pzJb7HW"
+                        }
+                    ],
+                    "signoffs": [
+                        {
+                            "id": "so_JwoHAAxohT",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_BoJ77HiAN4",
+                    "name": "Apply duct tape to both ends of the shock cord protector.",
+                    "content": [
+                        {
+                            "type": "alert",
+                            "subtype": "caution",
+                            "text": "If Nomex slips, the region holding the parachute may be exposed to black powder ccombustion",
+                            "id": "ct_VmHdhsTA7mZmfR0wspS4"
+                        }
+                    ],
+                    "signoffs": [
+                        {
+                            "id": "so_Bxd2jYeMF0",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_vSe0oOy7vF",
+                    "name": "Form bundles of shock cord every 12\" along the length of the shock cord.",
+                    "content": [
+                        {
+                            "type": "alert",
+                            "subtype": "note",
+                            "text": "Secure bundles with masking tape. Ensure that the bundles are not too tight or sparse.",
+                            "id": "ct_QekcsJQHn0Vf7Urv407g"
+                        },
+                        {
+                            "type": "alert",
+                            "subtype": "caution",
+                            "text": "Bundles that are too tight will inhibit shock cord from fully expanding; bundles that are too sparse will not be effective in absorbing force",
+                            "id": "ct_hQbeuW6gJDnljaixeNZO"
+                        }
+                    ],
+                    "signoffs": [
+                        {
+                            "id": "so_5NiJlRhhsM",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_VU6ERaR5gO",
+                    "name": "Attach a quick link to the forward end of the shock cord.",
+                    "content": [],
+                    "signoffs": [
+                        {
+                            "id": "so_f1mlDV6Zw5",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_gIsEhapfgG",
+                    "name": "Attach a quick link to the aft end of the shock cord.",
+                    "content": [],
+                    "signoffs": [
+                        {
+                            "id": "so_yVQpuSbjDR",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_LkkvkrQ5I1",
+                    "name": "Attach the main parachute to the shock cord.",
+                    "content": [
+                        {
+                            "type": "alert",
+                            "subtype": "note",
+                            "text": "This connection and others on the harness will be re-verified before flight.",
+                            "id": "ct_QUfusJwHkH2pMR6BVAqy"
+                        }
+                    ],
+                    "signoffs": [
+                        {
+                            "id": "so_c0KbFBP96e",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_wP3m1hixK4",
+                    "name": "Set aside the completed parachute and recovery harness.",
+                    "timing": "10:00:00",
+                    "content": [
+                        {
+                            "type": "alert",
+                            "subtype": "caution",
+                            "text": "If missing any part of the completed main parachute assembly, the parachute will not deploy properly, leading to failed recovery.",
+                            "id": "ct_eAspLCWwN7lYQG1CGCd4"
+                        }
+                    ],
+                    "signoffs": [
+                        {
+                            "id": "so_4xzXowW8MI",
+                            "operators": [
+                                "CE"
+                            ]
+                        },
+                        {
+                            "id": "so_od929G6ysm",
+                            "operators": [
+                                "SO"
+                            ]
+                        }
+                    ],
+                    "dependencies": []
+                }
+            ],
+            "headers": [],
+            "name": "L-1 Main Parachute Preparation"
+        },
+        {
+            "id": "sctn_e5VYlutbt9",
+            "steps": [
+                {
+                    "id": "step_BEZAcJo71P",
+                    "name": "Gather the following items:",
+                    "content": [
+                        {
+                            "type": "alert",
+                            "subtype": "note",
+                            "text": "- 4x 6 mL plastic vials\n- 4x E-matches\n- Black Powder\n- 1 cc measurement tool\n- Cellulose insulation (dog barf)\n- Tape\n- Sharpie",
+                            "id": "ct_Pfd1KJMSgUuxx84qyztR",
                             "tokens": [
                                 {
                                     "type": "text",
-                                    "value": "This is a warning"
+                                    "value": "- 4x 6 mL plastic vials\n- 4x E-matches\n- Black Powder\n- 1 cc measurement tool\n- Cellulose insulation (dog barf)\n- Tape\n- Sharpie"
                                 }
                             ]
                         }
                     ],
                     "signoffs": [
                         {
-                            "id": "so_YiMbwZwZn8",
+                            "id": "so_vmHDL9HdIX",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_sEzIo5wEn2",
+                    "name": "Construct the black power charges",
+                    "content": [],
+                    "signoffs": [
+                        {
+                            "id": "so_MvaQzTy3jF",
                             "operators": []
                         }
                     ],
                     "dependencies": []
                 }
             ],
-            "name": "This is a section header"
+            "name": "L-1 Ejection Charge Preparation"
+        },
+        {
+            "id": "sctn_m7b4wtAAKw",
+            "steps": [
+                {
+                    "id": "step_54BnIka3OB",
+                    "name": "Charge LiPo battery completely",
+                    "content": [],
+                    "signoffs": [
+                        {
+                            "id": "so_tiFrmH6z6I",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_prSrem1Mgz",
+                    "name": "Measure and record LiPo voltage",
+                    "content": [
+                        {
+                            "type": "input",
+                            "name": "LiPo Voltage",
+                            "inputType": "number",
+                            "units": "Volts",
+                            "dateTimeType": "date",
+                            "rule": {
+                                "value": "",
+                                "op": ""
+                            },
+                            "options": [],
+                            "list": "",
+                            "include_in_summary": true,
+                            "external_item_type": "",
+                            "external_search_type": {
+                                "data_type": "",
+                                "filter_options": []
+                            },
+                            "id": "ct_8Kn6graEOsgZCcskBqRA"
+                        }
+                    ],
+                    "signoffs": [
+                        {
+                            "id": "so_KIwzpOj9UE",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_3B6h9pIa1r",
+                    "name": "Power on STEMCRaFT capsule by removing the RBF tag",
+                    "content": [],
+                    "signoffs": [
+                        {
+                            "id": "so_rNmWqeF9Gp",
+                            "operators": []
+                        }
+                    ],
+                    "headers": [],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_PwrumFLzrO",
+                    "name": "Power on team transceiver",
+                    "content": [],
+                    "signoffs": [
+                        {
+                            "id": "so_3C4wckuXpP",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_Ef2I9c6ggT",
+                    "name": "Power on team LoRa radio",
+                    "content": [],
+                    "signoffs": [
+                        {
+                            "id": "so_4O7jwLTNsB",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_63OapOyy00",
+                    "name": "Initiate checkout sequence",
+                    "content": [],
+                    "signoffs": [
+                        {
+                            "id": "so_8LJrN5BFTS",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_UuuK7Xqdpu",
+                    "name": "Slide STEMCRaFT Capsule onto threaded rod.",
+                    "content": [],
+                    "signoffs": [
+                        {
+                            "id": "so_f8GCwnu7gQ",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_5X6SQpN0P7",
+                    "name": "Secure the bottom of the capsule with a 1/4-20 nut.",
+                    "content": [],
+                    "signoffs": [
+                        {
+                            "id": "so_Fi0iexy6Qw",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_5CumJ9ayUE",
+                    "name": "Something about cameras???",
+                    "content": [],
+                    "signoffs": [
+                        {
+                            "id": "so_iaFDHK1WZ4",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_W2NW9GHAmg",
+                    "name": "Slide the nose cone bulkhead onto the threaded rod.",
+                    "content": [],
+                    "signoffs": [
+                        {
+                            "id": "so_P20oBBmlUR",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_r9f1u05sWe",
+                    "name": "Secure the nose cone bulkhead to the threaded rod",
+                    "content": [],
+                    "signoffs": [
+                        {
+                            "id": "so_ZgNKs2KRZ7",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_9v4xbg3vrA",
+                    "name": "Verify the nose cone bulkhead is secured.",
+                    "content": [],
+                    "signoffs": [
+                        {
+                            "id": "so_0AK7hLpOz3",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_97WwXkZ5Db",
+                    "name": "Set the STEMCRaFT Payload aside to await vehicle integration.",
+                    "content": [],
+                    "signoffs": [
+                        {
+                            "id": "so_JVnxSRg0Fc",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                }
+            ],
+            "name": "L-1 STEMCRaFT Payload Preparation"
+        },
+        {
+            "id": "sctn_YXIfgSbv80",
+            "steps": [
+                {
+                    "id": "step_EiQpHnHSpP",
+                    "name": "Charge LiPo battery completely",
+                    "content": [],
+                    "signoffs": [
+                        {
+                            "id": "so_aqTmEmVxQt",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_hMAgf0cuXd",
+                    "name": "Measure and record the LiPo voltage",
+                    "content": [
+                        {
+                            "type": "input",
+                            "name": "LiPo Voltage",
+                            "inputType": "number",
+                            "units": "Volts",
+                            "dateTimeType": "date",
+                            "rule": {
+                                "value": "",
+                                "op": ""
+                            },
+                            "options": [],
+                            "list": "",
+                            "include_in_summary": true,
+                            "external_item_type": "",
+                            "external_search_type": {
+                                "data_type": "",
+                                "filter_options": []
+                            },
+                            "id": "ct_p3BhqOKSMmx7M5MoUer4"
+                        }
+                    ],
+                    "signoffs": [
+                        {
+                            "id": "so_n7EnFEqlrK",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_X0Y0wtlTPD",
+                    "name": "Power on ADS payload by removing RBF tag",
+                    "content": [],
+                    "signoffs": [
+                        {
+                            "id": "so_eYosOZuVpZ",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": [],
+                    "headers": []
+                },
+                {
+                    "id": "step_96kM4OyD0Q",
+                    "name": "Power on team LoRa receiver",
+                    "content": [],
+                    "signoffs": [
+                        {
+                            "id": "so_qwe8Roh2vt",
+                            "operators": []
+                        }
+                    ],
+                    "headers": [
+                        {
+                            "id": "sh_LfN47AHDfytUMCyhRzICmn",
+                            "name": "This doesnt exist! ",
+                            "content": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_59Shrhj7Vy",
+                    "name": "Initiate checkout sequence",
+                    "content": [],
+                    "signoffs": [
+                        {
+                            "id": "so_NAfNVPcsjA",
+                            "operators": []
+                        }
+                    ],
+                    "headers": [
+                        {
+                            "id": "sh_IIkPu11DeJ1nqzBGAH7UWp",
+                            "name": "what does this even mean",
+                            "content": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_ZVhf07Q4tA",
+                    "name": "Power off ADS payload",
+                    "content": [],
+                    "signoffs": [
+                        {
+                            "id": "so_RNPnqiCyWA",
+                            "operators": []
+                        }
+                    ],
+                    "headers": [
+                        {
+                            "id": "sh_rLECtqNz4HLI6pAEAwwFcR",
+                            "name": "wait so turnining it on and then turning it off? is this a callibration if so we should writethose steps out",
+                            "content": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_mcfavUKoZ6",
+                    "name": "Verify forward u-bolt is secured.",
+                    "content": [],
+                    "signoffs": [
+                        {
+                            "id": "so_X5nne8VpWr",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_vN9CF9S8ew",
+                    "name": "Verify aft stud is secured.",
+                    "content": [],
+                    "signoffs": [
+                        {
+                            "id": "so_mPS630lKNZ",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_SJFZrQ8paC",
+                    "name": "Verify forward and aft threaded nuts are secured.",
+                    "content": [],
+                    "signoffs": [
+                        {
+                            "id": "so_Jo6fM2ehD7",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_UY7VGkmAAn",
+                    "name": "Set the ADS payload aside to await vehicle integration.",
+                    "content": [],
+                    "signoffs": [
+                        {
+                            "id": "so_JVnxSRg0Fc",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                }
+            ],
+            "name": "L-1 ADS Payload Preparation"
+        },
+        {
+            "id": "sctn_agRe1g2ak5",
+            "steps": [
+                {
+                    "id": "step_2qFG5f78IM",
+                    "name": "Inspect fins and verify that they are undamaged and free of cracks.",
+                    "content": [
+                        {
+                            "type": "alert",
+                            "subtype": "note",
+                            "text": " In the event that a fin is damaged, replace the damaged fin with a spare.",
+                            "id": "ct_Sj3j15KIPOvozxjGRisB"
+                        }
+                    ],
+                    "signoffs": [
+                        {
+                            "id": "so_qwRx1cVmrB",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_lAAvJ4oyy2",
+                    "name": "Slide each fin axially until the locator pins are in place.",
+                    "content": [],
+                    "signoffs": [
+                        {
+                            "id": "so_tN23HyvI4k",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_6iX4i76K3W",
+                    "name": "Install the thrust plate on top of the fins so that the rear notches align using fin clamps",
+                    "content": [],
+                    "signoffs": [
+                        {
+                            "id": "so_xiSfpRiQ1W",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_YVlF5ZyPhT",
+                    "name": "Attach the thrust plate to the four fins using 1/4-20'' x 0.5'' bolts",
+                    "content": [],
+                    "signoffs": [
+                        {
+                            "id": "so_k71WGPATat",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_tldhEttFt8",
+                    "name": "Verify the motor mount tube is secured in place.",
+                    "content": [],
+                    "signoffs": [
+                        {
+                            "id": "so_MfxXuyD04d",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_brAfNUx2GT",
+                    "name": "Verify that the fins cannot move radially or axially.",
+                    "content": [],
+                    "signoffs": [
+                        {
+                            "id": "so_FXr752Layg",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_NRtkWRtW8b",
+                    "name": "Verify that the bolts holding the fin clamps in place are fully tightened ",
+                    "content": [],
+                    "signoffs": [
+                        {
+                            "id": "so_Z9HSrSwvFS",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_M4eVLntEP1",
+                    "name": "Verify that the rail buttons are fully tightened.",
+                    "content": [],
+                    "signoffs": [
+                        {
+                            "id": "so_L4HQ79ktgg",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_85iRMuuT8g",
+                    "name": "Verify that the following are free of cracks and unintended holes.",
+                    "content": [
+                        {
+                            "type": "text",
+                            "id": "ct_AOSAH018rBTPRZ8kHcjy",
+                            "text": "- Airframe\n- Couplers\n- Bulkheads",
+                            "tokens": [
+                                {
+                                    "type": "text",
+                                    "value": "- Airframe\n- Couplers\n- Bulkheads"
+                                }
+                            ]
+                        }
+                    ],
+                    "signoffs": [
+                        {
+                            "id": "so_wY8ZVcLlpV",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                }
+            ],
+            "name": "L-1 Vehicle Inspection"
+        },
+        {
+            "id": "sctn_zPHbTHgMDC",
+            "steps": [
+                {
+                    "id": "step_KHM7Gb2WAK",
+                    "name": "Locate the following:",
+                    "content": [
+                        {
+                            "type": "text",
+                            "id": "ct_CHdUGfxCoTrz7WLzZmvR",
+                            "text": "- Nose cone subassembly\n- Main parachute recovery harness\n- Forward airframe",
+                            "tokens": [
+                                {
+                                    "type": "text",
+                                    "value": "- Nose cone subassembly\n- Main parachute recovery harness\n- Forward airframe"
+                                }
+                            ]
+                        }
+                    ],
+                    "signoffs": [
+                        {
+                            "id": "so_JfANL7xONZ",
+                            "operators": []
+                        }
+                    ],
+                    "headers": [
+                        {
+                            "id": "sh_Z5VVGVPKRIUAGTAnbDbL8t",
+                            "name": "Forward Nose Cone and Airframe Integration",
+                            "content": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_dYE8AAzssm",
+                    "name": "Pass the forward end of the recovery harness through the forward airframe.",
+                    "content": [],
+                    "signoffs": [
+                        {
+                            "id": "so_oTWqUAsL3t",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_3DM9RFlgnK",
+                    "name": "Connect the forward end of the recovery harness to the nose cone bulkhead.",
+                    "content": [],
+                    "signoffs": [
+                        {
+                            "id": "so_hCsZIEQz9G",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_WmIXTrczMN",
+                    "name": "Verify the quick link is tight by checking with a teammate. ",
+                    "content": [],
+                    "signoffs": [
+                        {
+                            "id": "so_9fuQUpWJJU",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_vbkqJ7Sppk",
+                    "name": "Slide the nose cone shoulder into the forward airframe. ",
+                    "content": [],
+                    "signoffs": [
+                        {
+                            "id": "so_SIyuH97kUv",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_QMo9oUZC5S",
+                    "name": "Connect the nose cone to the forward airframe with 4x 4-40 shear pins.",
+                    "content": [],
+                    "signoffs": [
+                        {
+                            "id": "so_V4XlXQU9wo",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_tDTIUZ8KEu",
+                    "name": "Push the main parachute into the forward airframe.",
+                    "content": [],
+                    "signoffs": [
+                        {
+                            "id": "so_buKmzWydRa",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_BC2o46POnc",
+                    "name": "Push the recovery harness into the forward airframe ",
+                    "content": [
+                        {
+                            "type": "alert",
+                            "subtype": "caution",
+                            "text": "Push in small sections to prevent tangling. ",
+                            "id": "ct_zqzAOefatN0r8Mk7E1IE"
+                        }
+                    ],
+                    "signoffs": [
+                        {
+                            "id": "so_NFFa4whmAe",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_AY3tBw3qVu",
+                    "name": "Insert copious amounts of dog barf",
+                    "content": [
+                        {
+                            "type": "alert",
+                            "subtype": "warning",
+                            "text": "Go back and change this wording for NASA",
+                            "id": "ct_QrJ4Cf1fMfjaktEqyvW4"
+                        }
+                    ],
+                    "signoffs": [
+                        {
+                            "id": "so_2SLsWEnRn2",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_3XYBJq3598",
+                    "name": "Cap off the forward airframe.",
+                    "content": [],
+                    "signoffs": [
+                        {
+                            "id": "so_6LA6FMe5eu",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_zEEkZQASHN",
+                    "name": "Locate the following",
+                    "content": [
+                        {
+                            "type": "text",
+                            "id": "ct_XLLgRT0Hcv5F4Upgpvxn",
+                            "text": "- Aft airframe\n- Drogue parachute recovery harness\n- ADS subassembly\n- Booster subassembly",
+                            "tokens": [
+                                {
+                                    "type": "text",
+                                    "value": "- Aft airframe\n- Drogue parachute recovery harness\n- ADS subassembly\n- Booster subassembly"
+                                }
+                            ]
+                        }
+                    ],
+                    "signoffs": [
+                        {
+                            "id": "so_Uvbhljj9vi",
+                            "operators": []
+                        }
+                    ],
+                    "headers": [
+                        {
+                            "id": "sh_wPLASPinQfmfnSBrzUQSnz",
+                            "name": "Aft Airframe, ADS, and Booster Integration",
+                            "content": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_I5A7ogNQCo",
+                    "name": "Pass the aft end of the recovery harness through the aft airframe front to back.",
+                    "content": [],
+                    "signoffs": [
+                        {
+                            "id": "so_gHQnPKvIUi",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_A7II7PpxMf",
+                    "name": "Connect the recovery harness to the ADS forward bulkhead.",
+                    "content": [],
+                    "signoffs": [
+                        {
+                            "id": "so_iQAGKf6NqQ",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_jDbVu5GTnG",
+                    "name": "Verify the quick link is tight by checking with a teammate. ",
+                    "content": [],
+                    "signoffs": [
+                        {
+                            "id": "so_WFBApHGUkX",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_QHE8bkxjG4",
+                    "name": "Rotate the ADS mechanism to the clocked orientation.",
+                    "content": [],
+                    "signoffs": [
+                        {
+                            "id": "so_QwCDmKN3f4",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_gciBYtfKEl",
+                    "name": "Slide the ADS forward coupler into the aft airframe.",
+                    "content": [],
+                    "signoffs": [
+                        {
+                            "id": "so_5gBaIHXXZo",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_S2QXJi0YIO",
+                    "name": "Connect the aft airframe to the ADS coupler with 4x 4-40 shear pins.",
+                    "content": [],
+                    "signoffs": [
+                        {
+                            "id": "so_gT6gJxLajP",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_PNNx5GeGWh",
+                    "name": "Slide the ADS aft coupler into the booster airframe.",
+                    "content": [],
+                    "signoffs": [
+                        {
+                            "id": "so_GgZcXcq8se",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_2SdVzzYF2Y",
+                    "name": "Connect the ADS coupler to the booster airframe with 4x 1/4-20 fasteners.",
+                    "content": [
+                        {
+                            "type": "alert",
+                            "subtype": "note",
+                            "text": "These fasteners are not meant to be load bearing in shear. They are locating features only.",
+                            "id": "ct_Pvh6kwFYufyApotGlRu3"
+                        }
+                    ],
+                    "signoffs": [
+                        {
+                            "id": "so_4TSNUgZekr",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_R8Yp2UsyiZ",
+                    "name": "Insert new alkaline battery in tracker.",
+                    "content": [],
+                    "signoffs": [
+                        {
+                            "id": "so_cyCRJufMpC",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_2dXrFXybvj",
+                    "name": "Test that the tracker is functional and record its frequency.",
+                    "content": [
+                        {
+                            "type": "input",
+                            "name": "Frequency",
+                            "inputType": "number",
+                            "units": "Hz",
+                            "dateTimeType": "date",
+                            "rule": {
+                                "value": "",
+                                "op": ""
+                            },
+                            "options": [],
+                            "list": "",
+                            "include_in_summary": false,
+                            "external_item_type": "",
+                            "external_search_type": {
+                                "data_type": "",
+                                "filter_options": []
+                            },
+                            "id": "ct_EfSG5Irpw7tGxXPeBaTV"
+                        }
+                    ],
+                    "signoffs": [
+                        {
+                            "id": "so_4XIhGxdt7Y",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_NeP99n97K2",
+                    "name": "Encase tracker in electrical tape to prevent water damage.",
+                    "content": [],
+                    "signoffs": [
+                        {
+                            "id": "so_qV5TsSNrSM",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_4b3JFmG0Lo",
+                    "name": "Write the tracker frequency on the electrical tape.",
+                    "content": [],
+                    "signoffs": [
+                        {
+                            "id": "so_8KK9sLpqcd",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_QMDzQr7nhM",
+                    "name": "Secure the tracker on the drogue shock cord using a zip tie and electrical tape. ",
+                    "content": [
+                        {
+                            "type": "requirement",
+                            "requirement_id": "",
+                            "label": "Should be placed near the parachute and the antenna should point towards the parachute.",
+                            "metadata": {},
+                            "id": "ct_Y3toWoYbKUtDEl8yndXt"
+                        }
+                    ],
+                    "signoffs": [
+                        {
+                            "id": "so_84C0lHn4Zo",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_18UeLKSCuw",
+                    "name": "Push the drogue parachute into the aft airframe.",
+                    "content": [],
+                    "signoffs": [
+                        {
+                            "id": "so_n4a6FDZ3Do",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_KDLyskIsCo",
+                    "name": "Push the drogue recovery harness into the aft airframe.",
+                    "content": [],
+                    "signoffs": [
+                        {
+                            "id": "so_VVSjTP2VxX",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_PAbUYJjTQz",
+                    "name": "Insert copious amounts of dog barf",
+                    "content": [
+                        {
+                            "type": "alert",
+                            "subtype": "warning",
+                            "text": "Go back and change this wording for NASA",
+                            "id": "ct_jMl5lqUjVkIxHq0z0Wvv"
+                        }
+                    ],
+                    "signoffs": [
+                        {
+                            "id": "so_2SLsWEnRn2",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_BqV7CjHi0E",
+                    "name": "Cap off the aft airframe.",
+                    "content": [],
+                    "signoffs": [
+                        {
+                            "id": "so_9nfmTh9Ecw",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_r2RK8CxMMi",
+                    "name": "Verify team mentor and team members are wearing eye protection.",
+                    "content": [
+                        {
+                            "type": "alert",
+                            "subtype": "warning",
+                            "text": "The following steps involve black powder ejection charges. Only the team mentor shall handle these charges.",
+                            "id": "ct_xSjbX8ooO9KNGzLTXbvN"
+                        }
+                    ],
+                    "signoffs": [
+                        {
+                            "id": "so_UTKDZreB07",
+                            "operators": []
+                        }
+                    ],
+                    "headers": [
+                        {
+                            "id": "sh_EIFPVHwy5xjo8bjlzbbU4k",
+                            "name": "Forward Charges",
+                            "content": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_RMPO49bt3Q",
+                    "name": "Verify that the avionics are powered off. The RBF tag should be fully inserted.",
+                    "content": [],
+                    "signoffs": [
+                        {
+                            "id": "so_OudrE0skqd",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_nFw9NWqOS4",
+                    "name": "Connect the main recovery harness to the forward avionics bulkhead.",
+                    "content": [],
+                    "signoffs": [
+                        {
+                            "id": "so_k4d9Z0mWxI",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_WWpb20DJxY",
+                    "name": "Verify the quick link is tight by checking with a teammate. ",
+                    "content": [],
+                    "signoffs": [
+                        {
+                            "id": "so_HUv4V0mJzL",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_dzvxTk85Tf",
+                    "name": "Connect the primary main ejection charge.",
+                    "content": [],
+                    "signoffs": [
+                        {
+                            "id": "so_sov7TLVbA0",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_0viJN8xUEF",
+                    "name": "Connect the backup main ejection charge.",
+                    "content": [],
+                    "signoffs": [
+                        {
+                            "id": "so_d9ZARWPwHr",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_QEan6tg4iO",
+                    "name": "Uncap the forward airframe. ",
+                    "content": [],
+                    "signoffs": [
+                        {
+                            "id": "so_EsvTgvJyGe",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_uNa11QXtja",
+                    "name": "Slide the avionics coupler into the forward airframe.",
+                    "content": [],
+                    "signoffs": [
+                        {
+                            "id": "so_C0MjUqv06A",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_NNS8exGvr8",
+                    "name": "Connect the forward airframe to the avionics coupler with 4x 1/4-20 fasteners.",
+                    "content": [],
+                    "signoffs": [
+                        {
+                            "id": "so_2sLhnR3JTI",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_r5MwcekO4e",
+                    "name": "Connect the drogue recovery harness to the aft avionics bulkhead.",
+                    "content": [],
+                    "signoffs": [
+                        {
+                            "id": "so_uGYSMp1rt8",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_nFOOqnZETz",
+                    "name": "Verify the quick link is tight by checking with a teammate. ",
+                    "content": [],
+                    "signoffs": [
+                        {
+                            "id": "so_HUv4V0mJzL",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_91u8k5tMLL",
+                    "name": "Connect the primary drogue ejection charge.",
+                    "content": [],
+                    "signoffs": [
+                        {
+                            "id": "so_0o8HDte84E",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_Xr6Sl0xU9Y",
+                    "name": "Connect the backup drogue ejection charge.",
+                    "content": [],
+                    "signoffs": [
+                        {
+                            "id": "so_nDFMluGRFf",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_VReRVCkgb6",
+                    "name": "Uncap the aft airframe. ",
+                    "content": [],
+                    "signoffs": [
+                        {
+                            "id": "so_tEM7gYo9fy",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_XivsZn6mgB",
+                    "name": "Slide the avionics coupler into the aft airframe.",
+                    "content": [],
+                    "signoffs": [
+                        {
+                            "id": "so_oCo8b2TGJg",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_Wlamumv3Xy",
+                    "name": "Connect the avionics coupler to the aft airframe with 4x 1/4-20 fasteners.",
+                    "content": [],
+                    "signoffs": [
+                        {
+                            "id": "so_6ZOMwNX8p1",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_vwNsOP609z",
+                    "name": "Remove AeroPack motor retainer.",
+                    "content": [],
+                    "signoffs": [
+                        {
+                            "id": "so_HNsLzsz9IL",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_WCRza7HMEO",
+                    "name": "Insert assembled motor until thread contact.",
+                    "content": [],
+                    "signoffs": [
+                        {
+                            "id": "so_sHCnu4cCSI",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_iHOCKAeCYh",
+                    "name": "Rotate the motor counter clockwise to thread onto the ADS stud.",
+                    "content": [],
+                    "signoffs": [
+                        {
+                            "id": "so_5Mu5oKo1hT",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_xD8wotzpUD",
+                    "name": "Rotate until the aft closure bottoms out on the retainer.",
+                    "content": [
+                        {
+                            "type": "alert",
+                            "subtype": "warning",
+                            "text": "pre load?",
+                            "id": "ct_7McqLUf6sTHSsrxTYrC6",
+                            "tokens": [
+                                {
+                                    "type": "text",
+                                    "value": "pre load?"
+                                }
+                            ]
+                        }
+                    ],
+                    "signoffs": [
+                        {
+                            "id": "so_f1iReQNg7k",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_uQIBpsBuoY",
+                    "name": "Attach the retainer.",
+                    "content": [],
+                    "signoffs": [
+                        {
+                            "id": "so_7wp90N6mfC",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_0GOTFHG0V9",
+                    "name": "Verify the retainer is tight by checking with a friend. ",
+                    "content": [],
+                    "signoffs": [
+                        {
+                            "id": "so_PABUF6HHdd",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_oNAVl1TbGk",
+                    "name": "Weigh the completed vehicle and record it here.",
+                    "content": [
+                        {
+                            "type": "input",
+                            "name": "Weight",
+                            "inputType": "number",
+                            "units": "lbf",
+                            "dateTimeType": "date",
+                            "rule": {
+                                "value": "",
+                                "op": ""
+                            },
+                            "options": [],
+                            "list": "",
+                            "include_in_summary": true,
+                            "external_item_type": "",
+                            "external_search_type": {
+                                "data_type": "",
+                                "filter_options": []
+                            },
+                            "id": "ct_KzY1o2cYenJjwTFKVauj"
+                        }
+                    ],
+                    "signoffs": [
+                        {
+                            "id": "so_tXkhmZ9BSb",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                }
+            ],
+            "name": "Vehicle Assembly and Payload Integration"
+        },
+        {
+            "id": "sctn_4YYUC5gg6S",
+            "steps": [
+                {
+                    "id": "step_6fUPHThWbp",
+                    "name": "Place the launch rail in a horizontal position",
+                    "content": [],
+                    "signoffs": [
+                        {
+                            "id": "so_eF03BzIuA9",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_KOhMIOxOlH",
+                    "name": "Slide the vehicle onto the launch rail. ",
+                    "content": [
+                        {
+                            "type": "alert",
+                            "subtype": "caution",
+                            "text": "One person should coordinate the effort. Bending or twisting the vehicle while constrained to the rail can damage the rial buttons.",
+                            "id": "ct_kVrdasDLHrzxFkQ7cy8e"
+                        }
+                    ],
+                    "signoffs": [
+                        {
+                            "id": "so_lCskTipNaS",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_6BIfAPgnMC",
+                    "name": "Raise the rail to vertical and verify that it is locked.",
+                    "content": [],
+                    "signoffs": [
+                        {
+                            "id": "so_DRZ58azcLy",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_e7MbesOB5X",
+                    "name": "Arm the primary altimeter.",
+                    "content": [],
+                    "signoffs": [
+                        {
+                            "id": "so_vsSKC9L2gi",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_oYuYfn16Sp",
+                    "name": "Verify three continuity beeps from the primary altimeter. ",
+                    "content": [],
+                    "signoffs": [
+                        {
+                            "id": "so_sPrP6yz399",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_qV9OLChcz2",
+                    "name": "Verify signal acquisition from primary altimeter ground station. ",
+                    "content": [],
+                    "signoffs": [
+                        {
+                            "id": "so_mOJF9Pk8WE",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_ZOtSM1jtSp",
+                    "name": "Arm the backup altimeter.",
+                    "content": [],
+                    "signoffs": [
+                        {
+                            "id": "so_wUeSBt3ioB",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_Ra6PBnHowi",
+                    "name": "Verify three continuity beeps from the primary altimeter. ",
+                    "content": [
+                        {
+                            "type": "alert",
+                            "subtype": "note",
+                            "text": "There should be a total of six beeps. Two distinct tones in sets of three.",
+                            "id": "ct_3aZLMoXkKBXllTk0CCzU"
+                        }
+                    ],
+                    "signoffs": [
+                        {
+                            "id": "so_S4A4bfgbEk",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_eaduhOsycC",
+                    "name": "Remove the motor cap.",
+                    "content": [],
+                    "signoffs": [
+                        {
+                            "id": "so_O4A7Cd5nXh",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_wNlWIzLf7B",
+                    "name": "Insert the igniter into the motor.",
+                    "content": [],
+                    "signoffs": [
+                        {
+                            "id": "so_Z1kh16hsAI",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_O1J9P1iIhF",
+                    "name": "Re-attach motor cap to hold the igniter in place.",
+                    "content": [],
+                    "signoffs": [
+                        {
+                            "id": "so_ntzvfuea0A",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_SIasJsyAui",
+                    "name": "Touch alligator clips to check for stray current.",
+                    "content": [],
+                    "signoffs": [
+                        {
+                            "id": "so_mv9oMzi0yO",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_ezdGSo3wN4",
+                    "name": "Connect alligator clips to the igniter wires.",
+                    "content": [],
+                    "signoffs": [
+                        {
+                            "id": "so_FEWiHpzsUs",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_LrX6tMngjD",
+                    "name": "Check igniter for continuity.",
+                    "content": [
+                        {
+                            "type": "alert",
+                            "subtype": "warning",
+                            "text": "Clear all personnel away from the pad. Continuity checks have the potential to prematurely fire the rocket motor.",
+                            "id": "ct_y5tW8Fq9GCimtXJbBcKE"
+                        }
+                    ],
+                    "signoffs": [
+                        {
+                            "id": "so_ZnipQCFmJ2",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_KZoYBVAMna",
+                    "name": "Clear the pad area and await RSO and LCO launch approval.",
+                    "content": [],
+                    "signoffs": [
+                        {
+                            "id": "so_bKrAEWQIt1",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_CAfyEdDWHy",
+                    "name": "If the vehicle produces smoke but does not clear the pad, await RSO approval before troubleshooting the igniter.",
+                    "content": [],
+                    "signoffs": [
+                        {
+                            "id": "so_8yxSlg7mSF",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                }
+            ],
+            "name": "Pad Operations"
+        },
+        {
+            "id": "sctn_K2rjk2PJuP",
+            "steps": [
+                {
+                    "id": "step_qWjsDplfYw",
+                    "name": "Locate the vehicle using visual cues, the RF tracker, or the GPS locator.",
+                    "content": [],
+                    "signoffs": [
+                        {
+                            "id": "so_pDoIWaE4I2",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_zS4nk67s0Z",
+                    "name": "Check surroundings around vehicle to ensure no part has landed in a hazardous environment",
+                    "content": [
+                        {
+                            "type": "alert",
+                            "subtype": "note",
+                            "text": "Hazardous environments include power lines, trees, or water.",
+                            "id": "ct_Bn9iY1KgSf8OznyQyEAn"
+                        }
+                    ],
+                    "signoffs": [
+                        {
+                            "id": "so_AI1nzUinVp",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_3BX5oa0ucZ",
+                    "name": "Take ample photos of every section of the vehicle.",
+                    "content": [],
+                    "signoffs": [
+                        {
+                            "id": "so_rtb8jOHJHQ",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_xzyQReQmw2",
+                    "name": "Disarm both altimeters.",
+                    "content": [],
+                    "signoffs": [
+                        {
+                            "id": "so_tzjhdDoSzU",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_6EC2TQb17X",
+                    "name": "Access any encloses charge locations and verify detonation of all charges.",
+                    "content": [],
+                    "signoffs": [
+                        {
+                            "id": "so_xDL2y9hDKD",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_RgCZUxfbwG",
+                    "name": "Record observed damage to the vehicle and recovery system.",
+                    "content": [],
+                    "signoffs": [
+                        {
+                            "id": "so_ZcqyL4bTpc",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_FcqZefcKCY",
+                    "name": "Disconnect the primary and drogue recovery harnesses. ",
+                    "content": [],
+                    "signoffs": [
+                        {
+                            "id": "so_K3DzzIxznE",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_5vchPxRxXV",
+                    "name": "Disconnect and bundle the primary and drogue parachutes.",
+                    "content": [],
+                    "signoffs": [
+                        {
+                            "id": "so_mFgXwJ7axN",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_wHXWOX8N31",
+                    "name": "Transport all sections of the vehicle back to base.",
+                    "content": [],
+                    "signoffs": [
+                        {
+                            "id": "so_zr2Wt9gdnS",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                }
+            ],
+            "name": "Recovery Operations"
+        },
+        {
+            "id": "sctn_eDnLEzKb69",
+            "steps": [
+                {
+                    "id": "step_bT21qVaaqt",
+                    "name": "Disconnect all vehicle sections and recovery harness hardware.",
+                    "content": [],
+                    "signoffs": [
+                        {
+                            "id": "so_cBWMEJRJwx",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_Gard5IQ6XY",
+                    "name": "Clean the inside of the vehicle airframes using isopropyl alcohol.",
+                    "content": [],
+                    "signoffs": [
+                        {
+                            "id": "so_ue2d45pd4h",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_AY334ft29A",
+                    "name": "Disassemble the avionics bay and remove ungrounded electrical connections.",
+                    "content": [],
+                    "signoffs": [
+                        {
+                            "id": "so_FGshlAYDyN",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_nvUyWguWOK",
+                    "name": "Clean the avionics bay bulkheads using isopropyl alcohol.",
+                    "content": [],
+                    "signoffs": [
+                        {
+                            "id": "so_lzqSm2kFGn",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_9rFlMUfMLo",
+                    "name": "Clean the outside of the vehicle with a damp cloth.",
+                    "content": [
+                        {
+                            "type": "alert",
+                            "subtype": "warning",
+                            "text": "Isopropyl alcohol will degrade paint if present on the vehicle.",
+                            "id": "ct_nluNMHOfB800jS8nl5dC"
+                        }
+                    ],
+                    "signoffs": [
+                        {
+                            "id": "so_hRPJq5NjwJ",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                }
+            ],
+            "name": "L+1 Vehicle Cleaning"
         }
     ],
     "owner": "andywehmeyer2025@u.northwestern.edu",
@@ -58,19 +2278,17 @@
         {
             "reviewers": [],
             "actions": [],
-            "id": "rg_jwj28DmshFyedIDASiiFU6"
+            "id": "rg_rBrh6dX2SceYaVZQ5HKuLK"
         }
     ],
     "reviewer_actions_history": [],
     "end_run_signoffs_groups": [],
-    "start_run_signoffs_groups": [],
-    "auto_procedure_id_enabled": false,
     "state": "released",
+    "editedAt": "2024-12-09T04:34:43.900Z",
+    "comments": [],
     "skip_step_enabled": true,
     "repeat_step_enabled": true,
     "step_suggest_edits_enabled": true,
-    "procedure_rev_num": 6,
-    "editedAt": "2024-12-09T04:37:11.437Z",
-    "comments": [],
+    "procedure_rev_num": 137,
     "risks": []
 }
