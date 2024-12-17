@@ -29,8 +29,14 @@ for section in json_data['sections']:
 
     for step in section['steps']:
         step_name = step['name']
+
+        safety_notice = ""
         
-        # for alert in step['content']:
+        for alert in step['content']:
+            if alert['type'] == 'alert' and alert['subtype'] == 'caution':
+                safety_notice = alert['text'] + "\lcwarning"
+            if alert['type'] == 'alert' and alert['subtype'] == 'warning':
+                safety_notice = alert['text'] + "\lccritical"
         #     if alert['type'] == 'alert' and alert['subtype'] in ['warning', 'caution']:
         #         # Construct the LaTeX row for each step, including step number, step name, alert type, PPE, and personnel
         #         latex_row = f"    {section_counter}.{subsection_counter} & \\lccritical {alert['subtype'].capitalize()} & Gloves & CE & \\checkbox {step_name}\\\\\\hline"
@@ -38,7 +44,7 @@ for section in json_data['sections']:
 
         #         # Increment the subsection counter for each new step
         
-        latex_row = f"    {section_counter}.{subsection_counter} & \\lccritical & Gloves & CE & \\checkbox {step_name}\\\\\\hline"
+        latex_row = f"    {section_counter}.{subsection_counter} & {safety_notice} & Gloves & CE & \\checkbox {step_name}\\\\\\hline"
         latex_output.append(latex_row)
 
         subsection_counter += 1
@@ -54,7 +60,7 @@ for section in json_data['sections']:
     section_counter += 1
     # Reset subsection counter for the next section
 
-    print(latex_output)
+    # print(latex_output)
 
     # Join all the LaTeX lines together into one string
     latex_code = "".join(latex_output)
