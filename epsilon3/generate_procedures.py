@@ -37,12 +37,6 @@ for section in json_data['sections']:
                 safety_notice = alert['text'] + "\lcwarning"
             if alert['type'] == 'alert' and alert['subtype'] == 'warning':
                 safety_notice = alert['text'] + "\lccritical"
-        #     if alert['type'] == 'alert' and alert['subtype'] in ['warning', 'caution']:
-        #         # Construct the LaTeX row for each step, including step number, step name, alert type, PPE, and personnel
-        #         latex_row = f"    {section_counter}.{subsection_counter} & \\lccritical {alert['subtype'].capitalize()} & Gloves & CE & \\checkbox {step_name}\\\\\\hline"
-        #         latex_output.append(latex_row)
-
-        #         # Increment the subsection counter for each new step
         
         latex_row = f"    {section_counter}.{subsection_counter} & {safety_notice} & Gloves & CE & \\checkbox {step_name}\\\\\\hline"
         latex_output.append(latex_row)
