@@ -40,48 +40,45 @@ def generate_latex_table_risks(data, table_name, table_ref):
     latex_table += f"}}{{{table_name}}}{{{table_ref}}}\n"
     return latex_table
 
-# def generate_latex_table_risks(data, table_name, table_ref):
-#     latex_table = f"\\risksCDR{{"
+def generate_latex_table_tests_and_demonstrations(data):
+    latex_table = f""
     
-#     # Iterate through each row in the DataFrame and convert to LaTeX format
-#     for index, row in data.iterrows():
+    # Iterate through each row in the DataFrame and convert to LaTeX format
+    for index, row in data.iterrows():
 
-#         risk = str(row['Hazard/Risk'])
-#         description = str(row['Cause'])
-#         effect = str(row['Effect'])
-#         pre_rac = str(row['Pre-RAC'])
-#         mitigation = str(row['Mitigation'])
-#         verification = str(row['Verification'])
-#         post_rac = str(row['Post-RAC'])
-#         latex_row = f"{risk}&{description}&{effect}&\{pre_rac}&{mitigation}&{verification}&\{post_rac}\\\\\hline "
-#         latex_row = latex_row.replace('\n', '').replace('%', '\\%').replace('$', '\\$').replace('#', '\\#').replace('^', '\\^')
-#         latex_table += latex_row
-    
-#     latex_table += f"}}{{{table_name}}}{{{table_ref}}}\n"
-#     return latex_table
+        type = str(row['Type'])
+        verification_number = str(row['Verification Number'])
+        name = str(row['Name'])
+        test_objective = str(row['Test Objective'])
+        success_criteria = str(row['Success Criteria'])
+        testing_variable = str(row['Testing Variable'])
+        methodology = str(row['Methodology'])
+        justification = str(row['Justification'])
+        potential_impact_of_results = str(row['Potential Impact of Results'])
 
-
-
-# def generate_latex_table_fmea(data, table_name, table_ref):
-#     latex_table = f"\\fmeaCDR{{"
-    
-#     # Iterate through each row in the DataFrame and convert to LaTeX format
-#     for index, row in data.iterrows():
-
-#         risk = str(row['Failure Mode'])
-#         description = str(row['Cause'])
-#         effect = str(row['Effect'])
-#         pre_rac = str(row['Pre-RAC'])
-#         mitigation = str(row['Mitigation'])
-#         verification = str(row['Verification'])
-#         post_rac = str(row['Post-RAC'])
+        table_ref = f"tab:{name.lower().replace(' ', '-')}"
         
-#         latex_row = f"{risk}&{description}&{effect}&\{pre_rac}&{mitigation}&{verification}&\{post_rac}\\\\\hline "
-#         latex_row = latex_row.replace('\n', '').replace('%', '\\%').replace('$', '\\$').replace('#', '\\#').replace('^', '\\^')
-#         latex_table += latex_row
+        latex_row = f"\\testsAndDemonstrations{{\n"
+        latex_row += f"    type={{ {type} }},\n"
+        latex_row += f"    verification={{ {verification_number} }},\n"
+        latex_row += f"    name={{ {name} }},\n"
+        latex_row += f"    objective={{ {test_objective} }},\n"
+        latex_row += f"    criteria={{ {success_criteria} }},\n"
+        latex_row += f"    variable={{ {testing_variable} }},\n"
+        latex_row += f"    methodology={{ {methodology} }},\n"
+        latex_row += f"    justification={{ {justification} }},\n"
+        latex_row += f"    impact={{ {potential_impact_of_results} }},\n"
+        latex_row += f"    results={{ Final test results }},\n"
+        latex_row += f"    caption={{ {name} }},\n"
+        latex_row += f"    label={{{table_ref}}}\n"
+        latex_row += f"}}"
 
-#     latex_table += f"}}{{{table_name}}}{{{table_ref}}}\n"
-#     return latex_table
+        latex_row = latex_row.replace('\n', '').replace('%', '\\%').replace('$', '\\$').replace('#', '\\#').replace('^', '\\^')
+        latex_row += f"\n\n"
+
+        latex_table += latex_row
+
+    return latex_table
 
 def generate_latex_table_nasa_requirements_proposal(data, table_name, table_ref):
     latex_table = f"\\requirementsPROPOSAL{{"
@@ -110,12 +107,13 @@ def generate_latex_table_team_requirements(data, table_name, table_ref):
         description = str(row['Description'])
         justification = str(row['Justification'])
         verification_method = str(row['Verification Method'])
+        verification_plan = str(row['Verification Plan'])
         verification_status = str(row['Verification Status'])
         section = str(row['Section'])
         
         # latex_row = f"{item}&{description}&{verification_method}&{verification_status}&\\ref{section}\\\\\hline "
         # latex_row = f"{item}&{description}&{justification}&{verification_method}&{verification_status}&\\ref{{{section}}}\\\\\\hline "
-        latex_row = f"{item}&{description}&{justification}&{verification_method}&{verification_status}&{section}\\\\\hline "
+        latex_row = f"{item}&{description}&{justification}&{verification_method}&{verification_plan}&{verification_status}&{section}\\\\\hline "
         latex_row = latex_row.replace('\n', '').replace('%', '\\%').replace('$', '\\$').replace('#', '\\#').replace('^', '\\^')
         latex_table += latex_row
     
@@ -132,10 +130,11 @@ def generate_latex_table_nasa_requirements(data, table_name, table_ref):
         description = str(row['Description'])
         justification = str(row['Justification'])
         verification_method = str(row['Verification Method'])
+        verification_plan = str(row['Verification Plan'])
         verification_status = str(row['Verification Status'])
         section = str(row['Section'])
         
-        latex_row = f"{item}&{description}&{justification}&{verification_method}&{verification_status}&{section}\\\\\hline "
+        latex_row = f"{item}&{description}&{justification}&{verification_method}&{verification_plan}&{verification_status}&{section}\\\\\hline "
         # latex_row = f"{item}&{description}&{justification}&{verification_method}&{verification_status}&\\ref{{{section}}}\\\\\\hline "
         latex_row = latex_row.replace('\n', '').replace('%', '\\%').replace('$', '\\$').replace('#', '\\#').replace('^', '\\^')
         latex_table += latex_row
@@ -248,8 +247,10 @@ def parse_excel_file(file_path_header, file_path):
                     latex_table = generate_latex_table_challenges_solutions(df, table_name, table_ref)
             elif "changes" in file_path:
                     latex_table = generate_latex_table_changes(df, table_name, table_ref)
+            elif "tests_and_demonstrations" in file_path:
+                    latex_table = generate_latex_table_tests_and_demonstrations(df)
             else:
-                print("Error: File not recognized")
+                print("Error: File not found")
                 return
 
             # Generate the LaTeX table string
@@ -271,7 +272,7 @@ def parse_excel_file(file_path_header, file_path):
                 file.write(latex_table)    
 
 file_path_header = '/Users/andrewwehmeyer/Downloads/'
-files = ['budget', 'fmea', 'nasa_requirements_proposal', 'nasa_requirements', 'risks', 'team_requirements', 'challenges_solutions', 'changes']
+files = ['budget', 'fmea', 'nasa_requirements_proposal', 'nasa_requirements', 'risks', 'team_requirements', 'challenges_solutions', 'changes', 'tests_and_demonstrations']
 
 for file in files:
     file_path = os.path.join(file_path_header, file + '.xlsx')  # Assuming the files are .xlsx
