@@ -1,11 +1,11 @@
 {
     "_id": "zXpyGHRlJSGR2H70eNVqlB",
-    "_rev": "2-7d246fb7317595d15bc02e359209b723",
+    "_rev": "3-27f5c0656a98f52975c984d8e2aff441",
     "code": "USLI25",
     "name": "Launch Procedures",
     "description": "",
     "headers": [],
-    "version": "2",
+    "version": "3",
     "archived": false,
     "editedUserId": "andywehmeyer2025@u.northwestern.edu",
     "sections": [
@@ -195,8 +195,14 @@
                         {
                             "type": "alert",
                             "subtype": "caution",
-                            "text": "If Nomex slips, the region holding the parachute may be exposed to black powder ccombustion",
-                            "id": "ct_XAE08aKQvu2jqm7ExZdt"
+                            "text": "If Nomex slips, the region holding the parachute may be exposed to black powder combustion",
+                            "id": "ct_XAE08aKQvu2jqm7ExZdt",
+                            "tokens": [
+                                {
+                                    "type": "text",
+                                    "value": "If Nomex slips, the region holding the parachute may be exposed to black powder combustion"
+                                }
+                            ]
                         }
                     ],
                     "signoffs": [
@@ -209,19 +215,26 @@
                 },
                 {
                     "id": "step_p6Nmp3t012",
-                    "name": "Form bundles of shock cord every 12\" along the length of the shock cord.",
+                    "name": "Form bundles of shock cord every 12\" along the length of the shock cord using masking tape.",
                     "content": [
                         {
                             "type": "alert",
                             "subtype": "note",
-                            "text": "Secure bundles with masking tape. Ensure that the bundles are not too tight or sparse.",
-                            "id": "ct_36O3HcdJyDPLNtrYRu57"
+                            "text": "Ensure that the bundles are not too tight or sparse.",
+                            "id": "ct_36O3HcdJyDPLNtrYRu57",
+                            "tokens": []
                         },
                         {
                             "type": "alert",
                             "subtype": "caution",
-                            "text": "Bundles that are too tight will inhibit shock cord from fully expanding; bundles that are too sparse will not be effective in absorbing force",
-                            "id": "ct_HWmAkpWFOkG3VxkEia7o"
+                            "text": "Ensure that the bundles are not too tight or sparse. Bundles that are too tight will inhibit shock cord from fully expanding; bundles that are too sparse will not be effective in absorbing force",
+                            "id": "ct_HWmAkpWFOkG3VxkEia7o",
+                            "tokens": [
+                                {
+                                    "type": "text",
+                                    "value": "Ensure that the bundles are not too tight or sparse. Bundles that are too tight will inhibit shock cord from fully expanding; bundles that are too sparse will not be effective in absorbing force"
+                                }
+                            ]
                         }
                     ],
                     "signoffs": [
@@ -586,6 +599,229 @@
             "name": "L-1 Main Parachute Preparation"
         },
         {
+            "id": "sctn_ZPnMmHccRK",
+            "steps": [
+                {
+                    "id": "step_GkziDATLTs",
+                    "name": "Connect the primary battery to the primary computer.",
+                    "content": [
+                        {
+                            "type": "alert",
+                            "subtype": "note",
+                            "text": "These steps will be repeated on L-0 during vehicle integration.",
+                            "id": "ct_2FEesk9dGAgZPTgrh3Sk",
+                            "tokens": [
+                                {
+                                    "type": "text",
+                                    "value": "These steps will be repeated on L-0 during vehicle integration."
+                                }
+                            ]
+                        }
+                    ],
+                    "signoffs": [
+                        {
+                            "id": "so_3tS8gbJpKv",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_OHKgrIOvqR",
+                    "name": "Connect the backup battery to the backup computer.",
+                    "content": [],
+                    "signoffs": [
+                        {
+                            "id": "so_gUFOVp9UvI",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_Y2vqCG6Tpc",
+                    "name": "Connect the aft bulkhead e-match passthroughs to their labeled mates.",
+                    "content": [],
+                    "signoffs": [
+                        {
+                            "id": "so_yoYUf3zF5q",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_GzpqAIWlBf",
+                    "name": "Insert the avionics sled subassembly into the avionics coupler.",
+                    "content": [],
+                    "signoffs": [
+                        {
+                            "id": "so_lI98KuKpJq",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_HexXnWohBi",
+                    "name": "Rotate sled until RBF flight tag holes are aligned. Both computers should be disarmed.",
+                    "content": [],
+                    "signoffs": [
+                        {
+                            "id": "so_rvNFTS5DQa",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_QO9bRVQWP9",
+                    "name": "Connect the forward bulkhead e-match passthroughs to their labeled mates.",
+                    "content": [],
+                    "signoffs": [
+                        {
+                            "id": "so_L7IHeFWSch",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_JJWkrGTBLQ",
+                    "name": "Secure the forward bulkhead with 2x 1/4-20 nuts and washers.",
+                    "content": [],
+                    "signoffs": [
+                        {
+                            "id": "so_yIS17EtkkR",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_FFOEi2bJkd",
+                    "name": "Connect jumper wires to 4x e-match passthroughs on the avionics stack.",
+                    "content": [],
+                    "signoffs": [
+                        {
+                            "id": "so_QFTJaEpyke",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_53FLaxsfuG",
+                    "name": "Place the avionics stack in a vertical flight-like configuration.",
+                    "content": [],
+                    "signoffs": [
+                        {
+                            "id": "so_xMadZJTuD2",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_uq8uPCHJeC",
+                    "name": "Power on the backup computer.",
+                    "content": [],
+                    "signoffs": [
+                        {
+                            "id": "so_jeiVBKXMBN",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_SWeUMgEAIB",
+                    "name": "Verify 3x beeps to indicate nominal continuity.",
+                    "content": [],
+                    "signoffs": [
+                        {
+                            "id": "so_HfdlKeueZg",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_m8xVGn0gl7",
+                    "name": "Power off the backup computer.",
+                    "content": [],
+                    "signoffs": [
+                        {
+                            "id": "so_pgcmwXVeYm",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_YnbCk549gE",
+                    "name": "Power on the primary computer.",
+                    "content": [],
+                    "signoffs": [
+                        {
+                            "id": "so_UIHeqanx27",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_hu47hGZM5j",
+                    "name": "Verify 3x beeps to indicate nominal continuity.",
+                    "content": [],
+                    "signoffs": [
+                        {
+                            "id": "so_Ig16ZhY242",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_0mwj8mmUxI",
+                    "name": "Verify signal acquisition by TeleBT ground station.",
+                    "content": [],
+                    "signoffs": [
+                        {
+                            "id": "so_R0IaRXpZOr",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_si1O2JZRpE",
+                    "name": "Power off primary computer.",
+                    "content": [],
+                    "signoffs": [
+                        {
+                            "id": "so_sQY8QoISi6",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_viawqZn1J2",
+                    "name": "Remove 4x jumper wires.",
+                    "content": [],
+                    "signoffs": [
+                        {
+                            "id": "so_bSZB96W9IQ",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                }
+            ],
+            "name": "L-1 Electronics Checkout"
+        },
+        {
             "id": "sctn_e5VYlutbt9",
             "steps": [
                 {
@@ -593,10 +829,9 @@
                     "name": "Gather the following items:",
                     "content": [
                         {
-                            "type": "alert",
-                            "subtype": "note",
+                            "type": "text",
+                            "id": "ct_AmkccAsjX71l58bT1qGS",
                             "text": "- 4x 6 mL plastic vials\n- 4x E-matches\n- Black Powder\n- 1 cc measurement tool\n- Cellulose insulation (dog barf)\n- Tape\n- Sharpie\n- Antistatic bag",
-                            "id": "ct_Pfd1KJMSgUuxx84qyztR",
                             "tokens": [
                                 {
                                     "type": "text",
@@ -616,7 +851,20 @@
                 {
                     "id": "step_PUSQXzBoFQ",
                     "name": "The following steps shall be done by the team mentor.",
-                    "content": [],
+                    "content": [
+                        {
+                            "type": "alert",
+                            "subtype": "warning",
+                            "text": "Steps involving black powder explosives shall be conducted by the team mentor. All team members should wear safety glasses when black powder explosives are present.",
+                            "id": "ct_yqPWmTi6iVIsjb1wE4yo",
+                            "tokens": [
+                                {
+                                    "type": "text",
+                                    "value": "Steps involving black powder explosives shall be conducted by the team mentor. All team members should wear safety glasses when black powder explosives are present."
+                                }
+                            ]
+                        }
+                    ],
                     "signoffs": [
                         {
                             "id": "so_1c2WfDxBrc",
@@ -677,7 +925,20 @@
                 {
                     "id": "step_NeU0XgJfGR",
                     "name": "Place all charges in antistatic bag.",
-                    "content": [],
+                    "content": [
+                        {
+                            "type": "alert",
+                            "subtype": "warning",
+                            "text": "Proper storage of the black powder charges minimizes the risk of static charge buildup.",
+                            "id": "ct_OhrxRKUEH3vk6wCPgxgp",
+                            "tokens": [
+                                {
+                                    "type": "text",
+                                    "value": "Proper storage of the black powder charges minimizes the risk of static charge buildup."
+                                }
+                            ]
+                        }
+                    ],
                     "signoffs": [
                         {
                             "id": "so_KDXF3vVcGQ",
@@ -715,7 +976,7 @@
                 },
                 {
                     "id": "step_prSrem1Mgz",
-                    "name": "Measure and record battery voltage",
+                    "name": "Measure and record battery voltage.",
                     "content": [
                         {
                             "type": "input",
@@ -747,109 +1008,12 @@
                     "dependencies": []
                 },
                 {
-                    "id": "step_3B6h9pIa1r",
-                    "name": "Power on STEMCRaFT capsule by removing the RBF tag",
+                    "id": "step_MkYIXU2jsp",
+                    "name": "Secure LiPo Battery in the STEMCRaFT using the 2 hook and loop ties.",
                     "content": [],
                     "signoffs": [
                         {
-                            "id": "so_rNmWqeF9Gp",
-                            "operators": []
-                        }
-                    ],
-                    "headers": [],
-                    "dependencies": []
-                },
-                {
-                    "id": "step_PwrumFLzrO",
-                    "name": "Power on team transceiver",
-                    "content": [],
-                    "signoffs": [
-                        {
-                            "id": "so_3C4wckuXpP",
-                            "operators": []
-                        }
-                    ],
-                    "dependencies": []
-                },
-                {
-                    "id": "step_Ef2I9c6ggT",
-                    "name": "Power on team LoRa radio",
-                    "content": [],
-                    "signoffs": [
-                        {
-                            "id": "so_4O7jwLTNsB",
-                            "operators": []
-                        }
-                    ],
-                    "dependencies": []
-                },
-                {
-                    "id": "step_63OapOyy00",
-                    "name": "Initiate checkout sequence",
-                    "content": [],
-                    "signoffs": [
-                        {
-                            "id": "so_8LJrN5BFTS",
-                            "operators": []
-                        }
-                    ],
-                    "dependencies": []
-                },
-                {
-                    "id": "step_UuuK7Xqdpu",
-                    "name": "Slide STEMCRaFT Capsule onto threaded rod.",
-                    "content": [],
-                    "signoffs": [
-                        {
-                            "id": "so_f8GCwnu7gQ",
-                            "operators": []
-                        }
-                    ],
-                    "dependencies": []
-                },
-                {
-                    "id": "step_5X6SQpN0P7",
-                    "name": "Secure the bottom of the capsule with a 1/4-20 nut.",
-                    "content": [],
-                    "signoffs": [
-                        {
-                            "id": "so_Fi0iexy6Qw",
-                            "operators": []
-                        }
-                    ],
-                    "dependencies": []
-                },
-                {
-                    "id": "step_5CumJ9ayUE",
-                    "name": "Something about cameras???",
-                    "content": [],
-                    "signoffs": [
-                        {
-                            "id": "so_iaFDHK1WZ4",
-                            "operators": []
-                        }
-                    ],
-                    "dependencies": []
-                },
-                {
-                    "id": "step_W2NW9GHAmg",
-                    "name": "Slide the nose cone bulkhead onto the threaded rod.",
-                    "content": [],
-                    "signoffs": [
-                        {
-                            "id": "so_P20oBBmlUR",
-                            "operators": []
-                        }
-                    ],
-                    "dependencies": []
-                },
-                {
-                    "id": "step_r9f1u05sWe",
-                    "name": "Secure the nose cone bulkhead to the threaded rod",
-                    "content": [],
-                    "signoffs": [
-                        {
-                            "id": "so_ZgNKs2KRZ7",
+                            "id": "so_zDGYGkSMxP",
                             "operators": []
                         }
                     ],
@@ -857,11 +1021,122 @@
                 },
                 {
                     "id": "step_9v4xbg3vrA",
-                    "name": "Verify the nose cone bulkhead is secured.",
-                    "content": [],
+                    "name": "Verify the nose cone bulkhead is secured to the threaded rod using a 1/4-20 nut and washer on both sides.",
+                    "content": [
+                        {
+                            "type": "alert",
+                            "subtype": "caution",
+                            "text": "Improper axial alignment along the threaded rod will make integration impossible.",
+                            "id": "ct_v5jPSdDD7kBGmX9UwUe5",
+                            "tokens": [
+                                {
+                                    "type": "text",
+                                    "value": "Improper axial alignment along the threaded rod will make integration impossible."
+                                }
+                            ]
+                        }
+                    ],
                     "signoffs": [
                         {
                             "id": "so_0AK7hLpOz3",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_fKdlANnxM6",
+                    "name": "Verify that the STEMCRaFT is secured to the threaded rod using an additional 1/4-20 nut and washer on its forward end.",
+                    "content": [
+                        {
+                            "type": "alert",
+                            "subtype": "caution",
+                            "text": "Improper axial alignment along the threaded rod will make integration impossible.",
+                            "id": "ct_yG01maYPaY7SY3Jr8710",
+                            "tokens": [
+                                {
+                                    "type": "text",
+                                    "value": "Improper axial alignment along the threaded rod will make integration impossible."
+                                }
+                            ]
+                        }
+                    ],
+                    "signoffs": [
+                        {
+                            "id": "so_pUYrfcteNK",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_Ke5f6VAOoj",
+                    "name": "Connect LiPo battery connector to the STEMCRaFT PCB.",
+                    "content": [
+                        {
+                            "type": "alert",
+                            "subtype": "caution",
+                            "text": "Once the battery is connected, the STEMCRaFT will be powered on until payload preparation is complete.",
+                            "id": "ct_MaW7UOGe5AqKFsFkgL10",
+                            "tokens": [
+                                {
+                                    "type": "text",
+                                    "value": "Once the battery is connected, the STEMCRaFT will be powered on until payload preparation is complete."
+                                }
+                            ]
+                        }
+                    ],
+                    "signoffs": [
+                        {
+                            "id": "so_zUp92bIRZX",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_2X00uGn9dN",
+                    "name": "Preform the IMU calibration sequence until the buzzer indicates that calibration is complete.",
+                    "content": [],
+                    "signoffs": [
+                        {
+                            "id": "so_5loEubmNfl",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_1qfvpgJghB",
+                    "name": "Slide the STEMCRaFT assembly into the nose cone until the bulkhead lip makes contact with the end of the coupler.",
+                    "content": [],
+                    "signoffs": [
+                        {
+                            "id": "so_SEbWx6P3c3",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_Uu2n2TiwaD",
+                    "name": "Power off the STEMCRaFT by inserting the RBF tag and twisting the subassembly as necessary.",
+                    "content": [],
+                    "signoffs": [
+                        {
+                            "id": "so_npo5SoII1B",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_1tk22QZ8Fp",
+                    "name": "Attach the nose cone tip to the forward end of the threaded rod until it bottoms out.",
+                    "content": [],
+                    "signoffs": [
+                        {
+                            "id": "so_oXC9NyDjka",
                             "operators": []
                         }
                     ],
@@ -897,7 +1172,7 @@
             "steps": [
                 {
                     "id": "step_EiQpHnHSpP",
-                    "name": "Charge LiPo battery completely",
+                    "name": "Charge LiPo battery.",
                     "content": [],
                     "signoffs": [
                         {
@@ -909,7 +1184,7 @@
                 },
                 {
                     "id": "step_hMAgf0cuXd",
-                    "name": "Measure and record the LiPo voltage",
+                    "name": "Measure and record the LiPo voltage.",
                     "content": [
                         {
                             "type": "input",
@@ -942,36 +1217,11 @@
                 },
                 {
                     "id": "step_X0Y0wtlTPD",
-                    "name": "Power on ADS payload by removing RBF tag",
+                    "name": "Secure LiPo Battery in the ADS using the 2 hook and loop ties.",
                     "content": [],
                     "signoffs": [
                         {
                             "id": "so_eYosOZuVpZ",
-                            "operators": []
-                        }
-                    ],
-                    "dependencies": [],
-                    "headers": []
-                },
-                {
-                    "id": "step_PVfcDNaMZZ",
-                    "name": "Calibrate ADS payload",
-                    "content": [],
-                    "signoffs": [
-                        {
-                            "id": "so_YgiARhN5y3",
-                            "operators": []
-                        }
-                    ],
-                    "dependencies": []
-                },
-                {
-                    "id": "step_ZVhf07Q4tA",
-                    "name": "Power off ADS payload",
-                    "content": [],
-                    "signoffs": [
-                        {
-                            "id": "so_RNPnqiCyWA",
                             "operators": []
                         }
                     ],
@@ -980,7 +1230,7 @@
                 },
                 {
                     "id": "step_mcfavUKoZ6",
-                    "name": "Verify forward u-bolt is secured.",
+                    "name": "Verify that the forward u-bolt is secured to the forward bulkhead.",
                     "content": [],
                     "signoffs": [
                         {
@@ -991,8 +1241,58 @@
                     "dependencies": []
                 },
                 {
+                    "id": "step_COiAlS5OfW",
+                    "name": "Verify that the threaded rods are secured to the aft bulkhead using 10-32 nuts and washers on both sides",
+                    "content": [
+                        {
+                            "type": "alert",
+                            "subtype": "caution",
+                            "text": "Improper axial alignment along the threaded rods will make integration impossible.",
+                            "id": "ct_pecZazh2erAoGM2Ev1b2",
+                            "tokens": [
+                                {
+                                    "type": "text",
+                                    "value": "Improper axial alignment along the threaded rods will make integration impossible."
+                                }
+                            ]
+                        }
+                    ],
+                    "signoffs": [
+                        {
+                            "id": "so_fvYzX6DkpO",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_QG6qtLacZf",
+                    "name": "Verify that the ADS mechanical and electronics mounting plates are secured to the threaded rods using 10-32 hardware.",
+                    "content": [
+                        {
+                            "type": "alert",
+                            "subtype": "caution",
+                            "text": "Improper axial alignment along the threaded rods will make integration impossible.",
+                            "id": "ct_VRzq1LQlIvarZfA4mBPe",
+                            "tokens": [
+                                {
+                                    "type": "text",
+                                    "value": "Improper axial alignment along the threaded rods will make integration impossible."
+                                }
+                            ]
+                        }
+                    ],
+                    "signoffs": [
+                        {
+                            "id": "so_KaTNx106Pp",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
                     "id": "step_vN9CF9S8ew",
-                    "name": "Verify aft stud is secured.",
+                    "name": "Verify that the aft stud is secured to the aft bulkhead assembly.",
                     "content": [],
                     "signoffs": [
                         {
@@ -1003,8 +1303,93 @@
                     "dependencies": []
                 },
                 {
+                    "id": "step_fkHgQ7ndiN",
+                    "name": "Connect LiPo battery connector to the ADS PCB.",
+                    "content": [
+                        {
+                            "type": "alert",
+                            "subtype": "caution",
+                            "text": "Once the battery is connected, the ADS will be powered on until payload preparation is complete.",
+                            "id": "ct_OkFJ6ID102Hzd1iYpQxJ",
+                            "tokens": [
+                                {
+                                    "type": "text",
+                                    "value": "Once the battery is connected, the ADS will be powered on until payload preparation is complete."
+                                }
+                            ]
+                        }
+                    ],
+                    "signoffs": [
+                        {
+                            "id": "so_fKAYKrZq1E",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_HN9Rsw4Piz",
+                    "name": "Preform the IMU calibration sequence until the buzzer indicates that calibration is complete.",
+                    "content": [],
+                    "signoffs": [
+                        {
+                            "id": "so_eKZYiz0YbE",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_zglSy7kQb9",
+                    "name": "Slide aft bulkhead assembly into the ADS coupler until the bulkhead lip makes contact with the end of the coupler. ",
+                    "content": [],
+                    "signoffs": [
+                        {
+                            "id": "so_N6OHmHs2qa",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_f7e7ZyjpNG",
+                    "name": "Power off the ADS by inserting the RBF tag and twisting the subassembly as necessary.",
+                    "content": [],
+                    "signoffs": [
+                        {
+                            "id": "so_24Oh4ukyOt",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_0aMvNi7rm1",
+                    "name": "Insert 4x 1/4-20 locating hardware.",
+                    "content": [],
+                    "signoffs": [
+                        {
+                            "id": "so_TlwdmKaRNV",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_CrCAix9b9G",
+                    "name": "Cap the coupler using the forward bulkhead and secure it to the threaded rods using 10-32 nuts and washers.",
+                    "content": [],
+                    "signoffs": [
+                        {
+                            "id": "so_vJr30bFJ4J",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
                     "id": "step_SJFZrQ8paC",
-                    "name": "Verify forward and aft threaded nuts are secured.",
+                    "name": "Verify that the forward nuts are secured.",
                     "content": [],
                     "signoffs": [
                         {
@@ -1051,6 +1436,18 @@
                             "subtype": "note",
                             "text": " In the event that a fin is damaged, replace the damaged fin with a spare.",
                             "id": "ct_Sj3j15KIPOvozxjGRisB"
+                        },
+                        {
+                            "type": "alert",
+                            "subtype": "caution",
+                            "text": "This step and the following are the final check-off for flight readiness. Failure to inspect any element of the vehicle prior to flight may result in catastrophic failure during flight or recovery.",
+                            "id": "ct_PqBVfA5biJp8VgKvDSET",
+                            "tokens": [
+                                {
+                                    "type": "text",
+                                    "value": "This step and the following are the final check-off for flight readiness. Failure to inspect any element of the vehicle prior to flight may result in catastrophic failure during flight or recovery."
+                                }
+                            ]
                         }
                     ],
                     "signoffs": [
@@ -1075,7 +1472,7 @@
                 },
                 {
                     "id": "step_6iX4i76K3W",
-                    "name": "Install the thrust plate on top of the fins so that the rear notches align using fin clamps",
+                    "name": "Install the thrust plate on top of the fins so that the 2 pins on each fin slide into place.",
                     "content": [],
                     "signoffs": [
                         {
@@ -1087,7 +1484,7 @@
                 },
                 {
                     "id": "step_YVlF5ZyPhT",
-                    "name": "Attach the thrust plate to the four fins using 1/4-20'' x 0.5'' bolts",
+                    "name": "Attach the thrust plate to the aft airframe using 1/4-20 x 0.5'' bolts.",
                     "content": [],
                     "signoffs": [
                         {
@@ -1123,7 +1520,7 @@
                 },
                 {
                     "id": "step_NRtkWRtW8b",
-                    "name": "Verify that the bolts holding the fin clamps in place are fully tightened ",
+                    "name": "Verify that the bolts holding the fin clamps in place are fully tightened .",
                     "content": [],
                     "signoffs": [
                         {
@@ -1254,7 +1651,20 @@
                 {
                     "id": "step_4v4CocbHsW",
                     "name": "Verify the quick link is tight by checking with a teammate. ",
-                    "content": [],
+                    "content": [
+                        {
+                            "type": "alert",
+                            "subtype": "caution",
+                            "text": "This quick-link is critical to load transfer during recovery. Failure to secure the quick-link may result in separation of sections during recovery.",
+                            "id": "ct_ZWpyW2qbJfcJYpAkOsyl",
+                            "tokens": [
+                                {
+                                    "type": "text",
+                                    "value": "This quick-link is critical to load transfer during recovery. Failure to secure the quick-link may result in separation of sections during recovery."
+                                }
+                            ]
+                        }
+                    ],
                     "signoffs": [
                         {
                             "id": "so_N2YHNKGDwg",
@@ -1264,9 +1674,34 @@
                     "dependencies": []
                 },
                 {
-                    "id": "step_KGZoxUTop3",
-                    "name": "Slide the nose cone shoulder into the forward airframe. ",
+                    "id": "step_0FD5boJ4Ep",
+                    "name": "Retract the 3x deployable antennas on the nose cone assembly until the antennas are parallel to the axis of the launch vehicle.",
                     "content": [],
+                    "signoffs": [
+                        {
+                            "id": "so_LprChSqic0",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_KGZoxUTop3",
+                    "name": "Slide the nose cone shoulder into the forward airframe.",
+                    "content": [
+                        {
+                            "type": "alert",
+                            "subtype": "caution",
+                            "text": "Ensuring that the antennas slide along the inside edge of the airframe.",
+                            "id": "ct_EsyvT6rfy3RHMtZ7DcCZ",
+                            "tokens": [
+                                {
+                                    "type": "text",
+                                    "value": "Ensuring that the antennas slide along the inside edge of the airframe."
+                                }
+                            ]
+                        }
+                    ],
                     "signoffs": [
                         {
                             "id": "so_U87WRUPaDv",
@@ -1290,7 +1725,20 @@
                 {
                     "id": "step_RaH6ip7wUi",
                     "name": "Push the main parachute into the forward airframe.",
-                    "content": [],
+                    "content": [
+                        {
+                            "type": "alert",
+                            "subtype": "caution",
+                            "text": "Ensure that the parachute slides along the inside of the 3 antennas. Tangling the parachute and antenna assembly may prevent main parachute inflation.",
+                            "id": "ct_8xDHmt8iXwPcYsloJITs",
+                            "tokens": [
+                                {
+                                    "type": "text",
+                                    "value": "Ensure that the parachute slides along the inside of the 3 antennas. Tangling the parachute and antenna assembly may prevent main parachute inflation."
+                                }
+                            ]
+                        }
+                    ],
                     "signoffs": [
                         {
                             "id": "so_Tfp0xkdzHu",
@@ -1301,17 +1749,17 @@
                 },
                 {
                     "id": "step_gBpeQtfeGO",
-                    "name": "Push the recovery harness into the forward airframe ",
+                    "name": "Push the recovery harness into the forward airframe.",
                     "content": [
                         {
                             "type": "alert",
                             "subtype": "caution",
-                            "text": "Push in small sections to prevent tangling. ",
+                            "text": "Ensure that the parachute slides along the inside of the 3 antennas. Tangling the parachute and antenna assembly may prevent main parachute inflation.",
                             "id": "ct_3EsNQtTKlrQZEH6OClWr",
                             "tokens": [
                                 {
                                     "type": "text",
-                                    "value": "Push in small sections to prevent tangling. "
+                                    "value": "Ensure that the parachute slides along the inside of the 3 antennas. Tangling the parachute and antenna assembly may prevent main parachute inflation."
                                 }
                             ]
                         }
@@ -1326,7 +1774,7 @@
                 },
                 {
                     "id": "step_kyTxRUNLx0",
-                    "name": "Insert 2x large handfuls of dog barf (cellulose insullation)",
+                    "name": "Insert 2x large handfuls of dog barf (cellulose insullation).",
                     "content": [],
                     "signoffs": [
                         {
@@ -1393,7 +1841,7 @@
                 },
                 {
                     "id": "step_vIseBjNRxk",
-                    "name": "Connect the ADS coupler to the booster airframe with 4x 4-40 shear pins.",
+                    "name": "Connect the ADS coupler to the booster airframe with 4x 1/4-20 fasteners.",
                     "content": [],
                     "signoffs": [
                         {
@@ -1430,7 +1878,20 @@
                 {
                     "id": "step_9Gwy5FiiTo",
                     "name": "Verify the quick link is tight by checking with a teammate. ",
-                    "content": [],
+                    "content": [
+                        {
+                            "type": "alert",
+                            "subtype": "caution",
+                            "text": "This quick-link is critical to load transfer during recovery. Failure to secure the quick-link may result in separation of sections during recovery.",
+                            "id": "ct_DyaeQBneLmHUlN08XKC7",
+                            "tokens": [
+                                {
+                                    "type": "text",
+                                    "value": "This quick-link is critical to load transfer during recovery. Failure to secure the quick-link may result in separation of sections during recovery."
+                                }
+                            ]
+                        }
+                    ],
                     "signoffs": [
                         {
                             "id": "so_ZuG8UN42H2",
@@ -1501,7 +1962,7 @@
                 },
                 {
                     "id": "step_ZAzGV9Xmbt",
-                    "name": "Insert 2x large handfuls of dog barf (cellulose insullation)",
+                    "name": "Insert 2x large handfuls of dog barf (cellulose insullation).",
                     "content": [],
                     "signoffs": [
                         {
@@ -1583,7 +2044,7 @@
                 },
                 {
                     "id": "step_yKFn1cIkoZ",
-                    "name": "Power on the backup computer.",
+                    "name": "Power on the backup computer by removing its RBF tag.",
                     "content": [],
                     "signoffs": [
                         {
@@ -1607,7 +2068,7 @@
                 },
                 {
                     "id": "step_ntOtgZrWI2",
-                    "name": "Power off the backup computer.",
+                    "name": "Power off the backup computer by inserting its RBF tag.",
                     "content": [],
                     "signoffs": [
                         {
@@ -1619,7 +2080,7 @@
                 },
                 {
                     "id": "step_F7FLoIboDW",
-                    "name": "Power on the primary computer.",
+                    "name": "Power on the primary computer by removing its RBF tag.",
                     "content": [],
                     "signoffs": [
                         {
@@ -1655,7 +2116,7 @@
                 },
                 {
                     "id": "step_nw8jvJWrMt",
-                    "name": "Power off primary computer.",
+                    "name": "Power off primary computer by inserting its RBF tag.",
                     "content": [],
                     "signoffs": [
                         {
@@ -1668,10 +2129,47 @@
                 {
                     "id": "step_tWin7ZX7nr",
                     "name": "Remove 4x jumper wires.",
-                    "content": [],
+                    "content": [
+                        {
+                            "type": "alert",
+                            "subtype": "warning",
+                            "text": "Failure to remove all current-passing wires may reduce reliability of ejection charges e-matches.",
+                            "id": "ct_A9er4yiRN0i4mwchJKA2",
+                            "tokens": [
+                                {
+                                    "type": "text",
+                                    "value": "Failure to remove all current-passing wires may reduce reliability of ejection charges e-matches."
+                                }
+                            ]
+                        }
+                    ],
                     "signoffs": [
                         {
                             "id": "so_e4fvg0tFma",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_LYUu45oV2Q",
+                    "name": "Verify that the 1/4-20 nuts fastening the threaded rods are secure.",
+                    "content": [],
+                    "signoffs": [
+                        {
+                            "id": "so_jsNUczgb2L",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_zQRtT3UFpH",
+                    "name": "Verify that the u-bolts on both ends are secure.",
+                    "content": [],
+                    "signoffs": [
+                        {
+                            "id": "so_knaDiZy8JZ",
                             "operators": []
                         }
                     ],
@@ -1771,8 +2269,21 @@
                 },
                 {
                     "id": "step_UdFhSWxmCP",
-                    "name": "Verify the quick link is tight by checking with a friend.",
-                    "content": [],
+                    "name": "Verify the quick-link is tight by checking with a friend.",
+                    "content": [
+                        {
+                            "type": "alert",
+                            "subtype": "caution",
+                            "text": "This quick-link is critical to load transfer during recovery. Failure to secure the quick-link may result in separation of sections during recovery.",
+                            "id": "ct_8h3e8zjISM8F6OBsIrjq",
+                            "tokens": [
+                                {
+                                    "type": "text",
+                                    "value": "This quick-link is critical to load transfer during recovery. Failure to secure the quick-link may result in separation of sections during recovery."
+                                }
+                            ]
+                        }
+                    ],
                     "signoffs": [
                         {
                             "id": "so_gElfxYBwcp",
@@ -1794,12 +2305,36 @@
                     "dependencies": []
                 },
                 {
+                    "id": "step_g9jW1dPabf",
+                    "name": "Place the charge in its respective charge well and secure using a rubber band.",
+                    "content": [],
+                    "signoffs": [
+                        {
+                            "id": "so_F6ZQlcmYfL",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
                     "id": "step_dNJCqvYAv0",
-                    "name": "Connect the \"MAIN -- BACKUP\" charge to the correct terminal.",
+                    "name": "Connect the \"MAIN -- BACKUP\" labeled to the correct terminal.",
                     "content": [],
                     "signoffs": [
                         {
                             "id": "so_vvn3raPB05",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_QFsBnLMVap",
+                    "name": "Place the charge in its respective charge well and secure using a rubber band.",
+                    "content": [],
+                    "signoffs": [
+                        {
+                            "id": "so_wnN2PxY66V",
                             "operators": []
                         }
                     ],
@@ -1819,7 +2354,7 @@
                 },
                 {
                     "id": "step_hW9AxiMjgk",
-                    "name": "Connect the sections with 4x 10-32 rivets.",
+                    "name": "Connect the sections with 4x 1/4-20 fasteners.",
                     "content": [],
                     "signoffs": [
                         {
@@ -1855,8 +2390,21 @@
                 },
                 {
                     "id": "step_eMfsOjuhqa",
-                    "name": "Verify the quick link is tight by checking with a friend.",
-                    "content": [],
+                    "name": "Verify the quick-link is tight by checking with a friend.",
+                    "content": [
+                        {
+                            "type": "alert",
+                            "subtype": "caution",
+                            "text": "This quick-link is critical to load transfer during recovery. Failure to secure the quick-link may result in separation of sections during recovery.",
+                            "id": "ct_aluGFaC0D5LbojAZD2Ro",
+                            "tokens": [
+                                {
+                                    "type": "text",
+                                    "value": "This quick-link is critical to load transfer during recovery. Failure to secure the quick-link may result in separation of sections during recovery."
+                                }
+                            ]
+                        }
+                    ],
                     "signoffs": [
                         {
                             "id": "so_Z9qisflUgi",
@@ -1867,7 +2415,7 @@
                 },
                 {
                     "id": "step_LIEBBKrlgZ",
-                    "name": "Connect the \"DROGUE -- PRIMARY\" charge to the correct terminal.",
+                    "name": "Connect the \"DROGUE -- PRIMARY\" charge to the labeled terminal.",
                     "content": [],
                     "signoffs": [
                         {
@@ -1878,12 +2426,36 @@
                     "dependencies": []
                 },
                 {
+                    "id": "step_UFu8GH6bUT",
+                    "name": "Place the charge in its respective charge well and secure using a rubber band.",
+                    "content": [],
+                    "signoffs": [
+                        {
+                            "id": "so_i2Xhc899Pv",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
                     "id": "step_LObCGDkFMz",
-                    "name": "Connect the \"DROGUE -- BACKUP\" charge to the correct terminal.",
+                    "name": "Connect the \"DROGUE -- BACKUP\" charge to the labeled terminal.",
                     "content": [],
                     "signoffs": [
                         {
                             "id": "so_7uQbAJDmf3",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_jKjsTlJwoK",
+                    "name": "Place the charge in its respective charge well and secure using a rubber band.",
+                    "content": [],
+                    "signoffs": [
+                        {
+                            "id": "so_Dss0TL8O4U",
                             "operators": []
                         }
                     ],
@@ -1903,7 +2475,7 @@
                 },
                 {
                     "id": "step_AQhCc3GXTU",
-                    "name": "Connect the sections with 4x 10-32 rivets.",
+                    "name": "Connect the sections with 4x 1/4-20 fasteners.",
                     "content": [],
                     "signoffs": [
                         {
@@ -2031,6 +2603,18 @@
             "id": "sctn_4YYUC5gg6S",
             "steps": [
                 {
+                    "id": "step_eP2qvNhnAR",
+                    "name": "While pad operations are being preformed, power on the LoRa base station to prepare for data transmission.",
+                    "content": [],
+                    "signoffs": [
+                        {
+                            "id": "so_EuGlayEGM8",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
                     "id": "step_6fUPHThWbp",
                     "name": "Place the launch rail in a horizontal position.",
                     "content": [],
@@ -2062,12 +2646,60 @@
                     "dependencies": []
                 },
                 {
+                    "id": "step_TJ4InqP4iw",
+                    "name": "Arm the STEMCRaFT by removing its RBF tag.",
+                    "content": [],
+                    "signoffs": [
+                        {
+                            "id": "so_0lHJErH0Pk",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_fMqOGHqcvR",
+                    "name": "Verify that the STEMCRaFT has completed its initiation sequence successfully by listening for the proper beeping sequence.",
+                    "content": [],
+                    "signoffs": [
+                        {
+                            "id": "so_MKLKhzdUy3",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
                     "id": "step_6BIfAPgnMC",
                     "name": "Raise the rail to vertical and verify that it is locked.",
                     "content": [],
                     "signoffs": [
                         {
                             "id": "so_DRZ58azcLy",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_LZa6v54QTx",
+                    "name": "Arm the ADS by removing its RBF tag.",
+                    "content": [],
+                    "signoffs": [
+                        {
+                            "id": "so_okBKiV3eZo",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_v5bmOW4lwV",
+                    "name": "Verify that the ADS has completed its initiation sequence successfully by listening for the proper beeping sequence.",
+                    "content": [],
+                    "signoffs": [
+                        {
+                            "id": "so_5PLwLCDmZx",
                             "operators": []
                         }
                     ],
@@ -2116,12 +2748,12 @@
                         {
                             "type": "alert",
                             "subtype": "note",
-                            "text": "There should be a total of six beeps. Two distinct tones in sets of three.",
+                            "text": "There should be a total of six beeps from altimeters. Two distinct tones in sets of three.",
                             "id": "ct_51eYyMRK5gpmJqodjQte",
                             "tokens": [
                                 {
                                     "type": "text",
-                                    "value": "There should be a total of six beeps. Two distinct tones in sets of three."
+                                    "value": "There should be a total of six beeps from altimeters. Two distinct tones in sets of three."
                                 }
                             ]
                         }
@@ -2281,6 +2913,18 @@
             "id": "sctn_K2rjk2PJuP",
             "steps": [
                 {
+                    "id": "step_NOKqGaQpV6",
+                    "name": "Turn off radio transmission from the STEMCRaFT using the LoRa base station once desired.",
+                    "content": [],
+                    "signoffs": [
+                        {
+                            "id": "so_NUamWLtiEI",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
                     "id": "step_qWjsDplfYw",
                     "name": "Locate the vehicle using visual cues or the GPS locator.",
                     "content": [],
@@ -2313,8 +2957,29 @@
                 },
                 {
                     "id": "step_3BX5oa0ucZ",
-                    "name": "Take ample photos of every section of the vehicle.",
-                    "content": [],
+                    "name": "Take photos of each section of the vehicle.",
+                    "content": [
+                        {
+                            "type": "input",
+                            "name": "Main Parachute",
+                            "inputType": "attachment",
+                            "units": "",
+                            "dateTimeType": "date",
+                            "rule": {
+                                "value": "",
+                                "op": ""
+                            },
+                            "options": [],
+                            "list": "",
+                            "include_in_summary": true,
+                            "external_item_type": "",
+                            "external_search_type": {
+                                "data_type": "",
+                                "filter_options": []
+                            },
+                            "id": "ct_OZrWyyHnPrMSoktJ95oG"
+                        }
+                    ],
                     "signoffs": [
                         {
                             "id": "so_rtb8jOHJHQ",
@@ -2475,116 +3140,576 @@
     "owner": "andywehmeyer2025@u.northwestern.edu",
     "reviewer_groups": [
         {
-            "reviewers": [],
+            "reviewers": [
+                {
+                    "reviewer_ids": [
+                        {
+                            "type": "operator_role",
+                            "value": "SO"
+                        }
+                    ],
+                    "id": "reviewer_6N1pV80ROIjS0AcJP6KVE3"
+                }
+            ],
             "actions": [
                 {
                     "type": "approval",
-                    "reviewer_id": "reviewer_p3VHN1vka6GUrSJibyPNAP",
+                    "reviewer_id": "reviewer_6N1pV80ROIjS0AcJP6KVE3",
                     "user_id": "andywehmeyer2025@u.northwestern.edu",
                     "operator_role": "SO",
-                    "approved_at": "2024-12-17T17:33:50.466Z"
+                    "approved_at": "2025-01-07T22:19:33.851Z"
                 }
             ],
             "id": "rg_rBrh6dX2SceYaVZQ5HKuLK"
         }
     ],
-    "reviewer_actions_history": [],
+    "reviewer_actions_history": [
+        {
+            "type": "approval",
+            "reviewer_id": "reviewer_p3VHN1vka6GUrSJibyPNAP",
+            "user_id": "andywehmeyer2025@u.northwestern.edu",
+            "operator_role": "SO",
+            "approved_at": "2024-12-17T17:33:50.466Z"
+        }
+    ],
     "end_run_signoffs_groups": [],
     "state": "released",
-    "editedAt": "2024-12-17T17:34:17.415Z",
+    "editedAt": "2025-01-07T22:19:34.969Z",
     "skip_step_enabled": true,
     "repeat_step_enabled": true,
     "step_suggest_edits_enabled": true,
-    "procedure_rev_num": 279,
+    "procedure_rev_num": 504,
     "comments": [
         {
-            "id": "cmt_y0qIX25nRE",
+            "id": "cmt_YgcUVNqbiV",
             "parent_id": "",
             "type": "review_comment",
-            "text": "include the antastatic bag in this list too?",
-            "reference_id": "step_BEZAcJo71P",
+            "text": "spelling",
+            "reference_id": "step_fHLX3KQcH1",
             "mention_list": [],
-            "created_at": "2024-12-13T19:55:02.057Z",
-            "user_id": "prestonshin2026@u.northwestern.edu",
+            "created_at": "2025-01-07T18:00:12.204Z",
+            "updated_at": "2025-01-07T18:00:17.154Z",
+            "user_id": "andywehmeyer2025@u.northwestern.edu",
             "resolved": true,
             "resolved_by": "andywehmeyer2025@u.northwestern.edu",
-            "resolved_at": "2024-12-16T03:01:17.783Z",
-            "resolution_procedure_rev_num": 260
+            "resolved_at": "2025-01-07T21:58:00.433Z",
+            "resolution_procedure_rev_num": 463
         },
         {
-            "id": "cmt_1CkEyc7MwQ",
+            "id": "cmt_E0gb4LIMj9",
             "parent_id": "",
             "type": "review_comment",
-            "text": "pretty sure we're gonna use a lipo for the real thing",
-            "reference_id": "step_54BnIka3OB",
+            "text": "add a warning step here",
+            "reference_id": "step_PUSQXzBoFQ",
             "mention_list": [],
-            "created_at": "2024-12-13T19:55:36.550Z",
-            "user_id": "prestonshin2026@u.northwestern.edu",
+            "created_at": "2025-01-07T18:09:14.105Z",
+            "user_id": "andywehmeyer2025@u.northwestern.edu",
             "resolved": true,
             "resolved_by": "andywehmeyer2025@u.northwestern.edu",
-            "resolved_at": "2024-12-16T03:01:23.464Z",
-            "resolution_procedure_rev_num": 261
+            "resolved_at": "2025-01-07T21:59:33.836Z",
+            "resolution_procedure_rev_num": 469
         },
         {
-            "id": "cmt_ua2z8AWN8U",
+            "id": "cmt_c5DXMdLNYK",
             "parent_id": "",
             "type": "review_comment",
-            "text": "Rn the plan is to use IMU for STEMCRaFT payload so we're gonna need to calibrate here too",
-            "reference_id": "step_3B6h9pIa1r",
+            "text": "add a warning about safe storage of charges",
+            "reference_id": "step_NeU0XgJfGR",
             "mention_list": [],
-            "created_at": "2024-12-13T19:58:05.649Z",
-            "user_id": "prestonshin2026@u.northwestern.edu",
+            "created_at": "2025-01-07T18:09:43.989Z",
+            "user_id": "andywehmeyer2025@u.northwestern.edu",
             "resolved": true,
             "resolved_by": "andywehmeyer2025@u.northwestern.edu",
-            "resolved_at": "2024-12-15T20:33:12.556Z",
-            "resolution_procedure_rev_num": 256
+            "resolved_at": "2025-01-07T22:00:18.173Z",
+            "resolution_procedure_rev_num": 472
         },
         {
-            "id": "cmt_cktRHB1krO",
-            "parent_id": "cmt_ua2z8AWN8U",
-            "type": "review_comment",
-            "text": "unless I'm missing the step where we do that?",
-            "reference_id": "step_3B6h9pIa1r",
-            "mention_list": [],
-            "created_at": "2024-12-13T20:01:00.951Z",
-            "user_id": "prestonshin2026@u.northwestern.edu"
-        },
-        {
-            "id": "cmt_cKkjVNNi5Z",
+            "id": "cmt_dTMbOzhXeG",
             "parent_id": "",
             "type": "review_comment",
-            "text": "I think the imu needs recalibration every time it turns off?",
-            "reference_id": "step_ZVhf07Q4tA",
+            "text": "impossible",
+            "reference_id": "step_9v4xbg3vrA",
             "mention_list": [],
-            "created_at": "2024-12-13T20:01:46.943Z",
-            "user_id": "prestonshin2026@u.northwestern.edu"
+            "created_at": "2025-01-07T18:10:00.117Z",
+            "user_id": "andywehmeyer2025@u.northwestern.edu",
+            "resolved": true,
+            "resolved_by": "andywehmeyer2025@u.northwestern.edu",
+            "resolved_at": "2025-01-07T22:00:32.241Z",
+            "resolution_procedure_rev_num": 473
         },
         {
-            "id": "cmt_qIKqt0P0TJ",
-            "parent_id": "cmt_ua2z8AWN8U",
+            "id": "cmt_bdh6fF3onU",
+            "parent_id": "",
             "type": "review_comment",
-            "text": "that's what I thought but iw as waiting for clarification on how that calibration would work from electrical",
-            "reference_id": "step_3B6h9pIa1r",
+            "text": "impossible",
+            "reference_id": "step_fKdlANnxM6",
             "mention_list": [],
-            "created_at": "2024-12-13T20:11:58.477Z",
+            "created_at": "2025-01-07T18:10:10.008Z",
+            "user_id": "andywehmeyer2025@u.northwestern.edu",
+            "resolved": true,
+            "resolved_by": "andywehmeyer2025@u.northwestern.edu",
+            "resolved_at": "2025-01-07T22:00:39.885Z",
+            "resolution_procedure_rev_num": 474
+        },
+        {
+            "id": "cmt_Y5R8ozTb5q",
+            "parent_id": "",
+            "type": "review_comment",
+            "text": "make a note about how this powers it off?",
+            "reference_id": "step_Uu2n2TiwaD",
+            "mention_list": [],
+            "created_at": "2025-01-07T18:10:55.889Z",
+            "user_id": "andywehmeyer2025@u.northwestern.edu",
+            "resolved": true,
+            "resolved_by": "andywehmeyer2025@u.northwestern.edu",
+            "resolved_at": "2025-01-07T22:01:25.341Z",
+            "resolution_procedure_rev_num": 476
+        },
+        {
+            "id": "cmt_DQGGhH6fMW",
+            "parent_id": "",
+            "type": "review_comment",
+            "text": "impossible",
+            "reference_id": "step_COiAlS5OfW",
+            "mention_list": [],
+            "created_at": "2025-01-07T18:11:16.358Z",
+            "user_id": "andywehmeyer2025@u.northwestern.edu",
+            "resolved": true,
+            "resolved_by": "andywehmeyer2025@u.northwestern.edu",
+            "resolved_at": "2025-01-07T22:01:40.572Z",
+            "resolution_procedure_rev_num": 477
+        },
+        {
+            "id": "cmt_xWOYoRjWUp",
+            "parent_id": "",
+            "type": "review_comment",
+            "text": "impossible",
+            "reference_id": "step_QG6qtLacZf",
+            "mention_list": [],
+            "created_at": "2025-01-07T18:11:32.197Z",
+            "user_id": "andywehmeyer2025@u.northwestern.edu",
+            "resolved": true,
+            "resolved_by": "andywehmeyer2025@u.northwestern.edu",
+            "resolved_at": "2025-01-07T22:01:51.569Z",
+            "resolution_procedure_rev_num": 478
+        },
+        {
+            "id": "cmt_yYvOqPJzzU",
+            "parent_id": "",
+            "type": "review_comment",
+            "text": "after this step, add a step to insert the locating hardware",
+            "reference_id": "step_f7e7ZyjpNG",
+            "mention_list": [],
+            "created_at": "2025-01-07T18:12:17.948Z",
             "user_id": "andywehmeyer2025@u.northwestern.edu"
         },
         {
-            "id": "cmt_eiKKMTg8gR",
-            "parent_id": "cmt_cKkjVNNi5Z",
+            "id": "cmt_b1mByndaCP",
+            "parent_id": "",
             "type": "review_comment",
-            "text": "Procedurally that is gonna be a nightmare. Do you think we can avoid it? I just worry about the 3+ hour delay between turning stuff on and actually flying (speaking from experience last year)",
-            "reference_id": "step_ZVhf07Q4tA",
+            "text": "add a warning to these steps and subsequent ones",
+            "reference_id": "step_2qFG5f78IM",
             "mention_list": [],
-            "created_at": "2024-12-13T20:12:38.688Z",
+            "created_at": "2025-01-07T18:12:43.383Z",
+            "user_id": "andywehmeyer2025@u.northwestern.edu",
+            "resolved": true,
+            "resolved_by": "andywehmeyer2025@u.northwestern.edu",
+            "resolved_at": "2025-01-07T22:05:17.520Z",
+            "resolution_procedure_rev_num": 479
+        },
+        {
+            "id": "cmt_H1DDIb4DCN",
+            "parent_id": "",
+            "type": "review_comment",
+            "text": "no \" on 20",
+            "reference_id": "step_YVlF5ZyPhT",
+            "mention_list": [],
+            "created_at": "2025-01-07T18:14:16.675Z",
+            "user_id": "andywehmeyer2025@u.northwestern.edu",
+            "resolved": true,
+            "resolved_by": "andywehmeyer2025@u.northwestern.edu",
+            "resolved_at": "2025-01-07T22:05:25.980Z",
+            "resolution_procedure_rev_num": 480
+        },
+        {
+            "id": "cmt_AyIjiMe6Dy",
+            "parent_id": "",
+            "type": "review_comment",
+            "text": "change this from a \"note\" to a \"text\" so that it shows up properly",
+            "reference_id": "step_BEZAcJo71P",
+            "mention_list": [],
+            "created_at": "2025-01-07T18:16:31.453Z",
+            "user_id": "andywehmeyer2025@u.northwestern.edu",
+            "resolved": true,
+            "resolved_by": "andywehmeyer2025@u.northwestern.edu",
+            "resolved_at": "2025-01-07T21:58:54.433Z",
+            "resolution_procedure_rev_num": 466
+        },
+        {
+            "id": "cmt_QZQTHfE0Jr",
+            "parent_id": "",
+            "type": "review_comment",
+            "text": "caution step",
+            "reference_id": "step_4v4CocbHsW",
+            "mention_list": [],
+            "created_at": "2025-01-07T18:16:46.600Z",
+            "user_id": "andywehmeyer2025@u.northwestern.edu",
+            "resolved": true,
+            "resolved_by": "andywehmeyer2025@u.northwestern.edu",
+            "resolved_at": "2025-01-07T22:09:31.637Z",
+            "resolution_procedure_rev_num": 481
+        },
+        {
+            "id": "cmt_sIpktPCyfp",
+            "parent_id": "",
+            "type": "review_comment",
+            "text": "3x",
+            "reference_id": "step_0FD5boJ4Ep",
+            "mention_list": [],
+            "created_at": "2025-01-07T18:16:55.578Z",
+            "user_id": "andywehmeyer2025@u.northwestern.edu",
+            "resolved": true,
+            "resolved_by": "andywehmeyer2025@u.northwestern.edu",
+            "resolved_at": "2025-01-07T22:09:43.342Z",
+            "resolution_procedure_rev_num": 482
+        },
+        {
+            "id": "cmt_49EdH9Rwhe",
+            "parent_id": "",
+            "type": "review_comment",
+            "text": "move the \"ensure\" piece into the caution statement",
+            "reference_id": "step_KGZoxUTop3",
+            "mention_list": [],
+            "created_at": "2025-01-07T18:17:10.462Z",
+            "user_id": "andywehmeyer2025@u.northwestern.edu",
+            "resolved": true,
+            "resolved_by": "andywehmeyer2025@u.northwestern.edu",
+            "resolved_at": "2025-01-07T22:10:18.184Z",
+            "resolution_procedure_rev_num": 483
+        },
+        {
+            "id": "cmt_eywzNsGNCC",
+            "parent_id": "",
+            "type": "review_comment",
+            "text": "move the note into a caution statement",
+            "reference_id": "step_RaH6ip7wUi",
+            "mention_list": [],
+            "created_at": "2025-01-07T18:17:23.900Z",
+            "user_id": "andywehmeyer2025@u.northwestern.edu",
+            "resolved": true,
+            "resolved_by": "andywehmeyer2025@u.northwestern.edu",
+            "resolved_at": "2025-01-07T22:11:01.482Z",
+            "resolution_procedure_rev_num": 484
+        },
+        {
+            "id": "cmt_BgDaYZVkQW",
+            "parent_id": "",
+            "type": "review_comment",
+            "text": "remove the caution and leave the warning since it is most critical",
+            "reference_id": "step_gBpeQtfeGO",
+            "mention_list": [],
+            "created_at": "2025-01-07T18:17:37.318Z",
+            "user_id": "andywehmeyer2025@u.northwestern.edu",
+            "resolved": true,
+            "resolved_by": "andywehmeyer2025@u.northwestern.edu",
+            "resolved_at": "2025-01-07T22:11:28.729Z",
+            "resolution_procedure_rev_num": 485
+        },
+        {
+            "id": "cmt_ooKrYoy4vW",
+            "parent_id": "",
+            "type": "review_comment",
+            "text": "these should be 1/4-20 fasteners!!!",
+            "reference_id": "step_vIseBjNRxk",
+            "mention_list": [],
+            "created_at": "2025-01-07T18:18:16.772Z",
+            "user_id": "andywehmeyer2025@u.northwestern.edu",
+            "resolved": true,
+            "resolved_by": "andywehmeyer2025@u.northwestern.edu",
+            "resolved_at": "2025-01-07T22:11:50.283Z",
+            "resolution_procedure_rev_num": 486
+        },
+        {
+            "id": "cmt_iFIbLvNBfs",
+            "parent_id": "",
+            "type": "review_comment",
+            "text": "warning statement",
+            "reference_id": "step_9Gwy5FiiTo",
+            "mention_list": [],
+            "created_at": "2025-01-07T18:18:26.605Z",
+            "user_id": "andywehmeyer2025@u.northwestern.edu",
+            "resolved": true,
+            "resolved_by": "andywehmeyer2025@u.northwestern.edu",
+            "resolved_at": "2025-01-07T22:12:17.356Z",
+            "resolution_procedure_rev_num": 487
+        },
+        {
+            "id": "cmt_8LieJtyt66",
+            "parent_id": "",
+            "type": "review_comment",
+            "text": "this is correct no change required",
+            "reference_id": "step_oEsBbeDi6K",
+            "mention_list": [],
+            "created_at": "2025-01-07T18:18:43.036Z",
+            "user_id": "andywehmeyer2025@u.northwestern.edu",
+            "resolved": true,
+            "resolved_by": "andywehmeyer2025@u.northwestern.edu",
+            "resolved_at": "2025-01-07T22:12:22.571Z",
+            "resolution_procedure_rev_num": 488
+        },
+        {
+            "id": "cmt_ym71LOKMfe",
+            "parent_id": "",
+            "type": "review_comment",
+            "text": "jk no comment here",
+            "reference_id": "step_Y6bnxJCZc9",
+            "mention_list": [],
+            "created_at": "2025-01-07T18:41:10.550Z",
+            "updated_at": "2025-01-07T18:41:17.228Z",
+            "user_id": "andywehmeyer2025@u.northwestern.edu",
+            "resolved": true,
+            "resolved_by": "andywehmeyer2025@u.northwestern.edu",
+            "resolved_at": "2025-01-07T22:12:29.421Z",
+            "resolution_procedure_rev_num": 489
+        },
+        {
+            "id": "cmt_vfpye0chl2",
+            "parent_id": "",
+            "type": "review_comment",
+            "text": "warning on actually removing them otherwise the charges wont work",
+            "reference_id": "step_tWin7ZX7nr",
+            "mention_list": [],
+            "created_at": "2025-01-07T18:41:46.807Z",
+            "user_id": "andywehmeyer2025@u.northwestern.edu",
+            "resolved": true,
+            "resolved_by": "andywehmeyer2025@u.northwestern.edu",
+            "resolved_at": "2025-01-07T22:14:38.439Z",
+            "resolution_procedure_rev_num": 490
+        },
+        {
+            "id": "cmt_GHgsIArUjF",
+            "parent_id": "",
+            "type": "review_comment",
+            "text": "u-bolt for consistecy",
+            "reference_id": "step_zQRtT3UFpH",
+            "mention_list": [],
+            "created_at": "2025-01-07T18:41:53.835Z",
+            "user_id": "andywehmeyer2025@u.northwestern.edu",
+            "resolved": true,
+            "resolved_by": "andywehmeyer2025@u.northwestern.edu",
+            "resolved_at": "2025-01-07T22:14:46.290Z",
+            "resolution_procedure_rev_num": 491
+        },
+        {
+            "id": "cmt_Adqy4MdOG2",
+            "parent_id": "",
+            "type": "review_comment",
+            "text": "same warning",
+            "reference_id": "step_EpCg1iH0nN",
+            "mention_list": [],
+            "created_at": "2025-01-07T18:42:25.106Z",
+            "user_id": "andywehmeyer2025@u.northwestern.edu",
+            "resolved": true,
+            "resolved_by": "andywehmeyer2025@u.northwestern.edu",
+            "resolved_at": "2025-01-07T22:15:54.500Z",
+            "resolution_procedure_rev_num": 492
+        },
+        {
+            "id": "cmt_FzvYygOkYg",
+            "parent_id": "",
+            "type": "review_comment",
+            "text": "rubber band",
+            "reference_id": "step_g9jW1dPabf",
+            "mention_list": [],
+            "created_at": "2025-01-07T18:43:02.903Z",
+            "user_id": "andywehmeyer2025@u.northwestern.edu",
+            "resolved": true,
+            "resolved_by": "andywehmeyer2025@u.northwestern.edu",
+            "resolved_at": "2025-01-07T22:16:07.500Z",
+            "resolution_procedure_rev_num": 493
+        },
+        {
+            "id": "cmt_6uhyGkePOK",
+            "parent_id": "cmt_FzvYygOkYg",
+            "type": "review_comment",
+            "text": "and remove the comma",
+            "reference_id": "step_g9jW1dPabf",
+            "mention_list": [],
+            "created_at": "2025-01-07T18:43:07.209Z",
+            "user_id": "andywehmeyer2025@u.northwestern.edu"
+        },
+        {
+            "id": "cmt_2AtsTbJ995",
+            "parent_id": "",
+            "type": "review_comment",
+            "text": "get rid of \"correct\" verbiage and change to the labeled charge well",
+            "reference_id": "step_dNJCqvYAv0",
+            "mention_list": [],
+            "created_at": "2025-01-07T18:43:21.766Z",
+            "user_id": "andywehmeyer2025@u.northwestern.edu",
+            "resolved": true,
+            "resolved_by": "andywehmeyer2025@u.northwestern.edu",
+            "resolved_at": "2025-01-07T22:16:19.511Z",
+            "resolution_procedure_rev_num": 494
+        },
+        {
+            "id": "cmt_5WXiRMSQro",
+            "parent_id": "",
+            "type": "review_comment",
+            "text": "should be 1/4-20",
+            "reference_id": "step_hW9AxiMjgk",
+            "mention_list": [],
+            "created_at": "2025-01-07T18:43:56.389Z",
+            "user_id": "andywehmeyer2025@u.northwestern.edu",
+            "resolved": true,
+            "resolved_by": "andywehmeyer2025@u.northwestern.edu",
+            "resolved_at": "2025-01-07T22:16:29.840Z",
+            "resolution_procedure_rev_num": 495
+        },
+        {
+            "id": "cmt_zSCKRCMUvn",
+            "parent_id": "",
+            "type": "review_comment",
+            "text": "warning statement like before",
+            "reference_id": "step_eMfsOjuhqa",
+            "mention_list": [],
+            "created_at": "2025-01-07T18:44:18.128Z",
+            "user_id": "andywehmeyer2025@u.northwestern.edu"
+        },
+        {
+            "id": "cmt_TbRiZllc8g",
+            "parent_id": "",
+            "type": "review_comment",
+            "text": "1/4-20",
+            "reference_id": "step_AQhCc3GXTU",
+            "mention_list": [],
+            "created_at": "2025-01-07T18:44:23.902Z",
+            "user_id": "andywehmeyer2025@u.northwestern.edu",
+            "resolved": true,
+            "resolved_by": "andywehmeyer2025@u.northwestern.edu",
+            "resolved_at": "2025-01-07T22:16:57.404Z",
+            "resolution_procedure_rev_num": 496
+        },
+        {
+            "id": "cmt_hkIA4qd8sX",
+            "parent_id": "",
+            "type": "review_comment",
+            "text": "warning step about loosening motor",
+            "reference_id": "step_GLHC4zhEMK",
+            "mention_list": [],
+            "created_at": "2025-01-07T18:45:10.950Z",
+            "user_id": "andywehmeyer2025@u.northwestern.edu",
+            "resolved": true,
+            "resolved_by": "andywehmeyer2025@u.northwestern.edu",
+            "resolved_at": "2025-01-07T22:17:02.993Z",
+            "resolution_procedure_rev_num": 497
+        },
+        {
+            "id": "cmt_5JbtmqK8Ye",
+            "parent_id": "",
+            "type": "review_comment",
+            "text": "warning step about securing motor",
+            "reference_id": "step_J55HkLBSJ9",
+            "mention_list": [],
+            "created_at": "2025-01-07T18:45:19.343Z",
+            "user_id": "andywehmeyer2025@u.northwestern.edu"
+        },
+        {
+            "id": "cmt_2fqMzxVYyf",
+            "parent_id": "",
+            "type": "review_comment",
+            "text": "@maxhug what is the beep sequence",
+            "reference_id": "step_fMqOGHqcvR",
+            "mention_list": [
+                {
+                    "username": "maxhug",
+                    "email": "maxhug@u.northwestern.edu"
+                }
+            ],
+            "created_at": "2025-01-07T21:39:29.197Z",
+            "user_id": "andywehmeyer2025@u.northwestern.edu"
+        },
+        {
+            "id": "cmt_UjBUm5kXYz",
+            "parent_id": "",
+            "type": "review_comment",
+            "text": "add a warning or caution on this step to clarify there three beeps from altimeters",
+            "reference_id": "step_oYuYfn16Sp",
+            "mention_list": [],
+            "created_at": "2025-01-07T21:40:10.438Z",
+            "user_id": "andywehmeyer2025@u.northwestern.edu"
+        },
+        {
+            "id": "cmt_GptFqEbdCb",
+            "parent_id": "",
+            "type": "review_comment",
+            "text": "warning statement for mentor",
+            "reference_id": "step_wNlWIzLf7B",
+            "mention_list": [],
+            "created_at": "2025-01-07T21:40:25.736Z",
+            "user_id": "andywehmeyer2025@u.northwestern.edu"
+        },
+        {
+            "id": "cmt_mwIfUWgv4n",
+            "parent_id": "",
+            "type": "review_comment",
+            "text": "missing steps make a new checklist at the end that is \"optional\"",
+            "reference_id": "step_pgFy0faYTX",
+            "mention_list": [],
+            "created_at": "2025-01-07T21:40:46.472Z",
+            "user_id": "andywehmeyer2025@u.northwestern.edu"
+        },
+        {
+            "id": "cmt_wx8DGYjVGY",
+            "parent_id": "cmt_mwIfUWgv4n",
+            "type": "review_comment",
+            "text": "also add an electronics prep step prior to L-1 inspection",
+            "reference_id": "step_pgFy0faYTX",
+            "mention_list": [],
+            "created_at": "2025-01-07T21:41:04.048Z",
+            "user_id": "andywehmeyer2025@u.northwestern.edu"
+        },
+        {
+            "id": "cmt_LgpxyIh86l",
+            "parent_id": "",
+            "type": "review_comment",
+            "text": "remove ample",
+            "reference_id": "step_3BX5oa0ucZ",
+            "mention_list": [],
+            "created_at": "2025-01-07T21:43:07.799Z",
+            "user_id": "andywehmeyer2025@u.northwestern.edu"
+        },
+        {
+            "id": "cmt_eRp6bvtNBg",
+            "parent_id": "",
+            "type": "review_comment",
+            "text": "separate into two steps",
+            "reference_id": "step_xzyQReQmw2",
+            "mention_list": [],
+            "created_at": "2025-01-07T21:43:13.593Z",
+            "user_id": "andywehmeyer2025@u.northwestern.edu"
+        },
+        {
+            "id": "cmt_2dbjONU1QJ",
+            "parent_id": "",
+            "type": "review_comment",
+            "text": "safety glasses warning",
+            "reference_id": "step_6EC2TQb17X",
+            "mention_list": [],
+            "created_at": "2025-01-07T21:43:20.379Z",
+            "user_id": "andywehmeyer2025@u.northwestern.edu"
+        },
+        {
+            "id": "cmt_pI1CDpSBBa",
+            "parent_id": "",
+            "type": "review_comment",
+            "text": "make this a warning",
+            "reference_id": "step_9rFlMUfMLo",
+            "mention_list": [],
+            "created_at": "2025-01-07T21:43:59.916Z",
             "user_id": "andywehmeyer2025@u.northwestern.edu"
         }
     ],
-    "release_note": {
-        "user_id": "andywehmeyer2025@u.northwestern.edu",
-        "timestamp": "2024-12-13T17:49:08.262Z",
-        "text": "Preliminary draft. On my end, I need to add more steps relating to troubleshooting + caution/warning tags. For electrical and mechanical, please review what I have right now and leave comments accordingly. For more fleshed out procedural changes, slack me and I'll put it in this form."
-    },
     "project_name": "NASA Student Launch 2024-2025",
     "project_code": "USLI25",
     "project_id": "lEcBfohtyw",

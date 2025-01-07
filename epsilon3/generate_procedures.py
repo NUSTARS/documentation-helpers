@@ -43,7 +43,7 @@ for section in json_data['sections']:
                 step_name = step_name + text + "."
 
         operator_notice = ""
-        print(step["signoffs"])
+        # print(step["signoffs"])
         for signoff in step["signoffs"]:
             role = signoff["operators"]
             if len(role) == 0:
@@ -54,10 +54,10 @@ for section in json_data['sections']:
                 for i in range(len(role)):
                     operator_notice += role[i] + ", "
         operator_notice = operator_notice[:-2]
-        print(operator_notice)
-        print("\n")
+        # print(operator_notice)
+        # print("\n")
         
-        latex_row = f"    {section_counter}.{subsection_counter} & {safety_notice} & Gloves & {operator_notice} & \\checkbox {step_name}\\\\\\hline"
+        latex_row = f"    {section_counter}.{subsection_counter} & {safety_notice} & Glasses & {operator_notice} & \\checkbox {step_name}\\\\\\hline"
         latex_output.append(latex_row)
 
         operator_notice = ""
