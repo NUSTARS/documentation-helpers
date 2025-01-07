@@ -1,11 +1,11 @@
 {
     "_id": "zXpyGHRlJSGR2H70eNVqlB",
-    "_rev": "4-18139900a718ff6dd3e90f07aabd8750",
+    "_rev": "5-95295138755c49c732dfb85d1efb550f",
     "code": "USLI25",
     "name": "Launch Procedures",
     "description": "",
     "headers": [],
-    "version": "3 (CDR)",
+    "version": "4",
     "archived": false,
     "editedUserId": "andywehmeyer2025@u.northwestern.edu",
     "sections": [
@@ -945,229 +945,6 @@
             "name": "L-1 STEMCRaFT Payload Preparation"
         },
         {
-            "id": "sctn_ZPnMmHccRK",
-            "steps": [
-                {
-                    "id": "step_GkziDATLTs",
-                    "name": "Connect the primary battery to the primary computer.",
-                    "content": [
-                        {
-                            "type": "alert",
-                            "subtype": "note",
-                            "text": "These steps will be repeated on L-0 during vehicle integration.",
-                            "id": "ct_2FEesk9dGAgZPTgrh3Sk",
-                            "tokens": [
-                                {
-                                    "type": "text",
-                                    "value": "These steps will be repeated on L-0 during vehicle integration."
-                                }
-                            ]
-                        }
-                    ],
-                    "signoffs": [
-                        {
-                            "id": "so_3tS8gbJpKv",
-                            "operators": []
-                        }
-                    ],
-                    "dependencies": []
-                },
-                {
-                    "id": "step_OHKgrIOvqR",
-                    "name": "Connect the backup battery to the backup computer.",
-                    "content": [],
-                    "signoffs": [
-                        {
-                            "id": "so_gUFOVp9UvI",
-                            "operators": []
-                        }
-                    ],
-                    "dependencies": []
-                },
-                {
-                    "id": "step_Y2vqCG6Tpc",
-                    "name": "Connect the aft bulkhead e-match passthroughs to their labeled mates.",
-                    "content": [],
-                    "signoffs": [
-                        {
-                            "id": "so_yoYUf3zF5q",
-                            "operators": []
-                        }
-                    ],
-                    "dependencies": []
-                },
-                {
-                    "id": "step_GzpqAIWlBf",
-                    "name": "Insert the avionics sled subassembly into the avionics coupler.",
-                    "content": [],
-                    "signoffs": [
-                        {
-                            "id": "so_lI98KuKpJq",
-                            "operators": []
-                        }
-                    ],
-                    "dependencies": []
-                },
-                {
-                    "id": "step_HexXnWohBi",
-                    "name": "Rotate sled until RBF flight tag holes are aligned. Both computers should be disarmed.",
-                    "content": [],
-                    "signoffs": [
-                        {
-                            "id": "so_rvNFTS5DQa",
-                            "operators": []
-                        }
-                    ],
-                    "dependencies": []
-                },
-                {
-                    "id": "step_QO9bRVQWP9",
-                    "name": "Connect the forward bulkhead e-match passthroughs to their labeled mates.",
-                    "content": [],
-                    "signoffs": [
-                        {
-                            "id": "so_L7IHeFWSch",
-                            "operators": []
-                        }
-                    ],
-                    "dependencies": []
-                },
-                {
-                    "id": "step_JJWkrGTBLQ",
-                    "name": "Secure the forward bulkhead with 2x 1/4-20 nuts and washers.",
-                    "content": [],
-                    "signoffs": [
-                        {
-                            "id": "so_yIS17EtkkR",
-                            "operators": []
-                        }
-                    ],
-                    "dependencies": []
-                },
-                {
-                    "id": "step_FFOEi2bJkd",
-                    "name": "Connect jumper wires to 4x e-match passthroughs on the avionics stack.",
-                    "content": [],
-                    "signoffs": [
-                        {
-                            "id": "so_QFTJaEpyke",
-                            "operators": []
-                        }
-                    ],
-                    "dependencies": []
-                },
-                {
-                    "id": "step_53FLaxsfuG",
-                    "name": "Place the avionics stack in a vertical flight-like configuration.",
-                    "content": [],
-                    "signoffs": [
-                        {
-                            "id": "so_xMadZJTuD2",
-                            "operators": []
-                        }
-                    ],
-                    "dependencies": []
-                },
-                {
-                    "id": "step_uq8uPCHJeC",
-                    "name": "Power on the backup computer.",
-                    "content": [],
-                    "signoffs": [
-                        {
-                            "id": "so_jeiVBKXMBN",
-                            "operators": []
-                        }
-                    ],
-                    "dependencies": []
-                },
-                {
-                    "id": "step_SWeUMgEAIB",
-                    "name": "Verify 3x beeps to indicate nominal continuity.",
-                    "content": [],
-                    "signoffs": [
-                        {
-                            "id": "so_HfdlKeueZg",
-                            "operators": []
-                        }
-                    ],
-                    "dependencies": []
-                },
-                {
-                    "id": "step_m8xVGn0gl7",
-                    "name": "Power off the backup computer.",
-                    "content": [],
-                    "signoffs": [
-                        {
-                            "id": "so_pgcmwXVeYm",
-                            "operators": []
-                        }
-                    ],
-                    "dependencies": []
-                },
-                {
-                    "id": "step_YnbCk549gE",
-                    "name": "Power on the primary computer.",
-                    "content": [],
-                    "signoffs": [
-                        {
-                            "id": "so_UIHeqanx27",
-                            "operators": []
-                        }
-                    ],
-                    "dependencies": []
-                },
-                {
-                    "id": "step_hu47hGZM5j",
-                    "name": "Verify 3x beeps to indicate nominal continuity.",
-                    "content": [],
-                    "signoffs": [
-                        {
-                            "id": "so_Ig16ZhY242",
-                            "operators": []
-                        }
-                    ],
-                    "dependencies": []
-                },
-                {
-                    "id": "step_0mwj8mmUxI",
-                    "name": "Verify signal acquisition by TeleBT ground station.",
-                    "content": [],
-                    "signoffs": [
-                        {
-                            "id": "so_R0IaRXpZOr",
-                            "operators": []
-                        }
-                    ],
-                    "dependencies": []
-                },
-                {
-                    "id": "step_si1O2JZRpE",
-                    "name": "Power off primary computer.",
-                    "content": [],
-                    "signoffs": [
-                        {
-                            "id": "so_sQY8QoISi6",
-                            "operators": []
-                        }
-                    ],
-                    "dependencies": []
-                },
-                {
-                    "id": "step_viawqZn1J2",
-                    "name": "Remove 4x jumper wires.",
-                    "content": [],
-                    "signoffs": [
-                        {
-                            "id": "so_bSZB96W9IQ",
-                            "operators": []
-                        }
-                    ],
-                    "dependencies": []
-                }
-            ],
-            "name": "L-1 Electronics Checkout"
-        },
-        {
             "id": "sctn_YXIfgSbv80",
             "steps": [
                 {
@@ -1423,6 +1200,229 @@
                 }
             ],
             "name": "L-1 ADS Payload Preparation"
+        },
+        {
+            "id": "sctn_ZPnMmHccRK",
+            "steps": [
+                {
+                    "id": "step_GkziDATLTs",
+                    "name": "Connect the primary battery to the primary computer.",
+                    "content": [
+                        {
+                            "type": "alert",
+                            "subtype": "note",
+                            "text": "These steps will be repeated on L-0 during vehicle integration.",
+                            "id": "ct_2FEesk9dGAgZPTgrh3Sk",
+                            "tokens": [
+                                {
+                                    "type": "text",
+                                    "value": "These steps will be repeated on L-0 during vehicle integration."
+                                }
+                            ]
+                        }
+                    ],
+                    "signoffs": [
+                        {
+                            "id": "so_3tS8gbJpKv",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_OHKgrIOvqR",
+                    "name": "Connect the backup battery to the backup computer.",
+                    "content": [],
+                    "signoffs": [
+                        {
+                            "id": "so_gUFOVp9UvI",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_Y2vqCG6Tpc",
+                    "name": "Connect the aft bulkhead e-match passthroughs to their labeled mates.",
+                    "content": [],
+                    "signoffs": [
+                        {
+                            "id": "so_yoYUf3zF5q",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_GzpqAIWlBf",
+                    "name": "Insert the avionics sled subassembly into the avionics coupler.",
+                    "content": [],
+                    "signoffs": [
+                        {
+                            "id": "so_lI98KuKpJq",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_HexXnWohBi",
+                    "name": "Rotate sled until RBF flight tag holes are aligned. Both computers should be disarmed.",
+                    "content": [],
+                    "signoffs": [
+                        {
+                            "id": "so_rvNFTS5DQa",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_QO9bRVQWP9",
+                    "name": "Connect the forward bulkhead e-match passthroughs to their labeled mates.",
+                    "content": [],
+                    "signoffs": [
+                        {
+                            "id": "so_L7IHeFWSch",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_JJWkrGTBLQ",
+                    "name": "Secure the forward bulkhead with 2x 1/4-20 nuts and washers.",
+                    "content": [],
+                    "signoffs": [
+                        {
+                            "id": "so_yIS17EtkkR",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_FFOEi2bJkd",
+                    "name": "Connect jumper wires to 4x e-match passthroughs on the avionics stack.",
+                    "content": [],
+                    "signoffs": [
+                        {
+                            "id": "so_QFTJaEpyke",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_53FLaxsfuG",
+                    "name": "Place the avionics stack in a vertical flight-like configuration.",
+                    "content": [],
+                    "signoffs": [
+                        {
+                            "id": "so_xMadZJTuD2",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_uq8uPCHJeC",
+                    "name": "Power on the backup computer.",
+                    "content": [],
+                    "signoffs": [
+                        {
+                            "id": "so_jeiVBKXMBN",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_SWeUMgEAIB",
+                    "name": "Verify 3x beeps to indicate nominal continuity.",
+                    "content": [],
+                    "signoffs": [
+                        {
+                            "id": "so_HfdlKeueZg",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_m8xVGn0gl7",
+                    "name": "Power off the backup computer.",
+                    "content": [],
+                    "signoffs": [
+                        {
+                            "id": "so_pgcmwXVeYm",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_YnbCk549gE",
+                    "name": "Power on the primary computer.",
+                    "content": [],
+                    "signoffs": [
+                        {
+                            "id": "so_UIHeqanx27",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_hu47hGZM5j",
+                    "name": "Verify 3x beeps to indicate nominal continuity.",
+                    "content": [],
+                    "signoffs": [
+                        {
+                            "id": "so_Ig16ZhY242",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_0mwj8mmUxI",
+                    "name": "Verify signal acquisition by TeleBT ground station.",
+                    "content": [],
+                    "signoffs": [
+                        {
+                            "id": "so_R0IaRXpZOr",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_si1O2JZRpE",
+                    "name": "Power off primary computer.",
+                    "content": [],
+                    "signoffs": [
+                        {
+                            "id": "so_sQY8QoISi6",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_viawqZn1J2",
+                    "name": "Remove 4x jumper wires.",
+                    "content": [],
+                    "signoffs": [
+                        {
+                            "id": "so_bSZB96W9IQ",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                }
+            ],
+            "name": "L-1 Electronics Checkout"
         },
         {
             "id": "sctn_agRe1g2ak5",
@@ -3140,26 +3140,8 @@
     "owner": "andywehmeyer2025@u.northwestern.edu",
     "reviewer_groups": [
         {
-            "reviewers": [
-                {
-                    "reviewer_ids": [
-                        {
-                            "type": "operator_role",
-                            "value": "SO"
-                        }
-                    ],
-                    "id": "reviewer_6N1pV80ROIjS0AcJP6KVE3"
-                }
-            ],
-            "actions": [
-                {
-                    "type": "approval",
-                    "reviewer_id": "reviewer_6N1pV80ROIjS0AcJP6KVE3",
-                    "user_id": "andywehmeyer2025@u.northwestern.edu",
-                    "operator_role": "SO",
-                    "approved_at": "2025-01-07T22:38:02.634Z"
-                }
-            ],
+            "reviewers": [],
+            "actions": [],
             "id": "rg_rBrh6dX2SceYaVZQ5HKuLK"
         }
     ],
@@ -3177,15 +3159,22 @@
             "user_id": "andywehmeyer2025@u.northwestern.edu",
             "operator_role": "SO",
             "approved_at": "2025-01-07T22:19:33.851Z"
+        },
+        {
+            "type": "approval",
+            "reviewer_id": "reviewer_6N1pV80ROIjS0AcJP6KVE3",
+            "user_id": "andywehmeyer2025@u.northwestern.edu",
+            "operator_role": "SO",
+            "approved_at": "2025-01-07T22:38:02.634Z"
         }
     ],
     "end_run_signoffs_groups": [],
     "state": "released",
-    "editedAt": "2025-01-07T22:38:04.120Z",
+    "editedAt": "2025-01-07T22:40:10.294Z",
     "skip_step_enabled": true,
     "repeat_step_enabled": true,
     "step_suggest_edits_enabled": true,
-    "procedure_rev_num": 515,
+    "procedure_rev_num": 524,
     "comments": [],
     "project_name": "NASA Student Launch 2024-2025",
     "project_code": "USLI25",
