@@ -1,8 +1,10 @@
 import pandas as pd
 import os
 
+# change FMEA and RISKS to PDR if using for PDR
+
 def generate_latex_table_fmea(data, table_name, table_ref):
-    latex_table = f"\\fmeaPDR{{"
+    latex_table = f"\\fmeaCDR{{"
     
     # Iterate through each row in the DataFrame and convert to LaTeX format
     for index, row in data.iterrows():
@@ -22,7 +24,7 @@ def generate_latex_table_fmea(data, table_name, table_ref):
     return latex_table
 
 def generate_latex_table_risks(data, table_name, table_ref):
-    latex_table = f"\\risksPDR{{"
+    latex_table = f"\\risksCDR{{"
     
     # Iterate through each row in the DataFrame and convert to LaTeX format
     for index, row in data.iterrows():
