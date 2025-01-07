@@ -59,7 +59,7 @@ for section in json_data['sections']:
     # Join all the LaTeX lines together into one string
     latex_code = "".join(latex_output)
     print("Completed section:", section['name'])
-    print("\n")
+    print("")
 
 # Write the LaTeX code to a text file named after the section name
 with open(write_path, 'w') as output_file:

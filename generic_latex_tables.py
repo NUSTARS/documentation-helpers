@@ -137,7 +137,6 @@ def generate_latex_table_nasa_requirements(data, table_name, table_ref):
         section = str(row['Section'])
         
         latex_row = f"{item}&{description}&{justification}&{verification_method}&{verification_plan}&{verification_status}&{section}\\\\\hline "
-        # latex_row = f"{item}&{description}&{justification}&{verification_method}&{verification_status}&\\ref{{{section}}}\\\\\\hline "
         latex_row = latex_row.replace('\n', '').replace('%', '\\%').replace('$', '\\$').replace('#', '\\#').replace('^', '\\^')
         latex_table += latex_row
     
