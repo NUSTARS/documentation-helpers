@@ -1,11 +1,11 @@
 {
     "_id": "zXpyGHRlJSGR2H70eNVqlB",
-    "_rev": "3-27f5c0656a98f52975c984d8e2aff441",
+    "_rev": "4-18139900a718ff6dd3e90f07aabd8750",
     "code": "USLI25",
     "name": "Launch Procedures",
     "description": "",
     "headers": [],
-    "version": "3",
+    "version": "3 (CDR)",
     "archived": false,
     "editedUserId": "andywehmeyer2025@u.northwestern.edu",
     "sections": [
@@ -599,229 +599,6 @@
             "name": "L-1 Main Parachute Preparation"
         },
         {
-            "id": "sctn_ZPnMmHccRK",
-            "steps": [
-                {
-                    "id": "step_GkziDATLTs",
-                    "name": "Connect the primary battery to the primary computer.",
-                    "content": [
-                        {
-                            "type": "alert",
-                            "subtype": "note",
-                            "text": "These steps will be repeated on L-0 during vehicle integration.",
-                            "id": "ct_2FEesk9dGAgZPTgrh3Sk",
-                            "tokens": [
-                                {
-                                    "type": "text",
-                                    "value": "These steps will be repeated on L-0 during vehicle integration."
-                                }
-                            ]
-                        }
-                    ],
-                    "signoffs": [
-                        {
-                            "id": "so_3tS8gbJpKv",
-                            "operators": []
-                        }
-                    ],
-                    "dependencies": []
-                },
-                {
-                    "id": "step_OHKgrIOvqR",
-                    "name": "Connect the backup battery to the backup computer.",
-                    "content": [],
-                    "signoffs": [
-                        {
-                            "id": "so_gUFOVp9UvI",
-                            "operators": []
-                        }
-                    ],
-                    "dependencies": []
-                },
-                {
-                    "id": "step_Y2vqCG6Tpc",
-                    "name": "Connect the aft bulkhead e-match passthroughs to their labeled mates.",
-                    "content": [],
-                    "signoffs": [
-                        {
-                            "id": "so_yoYUf3zF5q",
-                            "operators": []
-                        }
-                    ],
-                    "dependencies": []
-                },
-                {
-                    "id": "step_GzpqAIWlBf",
-                    "name": "Insert the avionics sled subassembly into the avionics coupler.",
-                    "content": [],
-                    "signoffs": [
-                        {
-                            "id": "so_lI98KuKpJq",
-                            "operators": []
-                        }
-                    ],
-                    "dependencies": []
-                },
-                {
-                    "id": "step_HexXnWohBi",
-                    "name": "Rotate sled until RBF flight tag holes are aligned. Both computers should be disarmed.",
-                    "content": [],
-                    "signoffs": [
-                        {
-                            "id": "so_rvNFTS5DQa",
-                            "operators": []
-                        }
-                    ],
-                    "dependencies": []
-                },
-                {
-                    "id": "step_QO9bRVQWP9",
-                    "name": "Connect the forward bulkhead e-match passthroughs to their labeled mates.",
-                    "content": [],
-                    "signoffs": [
-                        {
-                            "id": "so_L7IHeFWSch",
-                            "operators": []
-                        }
-                    ],
-                    "dependencies": []
-                },
-                {
-                    "id": "step_JJWkrGTBLQ",
-                    "name": "Secure the forward bulkhead with 2x 1/4-20 nuts and washers.",
-                    "content": [],
-                    "signoffs": [
-                        {
-                            "id": "so_yIS17EtkkR",
-                            "operators": []
-                        }
-                    ],
-                    "dependencies": []
-                },
-                {
-                    "id": "step_FFOEi2bJkd",
-                    "name": "Connect jumper wires to 4x e-match passthroughs on the avionics stack.",
-                    "content": [],
-                    "signoffs": [
-                        {
-                            "id": "so_QFTJaEpyke",
-                            "operators": []
-                        }
-                    ],
-                    "dependencies": []
-                },
-                {
-                    "id": "step_53FLaxsfuG",
-                    "name": "Place the avionics stack in a vertical flight-like configuration.",
-                    "content": [],
-                    "signoffs": [
-                        {
-                            "id": "so_xMadZJTuD2",
-                            "operators": []
-                        }
-                    ],
-                    "dependencies": []
-                },
-                {
-                    "id": "step_uq8uPCHJeC",
-                    "name": "Power on the backup computer.",
-                    "content": [],
-                    "signoffs": [
-                        {
-                            "id": "so_jeiVBKXMBN",
-                            "operators": []
-                        }
-                    ],
-                    "dependencies": []
-                },
-                {
-                    "id": "step_SWeUMgEAIB",
-                    "name": "Verify 3x beeps to indicate nominal continuity.",
-                    "content": [],
-                    "signoffs": [
-                        {
-                            "id": "so_HfdlKeueZg",
-                            "operators": []
-                        }
-                    ],
-                    "dependencies": []
-                },
-                {
-                    "id": "step_m8xVGn0gl7",
-                    "name": "Power off the backup computer.",
-                    "content": [],
-                    "signoffs": [
-                        {
-                            "id": "so_pgcmwXVeYm",
-                            "operators": []
-                        }
-                    ],
-                    "dependencies": []
-                },
-                {
-                    "id": "step_YnbCk549gE",
-                    "name": "Power on the primary computer.",
-                    "content": [],
-                    "signoffs": [
-                        {
-                            "id": "so_UIHeqanx27",
-                            "operators": []
-                        }
-                    ],
-                    "dependencies": []
-                },
-                {
-                    "id": "step_hu47hGZM5j",
-                    "name": "Verify 3x beeps to indicate nominal continuity.",
-                    "content": [],
-                    "signoffs": [
-                        {
-                            "id": "so_Ig16ZhY242",
-                            "operators": []
-                        }
-                    ],
-                    "dependencies": []
-                },
-                {
-                    "id": "step_0mwj8mmUxI",
-                    "name": "Verify signal acquisition by TeleBT ground station.",
-                    "content": [],
-                    "signoffs": [
-                        {
-                            "id": "so_R0IaRXpZOr",
-                            "operators": []
-                        }
-                    ],
-                    "dependencies": []
-                },
-                {
-                    "id": "step_si1O2JZRpE",
-                    "name": "Power off primary computer.",
-                    "content": [],
-                    "signoffs": [
-                        {
-                            "id": "so_sQY8QoISi6",
-                            "operators": []
-                        }
-                    ],
-                    "dependencies": []
-                },
-                {
-                    "id": "step_viawqZn1J2",
-                    "name": "Remove 4x jumper wires.",
-                    "content": [],
-                    "signoffs": [
-                        {
-                            "id": "so_bSZB96W9IQ",
-                            "operators": []
-                        }
-                    ],
-                    "dependencies": []
-                }
-            ],
-            "name": "L-1 Electronics Checkout"
-        },
-        {
             "id": "sctn_e5VYlutbt9",
             "steps": [
                 {
@@ -1166,6 +943,229 @@
                 }
             ],
             "name": "L-1 STEMCRaFT Payload Preparation"
+        },
+        {
+            "id": "sctn_ZPnMmHccRK",
+            "steps": [
+                {
+                    "id": "step_GkziDATLTs",
+                    "name": "Connect the primary battery to the primary computer.",
+                    "content": [
+                        {
+                            "type": "alert",
+                            "subtype": "note",
+                            "text": "These steps will be repeated on L-0 during vehicle integration.",
+                            "id": "ct_2FEesk9dGAgZPTgrh3Sk",
+                            "tokens": [
+                                {
+                                    "type": "text",
+                                    "value": "These steps will be repeated on L-0 during vehicle integration."
+                                }
+                            ]
+                        }
+                    ],
+                    "signoffs": [
+                        {
+                            "id": "so_3tS8gbJpKv",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_OHKgrIOvqR",
+                    "name": "Connect the backup battery to the backup computer.",
+                    "content": [],
+                    "signoffs": [
+                        {
+                            "id": "so_gUFOVp9UvI",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_Y2vqCG6Tpc",
+                    "name": "Connect the aft bulkhead e-match passthroughs to their labeled mates.",
+                    "content": [],
+                    "signoffs": [
+                        {
+                            "id": "so_yoYUf3zF5q",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_GzpqAIWlBf",
+                    "name": "Insert the avionics sled subassembly into the avionics coupler.",
+                    "content": [],
+                    "signoffs": [
+                        {
+                            "id": "so_lI98KuKpJq",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_HexXnWohBi",
+                    "name": "Rotate sled until RBF flight tag holes are aligned. Both computers should be disarmed.",
+                    "content": [],
+                    "signoffs": [
+                        {
+                            "id": "so_rvNFTS5DQa",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_QO9bRVQWP9",
+                    "name": "Connect the forward bulkhead e-match passthroughs to their labeled mates.",
+                    "content": [],
+                    "signoffs": [
+                        {
+                            "id": "so_L7IHeFWSch",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_JJWkrGTBLQ",
+                    "name": "Secure the forward bulkhead with 2x 1/4-20 nuts and washers.",
+                    "content": [],
+                    "signoffs": [
+                        {
+                            "id": "so_yIS17EtkkR",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_FFOEi2bJkd",
+                    "name": "Connect jumper wires to 4x e-match passthroughs on the avionics stack.",
+                    "content": [],
+                    "signoffs": [
+                        {
+                            "id": "so_QFTJaEpyke",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_53FLaxsfuG",
+                    "name": "Place the avionics stack in a vertical flight-like configuration.",
+                    "content": [],
+                    "signoffs": [
+                        {
+                            "id": "so_xMadZJTuD2",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_uq8uPCHJeC",
+                    "name": "Power on the backup computer.",
+                    "content": [],
+                    "signoffs": [
+                        {
+                            "id": "so_jeiVBKXMBN",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_SWeUMgEAIB",
+                    "name": "Verify 3x beeps to indicate nominal continuity.",
+                    "content": [],
+                    "signoffs": [
+                        {
+                            "id": "so_HfdlKeueZg",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_m8xVGn0gl7",
+                    "name": "Power off the backup computer.",
+                    "content": [],
+                    "signoffs": [
+                        {
+                            "id": "so_pgcmwXVeYm",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_YnbCk549gE",
+                    "name": "Power on the primary computer.",
+                    "content": [],
+                    "signoffs": [
+                        {
+                            "id": "so_UIHeqanx27",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_hu47hGZM5j",
+                    "name": "Verify 3x beeps to indicate nominal continuity.",
+                    "content": [],
+                    "signoffs": [
+                        {
+                            "id": "so_Ig16ZhY242",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_0mwj8mmUxI",
+                    "name": "Verify signal acquisition by TeleBT ground station.",
+                    "content": [],
+                    "signoffs": [
+                        {
+                            "id": "so_R0IaRXpZOr",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_si1O2JZRpE",
+                    "name": "Power off primary computer.",
+                    "content": [],
+                    "signoffs": [
+                        {
+                            "id": "so_sQY8QoISi6",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_viawqZn1J2",
+                    "name": "Remove 4x jumper wires.",
+                    "content": [],
+                    "signoffs": [
+                        {
+                            "id": "so_bSZB96W9IQ",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                }
+            ],
+            "name": "L-1 Electronics Checkout"
         },
         {
             "id": "sctn_YXIfgSbv80",
@@ -3157,7 +3157,7 @@
                     "reviewer_id": "reviewer_6N1pV80ROIjS0AcJP6KVE3",
                     "user_id": "andywehmeyer2025@u.northwestern.edu",
                     "operator_role": "SO",
-                    "approved_at": "2025-01-07T22:19:33.851Z"
+                    "approved_at": "2025-01-07T22:38:02.634Z"
                 }
             ],
             "id": "rg_rBrh6dX2SceYaVZQ5HKuLK"
@@ -3170,546 +3170,23 @@
             "user_id": "andywehmeyer2025@u.northwestern.edu",
             "operator_role": "SO",
             "approved_at": "2024-12-17T17:33:50.466Z"
+        },
+        {
+            "type": "approval",
+            "reviewer_id": "reviewer_6N1pV80ROIjS0AcJP6KVE3",
+            "user_id": "andywehmeyer2025@u.northwestern.edu",
+            "operator_role": "SO",
+            "approved_at": "2025-01-07T22:19:33.851Z"
         }
     ],
     "end_run_signoffs_groups": [],
     "state": "released",
-    "editedAt": "2025-01-07T22:19:34.969Z",
+    "editedAt": "2025-01-07T22:38:04.120Z",
     "skip_step_enabled": true,
     "repeat_step_enabled": true,
     "step_suggest_edits_enabled": true,
-    "procedure_rev_num": 504,
-    "comments": [
-        {
-            "id": "cmt_YgcUVNqbiV",
-            "parent_id": "",
-            "type": "review_comment",
-            "text": "spelling",
-            "reference_id": "step_fHLX3KQcH1",
-            "mention_list": [],
-            "created_at": "2025-01-07T18:00:12.204Z",
-            "updated_at": "2025-01-07T18:00:17.154Z",
-            "user_id": "andywehmeyer2025@u.northwestern.edu",
-            "resolved": true,
-            "resolved_by": "andywehmeyer2025@u.northwestern.edu",
-            "resolved_at": "2025-01-07T21:58:00.433Z",
-            "resolution_procedure_rev_num": 463
-        },
-        {
-            "id": "cmt_E0gb4LIMj9",
-            "parent_id": "",
-            "type": "review_comment",
-            "text": "add a warning step here",
-            "reference_id": "step_PUSQXzBoFQ",
-            "mention_list": [],
-            "created_at": "2025-01-07T18:09:14.105Z",
-            "user_id": "andywehmeyer2025@u.northwestern.edu",
-            "resolved": true,
-            "resolved_by": "andywehmeyer2025@u.northwestern.edu",
-            "resolved_at": "2025-01-07T21:59:33.836Z",
-            "resolution_procedure_rev_num": 469
-        },
-        {
-            "id": "cmt_c5DXMdLNYK",
-            "parent_id": "",
-            "type": "review_comment",
-            "text": "add a warning about safe storage of charges",
-            "reference_id": "step_NeU0XgJfGR",
-            "mention_list": [],
-            "created_at": "2025-01-07T18:09:43.989Z",
-            "user_id": "andywehmeyer2025@u.northwestern.edu",
-            "resolved": true,
-            "resolved_by": "andywehmeyer2025@u.northwestern.edu",
-            "resolved_at": "2025-01-07T22:00:18.173Z",
-            "resolution_procedure_rev_num": 472
-        },
-        {
-            "id": "cmt_dTMbOzhXeG",
-            "parent_id": "",
-            "type": "review_comment",
-            "text": "impossible",
-            "reference_id": "step_9v4xbg3vrA",
-            "mention_list": [],
-            "created_at": "2025-01-07T18:10:00.117Z",
-            "user_id": "andywehmeyer2025@u.northwestern.edu",
-            "resolved": true,
-            "resolved_by": "andywehmeyer2025@u.northwestern.edu",
-            "resolved_at": "2025-01-07T22:00:32.241Z",
-            "resolution_procedure_rev_num": 473
-        },
-        {
-            "id": "cmt_bdh6fF3onU",
-            "parent_id": "",
-            "type": "review_comment",
-            "text": "impossible",
-            "reference_id": "step_fKdlANnxM6",
-            "mention_list": [],
-            "created_at": "2025-01-07T18:10:10.008Z",
-            "user_id": "andywehmeyer2025@u.northwestern.edu",
-            "resolved": true,
-            "resolved_by": "andywehmeyer2025@u.northwestern.edu",
-            "resolved_at": "2025-01-07T22:00:39.885Z",
-            "resolution_procedure_rev_num": 474
-        },
-        {
-            "id": "cmt_Y5R8ozTb5q",
-            "parent_id": "",
-            "type": "review_comment",
-            "text": "make a note about how this powers it off?",
-            "reference_id": "step_Uu2n2TiwaD",
-            "mention_list": [],
-            "created_at": "2025-01-07T18:10:55.889Z",
-            "user_id": "andywehmeyer2025@u.northwestern.edu",
-            "resolved": true,
-            "resolved_by": "andywehmeyer2025@u.northwestern.edu",
-            "resolved_at": "2025-01-07T22:01:25.341Z",
-            "resolution_procedure_rev_num": 476
-        },
-        {
-            "id": "cmt_DQGGhH6fMW",
-            "parent_id": "",
-            "type": "review_comment",
-            "text": "impossible",
-            "reference_id": "step_COiAlS5OfW",
-            "mention_list": [],
-            "created_at": "2025-01-07T18:11:16.358Z",
-            "user_id": "andywehmeyer2025@u.northwestern.edu",
-            "resolved": true,
-            "resolved_by": "andywehmeyer2025@u.northwestern.edu",
-            "resolved_at": "2025-01-07T22:01:40.572Z",
-            "resolution_procedure_rev_num": 477
-        },
-        {
-            "id": "cmt_xWOYoRjWUp",
-            "parent_id": "",
-            "type": "review_comment",
-            "text": "impossible",
-            "reference_id": "step_QG6qtLacZf",
-            "mention_list": [],
-            "created_at": "2025-01-07T18:11:32.197Z",
-            "user_id": "andywehmeyer2025@u.northwestern.edu",
-            "resolved": true,
-            "resolved_by": "andywehmeyer2025@u.northwestern.edu",
-            "resolved_at": "2025-01-07T22:01:51.569Z",
-            "resolution_procedure_rev_num": 478
-        },
-        {
-            "id": "cmt_yYvOqPJzzU",
-            "parent_id": "",
-            "type": "review_comment",
-            "text": "after this step, add a step to insert the locating hardware",
-            "reference_id": "step_f7e7ZyjpNG",
-            "mention_list": [],
-            "created_at": "2025-01-07T18:12:17.948Z",
-            "user_id": "andywehmeyer2025@u.northwestern.edu"
-        },
-        {
-            "id": "cmt_b1mByndaCP",
-            "parent_id": "",
-            "type": "review_comment",
-            "text": "add a warning to these steps and subsequent ones",
-            "reference_id": "step_2qFG5f78IM",
-            "mention_list": [],
-            "created_at": "2025-01-07T18:12:43.383Z",
-            "user_id": "andywehmeyer2025@u.northwestern.edu",
-            "resolved": true,
-            "resolved_by": "andywehmeyer2025@u.northwestern.edu",
-            "resolved_at": "2025-01-07T22:05:17.520Z",
-            "resolution_procedure_rev_num": 479
-        },
-        {
-            "id": "cmt_H1DDIb4DCN",
-            "parent_id": "",
-            "type": "review_comment",
-            "text": "no \" on 20",
-            "reference_id": "step_YVlF5ZyPhT",
-            "mention_list": [],
-            "created_at": "2025-01-07T18:14:16.675Z",
-            "user_id": "andywehmeyer2025@u.northwestern.edu",
-            "resolved": true,
-            "resolved_by": "andywehmeyer2025@u.northwestern.edu",
-            "resolved_at": "2025-01-07T22:05:25.980Z",
-            "resolution_procedure_rev_num": 480
-        },
-        {
-            "id": "cmt_AyIjiMe6Dy",
-            "parent_id": "",
-            "type": "review_comment",
-            "text": "change this from a \"note\" to a \"text\" so that it shows up properly",
-            "reference_id": "step_BEZAcJo71P",
-            "mention_list": [],
-            "created_at": "2025-01-07T18:16:31.453Z",
-            "user_id": "andywehmeyer2025@u.northwestern.edu",
-            "resolved": true,
-            "resolved_by": "andywehmeyer2025@u.northwestern.edu",
-            "resolved_at": "2025-01-07T21:58:54.433Z",
-            "resolution_procedure_rev_num": 466
-        },
-        {
-            "id": "cmt_QZQTHfE0Jr",
-            "parent_id": "",
-            "type": "review_comment",
-            "text": "caution step",
-            "reference_id": "step_4v4CocbHsW",
-            "mention_list": [],
-            "created_at": "2025-01-07T18:16:46.600Z",
-            "user_id": "andywehmeyer2025@u.northwestern.edu",
-            "resolved": true,
-            "resolved_by": "andywehmeyer2025@u.northwestern.edu",
-            "resolved_at": "2025-01-07T22:09:31.637Z",
-            "resolution_procedure_rev_num": 481
-        },
-        {
-            "id": "cmt_sIpktPCyfp",
-            "parent_id": "",
-            "type": "review_comment",
-            "text": "3x",
-            "reference_id": "step_0FD5boJ4Ep",
-            "mention_list": [],
-            "created_at": "2025-01-07T18:16:55.578Z",
-            "user_id": "andywehmeyer2025@u.northwestern.edu",
-            "resolved": true,
-            "resolved_by": "andywehmeyer2025@u.northwestern.edu",
-            "resolved_at": "2025-01-07T22:09:43.342Z",
-            "resolution_procedure_rev_num": 482
-        },
-        {
-            "id": "cmt_49EdH9Rwhe",
-            "parent_id": "",
-            "type": "review_comment",
-            "text": "move the \"ensure\" piece into the caution statement",
-            "reference_id": "step_KGZoxUTop3",
-            "mention_list": [],
-            "created_at": "2025-01-07T18:17:10.462Z",
-            "user_id": "andywehmeyer2025@u.northwestern.edu",
-            "resolved": true,
-            "resolved_by": "andywehmeyer2025@u.northwestern.edu",
-            "resolved_at": "2025-01-07T22:10:18.184Z",
-            "resolution_procedure_rev_num": 483
-        },
-        {
-            "id": "cmt_eywzNsGNCC",
-            "parent_id": "",
-            "type": "review_comment",
-            "text": "move the note into a caution statement",
-            "reference_id": "step_RaH6ip7wUi",
-            "mention_list": [],
-            "created_at": "2025-01-07T18:17:23.900Z",
-            "user_id": "andywehmeyer2025@u.northwestern.edu",
-            "resolved": true,
-            "resolved_by": "andywehmeyer2025@u.northwestern.edu",
-            "resolved_at": "2025-01-07T22:11:01.482Z",
-            "resolution_procedure_rev_num": 484
-        },
-        {
-            "id": "cmt_BgDaYZVkQW",
-            "parent_id": "",
-            "type": "review_comment",
-            "text": "remove the caution and leave the warning since it is most critical",
-            "reference_id": "step_gBpeQtfeGO",
-            "mention_list": [],
-            "created_at": "2025-01-07T18:17:37.318Z",
-            "user_id": "andywehmeyer2025@u.northwestern.edu",
-            "resolved": true,
-            "resolved_by": "andywehmeyer2025@u.northwestern.edu",
-            "resolved_at": "2025-01-07T22:11:28.729Z",
-            "resolution_procedure_rev_num": 485
-        },
-        {
-            "id": "cmt_ooKrYoy4vW",
-            "parent_id": "",
-            "type": "review_comment",
-            "text": "these should be 1/4-20 fasteners!!!",
-            "reference_id": "step_vIseBjNRxk",
-            "mention_list": [],
-            "created_at": "2025-01-07T18:18:16.772Z",
-            "user_id": "andywehmeyer2025@u.northwestern.edu",
-            "resolved": true,
-            "resolved_by": "andywehmeyer2025@u.northwestern.edu",
-            "resolved_at": "2025-01-07T22:11:50.283Z",
-            "resolution_procedure_rev_num": 486
-        },
-        {
-            "id": "cmt_iFIbLvNBfs",
-            "parent_id": "",
-            "type": "review_comment",
-            "text": "warning statement",
-            "reference_id": "step_9Gwy5FiiTo",
-            "mention_list": [],
-            "created_at": "2025-01-07T18:18:26.605Z",
-            "user_id": "andywehmeyer2025@u.northwestern.edu",
-            "resolved": true,
-            "resolved_by": "andywehmeyer2025@u.northwestern.edu",
-            "resolved_at": "2025-01-07T22:12:17.356Z",
-            "resolution_procedure_rev_num": 487
-        },
-        {
-            "id": "cmt_8LieJtyt66",
-            "parent_id": "",
-            "type": "review_comment",
-            "text": "this is correct no change required",
-            "reference_id": "step_oEsBbeDi6K",
-            "mention_list": [],
-            "created_at": "2025-01-07T18:18:43.036Z",
-            "user_id": "andywehmeyer2025@u.northwestern.edu",
-            "resolved": true,
-            "resolved_by": "andywehmeyer2025@u.northwestern.edu",
-            "resolved_at": "2025-01-07T22:12:22.571Z",
-            "resolution_procedure_rev_num": 488
-        },
-        {
-            "id": "cmt_ym71LOKMfe",
-            "parent_id": "",
-            "type": "review_comment",
-            "text": "jk no comment here",
-            "reference_id": "step_Y6bnxJCZc9",
-            "mention_list": [],
-            "created_at": "2025-01-07T18:41:10.550Z",
-            "updated_at": "2025-01-07T18:41:17.228Z",
-            "user_id": "andywehmeyer2025@u.northwestern.edu",
-            "resolved": true,
-            "resolved_by": "andywehmeyer2025@u.northwestern.edu",
-            "resolved_at": "2025-01-07T22:12:29.421Z",
-            "resolution_procedure_rev_num": 489
-        },
-        {
-            "id": "cmt_vfpye0chl2",
-            "parent_id": "",
-            "type": "review_comment",
-            "text": "warning on actually removing them otherwise the charges wont work",
-            "reference_id": "step_tWin7ZX7nr",
-            "mention_list": [],
-            "created_at": "2025-01-07T18:41:46.807Z",
-            "user_id": "andywehmeyer2025@u.northwestern.edu",
-            "resolved": true,
-            "resolved_by": "andywehmeyer2025@u.northwestern.edu",
-            "resolved_at": "2025-01-07T22:14:38.439Z",
-            "resolution_procedure_rev_num": 490
-        },
-        {
-            "id": "cmt_GHgsIArUjF",
-            "parent_id": "",
-            "type": "review_comment",
-            "text": "u-bolt for consistecy",
-            "reference_id": "step_zQRtT3UFpH",
-            "mention_list": [],
-            "created_at": "2025-01-07T18:41:53.835Z",
-            "user_id": "andywehmeyer2025@u.northwestern.edu",
-            "resolved": true,
-            "resolved_by": "andywehmeyer2025@u.northwestern.edu",
-            "resolved_at": "2025-01-07T22:14:46.290Z",
-            "resolution_procedure_rev_num": 491
-        },
-        {
-            "id": "cmt_Adqy4MdOG2",
-            "parent_id": "",
-            "type": "review_comment",
-            "text": "same warning",
-            "reference_id": "step_EpCg1iH0nN",
-            "mention_list": [],
-            "created_at": "2025-01-07T18:42:25.106Z",
-            "user_id": "andywehmeyer2025@u.northwestern.edu",
-            "resolved": true,
-            "resolved_by": "andywehmeyer2025@u.northwestern.edu",
-            "resolved_at": "2025-01-07T22:15:54.500Z",
-            "resolution_procedure_rev_num": 492
-        },
-        {
-            "id": "cmt_FzvYygOkYg",
-            "parent_id": "",
-            "type": "review_comment",
-            "text": "rubber band",
-            "reference_id": "step_g9jW1dPabf",
-            "mention_list": [],
-            "created_at": "2025-01-07T18:43:02.903Z",
-            "user_id": "andywehmeyer2025@u.northwestern.edu",
-            "resolved": true,
-            "resolved_by": "andywehmeyer2025@u.northwestern.edu",
-            "resolved_at": "2025-01-07T22:16:07.500Z",
-            "resolution_procedure_rev_num": 493
-        },
-        {
-            "id": "cmt_6uhyGkePOK",
-            "parent_id": "cmt_FzvYygOkYg",
-            "type": "review_comment",
-            "text": "and remove the comma",
-            "reference_id": "step_g9jW1dPabf",
-            "mention_list": [],
-            "created_at": "2025-01-07T18:43:07.209Z",
-            "user_id": "andywehmeyer2025@u.northwestern.edu"
-        },
-        {
-            "id": "cmt_2AtsTbJ995",
-            "parent_id": "",
-            "type": "review_comment",
-            "text": "get rid of \"correct\" verbiage and change to the labeled charge well",
-            "reference_id": "step_dNJCqvYAv0",
-            "mention_list": [],
-            "created_at": "2025-01-07T18:43:21.766Z",
-            "user_id": "andywehmeyer2025@u.northwestern.edu",
-            "resolved": true,
-            "resolved_by": "andywehmeyer2025@u.northwestern.edu",
-            "resolved_at": "2025-01-07T22:16:19.511Z",
-            "resolution_procedure_rev_num": 494
-        },
-        {
-            "id": "cmt_5WXiRMSQro",
-            "parent_id": "",
-            "type": "review_comment",
-            "text": "should be 1/4-20",
-            "reference_id": "step_hW9AxiMjgk",
-            "mention_list": [],
-            "created_at": "2025-01-07T18:43:56.389Z",
-            "user_id": "andywehmeyer2025@u.northwestern.edu",
-            "resolved": true,
-            "resolved_by": "andywehmeyer2025@u.northwestern.edu",
-            "resolved_at": "2025-01-07T22:16:29.840Z",
-            "resolution_procedure_rev_num": 495
-        },
-        {
-            "id": "cmt_zSCKRCMUvn",
-            "parent_id": "",
-            "type": "review_comment",
-            "text": "warning statement like before",
-            "reference_id": "step_eMfsOjuhqa",
-            "mention_list": [],
-            "created_at": "2025-01-07T18:44:18.128Z",
-            "user_id": "andywehmeyer2025@u.northwestern.edu"
-        },
-        {
-            "id": "cmt_TbRiZllc8g",
-            "parent_id": "",
-            "type": "review_comment",
-            "text": "1/4-20",
-            "reference_id": "step_AQhCc3GXTU",
-            "mention_list": [],
-            "created_at": "2025-01-07T18:44:23.902Z",
-            "user_id": "andywehmeyer2025@u.northwestern.edu",
-            "resolved": true,
-            "resolved_by": "andywehmeyer2025@u.northwestern.edu",
-            "resolved_at": "2025-01-07T22:16:57.404Z",
-            "resolution_procedure_rev_num": 496
-        },
-        {
-            "id": "cmt_hkIA4qd8sX",
-            "parent_id": "",
-            "type": "review_comment",
-            "text": "warning step about loosening motor",
-            "reference_id": "step_GLHC4zhEMK",
-            "mention_list": [],
-            "created_at": "2025-01-07T18:45:10.950Z",
-            "user_id": "andywehmeyer2025@u.northwestern.edu",
-            "resolved": true,
-            "resolved_by": "andywehmeyer2025@u.northwestern.edu",
-            "resolved_at": "2025-01-07T22:17:02.993Z",
-            "resolution_procedure_rev_num": 497
-        },
-        {
-            "id": "cmt_5JbtmqK8Ye",
-            "parent_id": "",
-            "type": "review_comment",
-            "text": "warning step about securing motor",
-            "reference_id": "step_J55HkLBSJ9",
-            "mention_list": [],
-            "created_at": "2025-01-07T18:45:19.343Z",
-            "user_id": "andywehmeyer2025@u.northwestern.edu"
-        },
-        {
-            "id": "cmt_2fqMzxVYyf",
-            "parent_id": "",
-            "type": "review_comment",
-            "text": "@maxhug what is the beep sequence",
-            "reference_id": "step_fMqOGHqcvR",
-            "mention_list": [
-                {
-                    "username": "maxhug",
-                    "email": "maxhug@u.northwestern.edu"
-                }
-            ],
-            "created_at": "2025-01-07T21:39:29.197Z",
-            "user_id": "andywehmeyer2025@u.northwestern.edu"
-        },
-        {
-            "id": "cmt_UjBUm5kXYz",
-            "parent_id": "",
-            "type": "review_comment",
-            "text": "add a warning or caution on this step to clarify there three beeps from altimeters",
-            "reference_id": "step_oYuYfn16Sp",
-            "mention_list": [],
-            "created_at": "2025-01-07T21:40:10.438Z",
-            "user_id": "andywehmeyer2025@u.northwestern.edu"
-        },
-        {
-            "id": "cmt_GptFqEbdCb",
-            "parent_id": "",
-            "type": "review_comment",
-            "text": "warning statement for mentor",
-            "reference_id": "step_wNlWIzLf7B",
-            "mention_list": [],
-            "created_at": "2025-01-07T21:40:25.736Z",
-            "user_id": "andywehmeyer2025@u.northwestern.edu"
-        },
-        {
-            "id": "cmt_mwIfUWgv4n",
-            "parent_id": "",
-            "type": "review_comment",
-            "text": "missing steps make a new checklist at the end that is \"optional\"",
-            "reference_id": "step_pgFy0faYTX",
-            "mention_list": [],
-            "created_at": "2025-01-07T21:40:46.472Z",
-            "user_id": "andywehmeyer2025@u.northwestern.edu"
-        },
-        {
-            "id": "cmt_wx8DGYjVGY",
-            "parent_id": "cmt_mwIfUWgv4n",
-            "type": "review_comment",
-            "text": "also add an electronics prep step prior to L-1 inspection",
-            "reference_id": "step_pgFy0faYTX",
-            "mention_list": [],
-            "created_at": "2025-01-07T21:41:04.048Z",
-            "user_id": "andywehmeyer2025@u.northwestern.edu"
-        },
-        {
-            "id": "cmt_LgpxyIh86l",
-            "parent_id": "",
-            "type": "review_comment",
-            "text": "remove ample",
-            "reference_id": "step_3BX5oa0ucZ",
-            "mention_list": [],
-            "created_at": "2025-01-07T21:43:07.799Z",
-            "user_id": "andywehmeyer2025@u.northwestern.edu"
-        },
-        {
-            "id": "cmt_eRp6bvtNBg",
-            "parent_id": "",
-            "type": "review_comment",
-            "text": "separate into two steps",
-            "reference_id": "step_xzyQReQmw2",
-            "mention_list": [],
-            "created_at": "2025-01-07T21:43:13.593Z",
-            "user_id": "andywehmeyer2025@u.northwestern.edu"
-        },
-        {
-            "id": "cmt_2dbjONU1QJ",
-            "parent_id": "",
-            "type": "review_comment",
-            "text": "safety glasses warning",
-            "reference_id": "step_6EC2TQb17X",
-            "mention_list": [],
-            "created_at": "2025-01-07T21:43:20.379Z",
-            "user_id": "andywehmeyer2025@u.northwestern.edu"
-        },
-        {
-            "id": "cmt_pI1CDpSBBa",
-            "parent_id": "",
-            "type": "review_comment",
-            "text": "make this a warning",
-            "reference_id": "step_9rFlMUfMLo",
-            "mention_list": [],
-            "created_at": "2025-01-07T21:43:59.916Z",
-            "user_id": "andywehmeyer2025@u.northwestern.edu"
-        }
-    ],
+    "procedure_rev_num": 515,
+    "comments": [],
     "project_name": "NASA Student Launch 2024-2025",
     "project_code": "USLI25",
     "project_id": "lEcBfohtyw",
