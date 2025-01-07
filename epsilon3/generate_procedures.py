@@ -37,13 +37,30 @@ for section in json_data['sections']:
                 safety_notice = subcontent['text'] + "\lcwarning"
             elif subcontent['type'] == 'alert' and subcontent['subtype'] == 'warning':
                 safety_notice = subcontent['text'] + "\lccritical"
-            elif subcontent['type'] == 'alert' and subcontent['subtype'] == 'note':
-                note = subcontent['text']
-                note = note.replace("\n", ".").replace("-", "")
-                step_name = step_name + note + "."
+            elif subcontent['type'] == 'text':
+                text = subcontent['text']
+                text = text.replace("\n", ".").replace("-", "")
+                step_name = step_name + text + "."
+
+        operator_notice = ""
+        print(step["signoffs"])
+        for signoff in step["signoffs"]:
+            role = signoff["operators"]
+            if len(role) == 0:
+                operator_notice += "CE, "
+            elif len(role) == 1:
+                operator_notice += role[0] + ", "
+            elif len(role) > 1:
+                for i in range(len(role)):
+                    operator_notice += role[i] + ", "
+        operator_notice = operator_notice[:-2]
+        print(operator_notice)
+        print("\n")
         
-        latex_row = f"    {section_counter}.{subsection_counter} & {safety_notice} & Gloves & CE & \\checkbox {step_name}\\\\\\hline"
+        latex_row = f"    {section_counter}.{subsection_counter} & {safety_notice} & Gloves & {operator_notice} & \\checkbox {step_name}\\\\\\hline"
         latex_output.append(latex_row)
+
+        operator_notice = ""
 
         subsection_counter += 1
     
