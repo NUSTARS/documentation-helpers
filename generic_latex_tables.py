@@ -15,8 +15,9 @@ def generate_latex_table_fmea(data, table_name, table_ref):
         pre_rac = str(row['Pre-RAC'])
         mitigation = str(row['Mitigation'])
         post_rac = str(row['Post-RAC'])
+        verification = str(row['Verification'])
         
-        latex_row = f"{risk}&{description}&{effect}&\{pre_rac}&{mitigation}&\{post_rac}\\\\\hline "
+        latex_row = f"{risk}&{description}&{effect}&\{pre_rac}&{mitigation}&\{post_rac}&{verification}\\\\\hline "
         latex_row = latex_row.replace('\n', '').replace('%', '\\%').replace('$', '\\$').replace('#', '\\#').replace('^', '\\^')
         latex_table += latex_row
 
@@ -35,7 +36,8 @@ def generate_latex_table_risks(data, table_name, table_ref):
         pre_rac = str(row['Pre-RAC'])
         mitigation = str(row['Mitigation'])
         post_rac = str(row['Post-RAC'])
-        latex_row = f"{risk}&{description}&{effect}&\{pre_rac}&{mitigation}&\{post_rac}\\\\\hline "
+        verification = str(row['Verification'])
+        latex_row = f"{risk}&{description}&{effect}&\{pre_rac}&{mitigation}&\{post_rac}&{verification}\\\\\hline "
         latex_row = latex_row.replace('\n', '').replace('%', '\\%').replace('$', '\\$').replace('#', '\\#').replace('^', '\\^')
         latex_table += latex_row
     
@@ -56,6 +58,7 @@ def generate_latex_table_tests_and_demonstrations(data):
         testing_variable = str(row['Testing Variable'])
         methodology = str(row['Methodology'])
         justification = str(row['Justification'])
+        results = str(row['Results'])
         potential_impact_of_results = str(row['Potential Impact of Results'])
 
         table_ref = f"tab:{name.lower().replace(' ', '-')}"
@@ -70,7 +73,7 @@ def generate_latex_table_tests_and_demonstrations(data):
         latex_row += f"    methodology={{ {methodology} }},\n"
         latex_row += f"    justification={{ {justification} }},\n"
         latex_row += f"    impact={{ {potential_impact_of_results} }},\n"
-        latex_row += f"    results={{ Final test results }},\n"
+        latex_row += f"    results={{ {results} }},\n"
         latex_row += f"    caption={{ {name} }},\n"
         latex_row += f"    label={{{table_ref}}}\n"
         latex_row += f"}}"
@@ -169,9 +172,9 @@ def generate_latex_table_itemizedBudget(data, table_name, table_ref):
         item = str(row['Item'])
         description = str(row['Description'])
         vendor = str(row['Vendor'])
-        unit_cost = str(row['Unit Cost'])
+        unit_cost = f"{row['Unit Cost']:.2f}"
         count = str(row['Count'])
-        total = str(row['Total'])
+        total = f"{row['Total']:.2f}"
         
         latex_row = f"{item}&{description}&{vendor}&{unit_cost}&{count}&{total}\\\\\hline "
         latex_row = latex_row.replace('\n', '').replace('%', '\\%').replace('$', '\\$').replace('#', '\\#').replace('^', '\\^')
