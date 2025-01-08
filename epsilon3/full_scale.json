@@ -1,11 +1,11 @@
 {
     "_id": "zXpyGHRlJSGR2H70eNVqlB",
-    "_rev": "5-95295138755c49c732dfb85d1efb550f",
+    "_rev": "6-9f41333418544c0d024fb98d5c9470ef",
     "code": "USLI25",
     "name": "Launch Procedures",
     "description": "",
     "headers": [],
-    "version": "4",
+    "version": "5",
     "archived": false,
     "editedUserId": "andywehmeyer2025@u.northwestern.edu",
     "sections": [
@@ -740,6 +740,31 @@
             "id": "sctn_m7b4wtAAKw",
             "steps": [
                 {
+                    "id": "step_zQcyAHLmwm",
+                    "name": "Verify the LiPo battery is free of damage.",
+                    "content": [
+                        {
+                            "type": "alert",
+                            "subtype": "caution",
+                            "text": "Damage to the LiPo battery may result in fires or combustion during charging.",
+                            "id": "ct_zJBq64BfwWRmPCYI3aby",
+                            "tokens": [
+                                {
+                                    "type": "text",
+                                    "value": "Damage to the LiPo battery may result in fires or combustion during charging."
+                                }
+                            ]
+                        }
+                    ],
+                    "signoffs": [
+                        {
+                            "id": "so_JZUCT9HfCA",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
                     "id": "step_54BnIka3OB",
                     "name": "Charge LiPo battery.",
                     "content": [],
@@ -947,6 +972,31 @@
         {
             "id": "sctn_YXIfgSbv80",
             "steps": [
+                {
+                    "id": "step_HZIsTuRlYB",
+                    "name": "Verify the LiPo battery is free of damage.",
+                    "content": [
+                        {
+                            "type": "alert",
+                            "subtype": "caution",
+                            "text": "Damage to the LiPo battery may result in fires or combustion during charging.",
+                            "id": "ct_vcyK82MWDbtJAGSAS0IH",
+                            "tokens": [
+                                {
+                                    "type": "text",
+                                    "value": "Damage to the LiPo battery may result in fires or combustion during charging."
+                                }
+                            ]
+                        }
+                    ],
+                    "signoffs": [
+                        {
+                            "id": "so_JZUCT9HfCA",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
                 {
                     "id": "step_EiQpHnHSpP",
                     "name": "Charge LiPo battery.",
@@ -2462,6 +2512,18 @@
                     "dependencies": []
                 },
                 {
+                    "id": "step_O0wKyEeLzN",
+                    "name": "Connect the ADS brake-away cable.",
+                    "content": [],
+                    "signoffs": [
+                        {
+                            "id": "so_AMiJl2KlAe",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
                     "id": "step_bIzoaeudI7",
                     "name": "Slide the avionics coupler into the aft airframe.",
                     "content": [],
@@ -2989,6 +3051,18 @@
                     "dependencies": []
                 },
                 {
+                    "id": "step_G7bOuEBIhI",
+                    "name": "Wait 5:00 minutes before making contact with vehicle.",
+                    "content": [],
+                    "signoffs": [
+                        {
+                            "id": "so_rsI5MjAber",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
                     "id": "step_xzyQReQmw2",
                     "name": "Disarm both altimeters.",
                     "content": [],
@@ -3135,6 +3209,350 @@
                 }
             ],
             "name": "L+1 Vehicle Cleaning"
+        },
+        {
+            "id": "sctn_tlZHWg2jWP",
+            "steps": [
+                {
+                    "id": "step_nNt9AHV3q9",
+                    "name": "Troubleshooting: Ignition Failure",
+                    "content": [],
+                    "signoffs": [
+                        {
+                            "id": "so_wJdaUZTSzk",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_ukZSHR3P73",
+                    "name": "Wait for all launch vehicles remaining on the pad to launch or cycle.",
+                    "content": [],
+                    "signoffs": [
+                        {
+                            "id": "so_qTIuinlGG6",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_lNTGiKO2Y7",
+                    "name": "With RSO approval, remove the igniter.",
+                    "content": [],
+                    "signoffs": [
+                        {
+                            "id": "so_doOyqTb2H9",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_HXhSmOXtsb",
+                    "name": "Return to the previous checklist to install a new igniter.",
+                    "content": [
+                        {
+                            "type": "jump_to",
+                            "jumpToId": "step_wNlWIzLf7B",
+                            "id": "ct_HeE4rItlZbaDodNDo0d6"
+                        }
+                    ],
+                    "signoffs": [
+                        {
+                            "id": "so_VxgHvfKyKb",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_hEhFSPNVWF",
+                    "name": "Troubleshooting: Motor Failure",
+                    "content": [],
+                    "signoffs": [
+                        {
+                            "id": "so_0a5qDaFFWj",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_mAW3V4x0Ht",
+                    "name": "Wait for all launch vehicles remaining on the pad to launch or cycle.",
+                    "content": [],
+                    "signoffs": [
+                        {
+                            "id": "so_BJV29gd4Go",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_9PpGlMGt9i",
+                    "name": "With RSO approval, approach the vehicle. ",
+                    "content": [],
+                    "signoffs": [
+                        {
+                            "id": "so_z7eJI2hByL",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_hT8PUG2ddE",
+                    "name": "Remove the igniter.",
+                    "content": [],
+                    "signoffs": [
+                        {
+                            "id": "so_4OG4A83lUJ",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_ptjx8FRhor",
+                    "name": "Power off the primary and backup computers.",
+                    "content": [
+                        {
+                            "type": "alert",
+                            "subtype": "warning",
+                            "text": "Explosives present. Power off computers before further moving or adjusting the vehicle to prevent premature ejection charge detonation.",
+                            "id": "ct_Q8FqUhjOEMjgvuYrOF26",
+                            "tokens": [
+                                {
+                                    "type": "text",
+                                    "value": "Explosives present. Power off computers before further moving or adjusting the vehicle to prevent premature ejection charge detonation."
+                                }
+                            ]
+                        }
+                    ],
+                    "signoffs": [
+                        {
+                            "id": "so_LTEXlZ2Dm6",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_1oRJkxphHw",
+                    "name": "Remove launch vehicle from launch pad and return to the work area.",
+                    "content": [],
+                    "signoffs": [
+                        {
+                            "id": "so_escwDkfcXf",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_keY31Puum8",
+                    "name": "Remove motor and soak it in water to minimize ignition risk.",
+                    "content": [
+                        {
+                            "type": "alert",
+                            "subtype": "warning",
+                            "text": "Explosives present with the potential to reignite. Handle with extreme caution.",
+                            "id": "ct_jIkqA9TJuwDoN2FRRwqy",
+                            "tokens": [
+                                {
+                                    "type": "text",
+                                    "value": "Explosives present with the potential to reignite. Handle with extreme caution."
+                                }
+                            ]
+                        }
+                    ],
+                    "signoffs": [
+                        {
+                            "id": "so_DYtGxm5IRs",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_zvBPKhNlCA",
+                    "name": "If possible, prepare another motor and return to the motor integration step.",
+                    "content": [
+                        {
+                            "type": "jump_to",
+                            "jumpToId": "step_ctHuE8gNU6",
+                            "id": "ct_qLk4j52tUZgEHW895SwK"
+                        }
+                    ],
+                    "signoffs": [
+                        {
+                            "id": "so_rxsN9s5AZe",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_NPKJthOTin",
+                    "name": "Troubleshooting: Fin Failure",
+                    "content": [],
+                    "signoffs": [
+                        {
+                            "id": "so_LGi88MFoUW",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_ehjUY51cuC",
+                    "name": "Remove damaged fin(s) and replace with fin(s)",
+                    "content": [],
+                    "signoffs": [
+                        {
+                            "id": "so_sOHQYpbbaS",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_TT58GIk2Lu",
+                    "name": "Troubleshooting: STEMCRaFT Electronic Failure",
+                    "content": [],
+                    "signoffs": [
+                        {
+                            "id": "so_qLebLIB8BK",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_XI8JLB5fh4",
+                    "name": "Remove the STEMCRaFT payload.",
+                    "content": [],
+                    "signoffs": [
+                        {
+                            "id": "so_9Bim2j5gf0",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_YUErudR9rV",
+                    "name": "Remove nose cone tip to access sled and electronics. ",
+                    "content": [],
+                    "signoffs": [
+                        {
+                            "id": "so_SfHSbp9Rzp",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_tcDK3qOa3k",
+                    "name": "Power cycle payload and verify battery voltage and electronic connections.",
+                    "content": [],
+                    "signoffs": [
+                        {
+                            "id": "so_SVh3HxN5tK",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_3UW7fp6gQX",
+                    "name": "When complete, return to previous step to reassembly STEMCRaFT payload.",
+                    "content": [
+                        {
+                            "type": "jump_to",
+                            "jumpToId": "sctn_m7b4wtAAKw",
+                            "id": "ct_SsSSPxHiIKLkW9hijG6F"
+                        }
+                    ],
+                    "signoffs": [
+                        {
+                            "id": "so_mLAJwvk8bU",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_k1uTqVt5LR",
+                    "name": "Troubleshooting: ADS Electronic Failure",
+                    "content": [],
+                    "signoffs": [
+                        {
+                            "id": "so_dFJcPBSJFu",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_yNv2zfaaE0",
+                    "name": "Remove the ADS payload.",
+                    "content": [],
+                    "signoffs": [
+                        {
+                            "id": "so_tuiZYFg5zl",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_BvzTPOxnmv",
+                    "name": "Remove forward bulkhead fasteners to access sled and electronics.",
+                    "content": [],
+                    "signoffs": [
+                        {
+                            "id": "so_0R6Wh12n3K",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_vKHkr1N8W0",
+                    "name": "Power cycle payload and verify battery voltage and electronic connections.",
+                    "content": [],
+                    "signoffs": [
+                        {
+                            "id": "so_H9wxzZgOhf",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_8W4ANCLU52",
+                    "name": "When complete, return to previous step to reassembly ADS payload.",
+                    "content": [
+                        {
+                            "type": "jump_to",
+                            "jumpToId": "sctn_YXIfgSbv80",
+                            "id": "ct_6d4GlsMvouOQKPVixTwK"
+                        }
+                    ],
+                    "signoffs": [
+                        {
+                            "id": "so_nw5o5kDb3h",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                }
+            ],
+            "name": "Troubleshooting (Catchall)"
         }
     ],
     "owner": "andywehmeyer2025@u.northwestern.edu",
@@ -3170,11 +3588,11 @@
     ],
     "end_run_signoffs_groups": [],
     "state": "released",
-    "editedAt": "2025-01-07T22:40:10.294Z",
+    "editedAt": "2025-01-08T06:29:19.446Z",
     "skip_step_enabled": true,
     "repeat_step_enabled": true,
     "step_suggest_edits_enabled": true,
-    "procedure_rev_num": 524,
+    "procedure_rev_num": 578,
     "comments": [],
     "project_name": "NASA Student Launch 2024-2025",
     "project_code": "USLI25",
