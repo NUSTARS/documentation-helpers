@@ -169,6 +169,8 @@ def generate_latex_table_itemizedBudget(data, table_name, table_ref):
     # Iterate through each row in the DataFrame and convert to LaTeX format
     for index, row in data.iterrows():
 
+        # print(row['Total'])
+
         item = str(row['Item'])
         description = str(row['Description'])
         vendor = str(row['Vendor'])
@@ -297,7 +299,3 @@ for file in files:
 # | |              | || |              | || |              | || |              | || |              | |
 # | '--------------' || '--------------' || '--------------' || '--------------' || '--------------' |
 #  '----------------'  '----------------'  '----------------'  '----------------'  '----------------' 
-
-# change the file_path_header to be appropriate for your computer
-# download the files you wish to generate -- do not modify the file names
-# run

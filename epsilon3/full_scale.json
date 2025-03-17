@@ -1,11 +1,11 @@
 {
     "_id": "zXpyGHRlJSGR2H70eNVqlB",
-    "_rev": "7-27090bdabe72ae5a8eccb2574cdeb6d7",
+    "_rev": "10-b8a158be6eac90bd571e30c4c06e8050",
     "code": "USLI25",
     "name": "Launch Procedures",
-    "description": "",
+    "description": "Preparation, integration, and launch procedures for the 2025 USLI season. ",
     "headers": [],
-    "version": "6 (CDR Part II)",
+    "version": "9",
     "archived": false,
     "editedUserId": "andywehmeyer2025@u.northwestern.edu",
     "sections": [
@@ -164,50 +164,6 @@
                     "signoffs": [
                         {
                             "id": "so_Ul0foZqamJ",
-                            "operators": []
-                        }
-                    ],
-                    "dependencies": []
-                },
-                {
-                    "id": "step_JAaho10oId",
-                    "name": "Cover the 3 ft closest to the avionics bay with a shock cord protector.",
-                    "content": [
-                        {
-                            "type": "alert",
-                            "subtype": "caution",
-                            "text": "Nomex should cover the majority of the area to prevent black powder combustion from reaching parts of the parachute",
-                            "id": "ct_apanV597zKRyvHoA8ijp"
-                        }
-                    ],
-                    "signoffs": [
-                        {
-                            "id": "so_JwoHAAxohT",
-                            "operators": []
-                        }
-                    ],
-                    "dependencies": []
-                },
-                {
-                    "id": "step_fHLX3KQcH1",
-                    "name": "Apply duct tape to both ends of the shock cord protector.",
-                    "content": [
-                        {
-                            "type": "alert",
-                            "subtype": "caution",
-                            "text": "If Nomex slips, the region holding the parachute may be exposed to black powder combustion",
-                            "id": "ct_XAE08aKQvu2jqm7ExZdt",
-                            "tokens": [
-                                {
-                                    "type": "text",
-                                    "value": "If Nomex slips, the region holding the parachute may be exposed to black powder combustion"
-                                }
-                            ]
-                        }
-                    ],
-                    "signoffs": [
-                        {
-                            "id": "so_Bxd2jYeMF0",
                             "operators": []
                         }
                     ],
@@ -394,7 +350,7 @@
                 },
                 {
                     "id": "step_oW2dn3APjP",
-                    "name": "Wrap parachute with the small square of nomex",
+                    "name": "Wrap parachute with the large square of nomex.",
                     "content": [
                         {
                             "type": "alert",
@@ -444,14 +400,8 @@
                 },
                 {
                     "id": "step_lKEMi1dw11",
-                    "name": "Verify that the drogue shock cord has a loop for parachute attachment.",
+                    "name": "Verify that the main shock cord has a loop for parachute attachment.",
                     "content": [
-                        {
-                            "type": "alert",
-                            "subtype": "note",
-                            "text": "The parachute should be connected roughly 2/3 along the shock cord from the forward end.",
-                            "id": "ct_NMreoXBaBqriOoAgYZZY"
-                        },
                         {
                             "type": "alert",
                             "subtype": "caution",
@@ -462,44 +412,6 @@
                     "signoffs": [
                         {
                             "id": "so_Ul0foZqamJ",
-                            "operators": []
-                        }
-                    ],
-                    "dependencies": []
-                },
-                {
-                    "id": "step_gVU75xR816",
-                    "name": "Cover the 3 ft closest to the avionics bay with a shock cord protector.",
-                    "content": [
-                        {
-                            "type": "alert",
-                            "subtype": "caution",
-                            "text": "Nomex should cover the majority of the area to prevent black powder combustion from reaching parts of the parachute",
-                            "id": "ct_Ze1QGfGadeC74pzJb7HW"
-                        }
-                    ],
-                    "signoffs": [
-                        {
-                            "id": "so_JwoHAAxohT",
-                            "operators": []
-                        }
-                    ],
-                    "dependencies": []
-                },
-                {
-                    "id": "step_BoJ77HiAN4",
-                    "name": "Apply duct tape to both ends of the shock cord protector.",
-                    "content": [
-                        {
-                            "type": "alert",
-                            "subtype": "caution",
-                            "text": "If Nomex slips, the region holding the parachute may be exposed to black powder ccombustion",
-                            "id": "ct_VmHdhsTA7mZmfR0wspS4"
-                        }
-                    ],
-                    "signoffs": [
-                        {
-                            "id": "so_Bxd2jYeMF0",
                             "operators": []
                         }
                     ],
@@ -652,7 +564,7 @@
                 },
                 {
                     "id": "step_sEzIo5wEn2",
-                    "name": "Construct a 3.5g charge and label it \"MAIN -- PRIMARY\"",
+                    "name": "Construct a 5g charge and label it \"MAIN -- PRIMARY\"",
                     "content": [],
                     "signoffs": [
                         {
@@ -665,7 +577,7 @@
                 },
                 {
                     "id": "step_qraGnmFDPs",
-                    "name": "Construct a 4.0g charge and label it \"MAIN -- BACKUP\"",
+                    "name": "Construct a 6.25g charge and label it \"MAIN -- BACKUP\"",
                     "content": [],
                     "signoffs": [
                         {
@@ -677,7 +589,7 @@
                 },
                 {
                     "id": "step_JqnR0rZpAS",
-                    "name": "Construct a 3.5g charge and label it \"DROGUE -- PRIMARY\"",
+                    "name": "Construct a 2.5g charge and label it \"DROGUE -- PRIMARY\"",
                     "content": [],
                     "signoffs": [
                         {
@@ -689,7 +601,7 @@
                 },
                 {
                     "id": "step_iYnD5ShfXB",
-                    "name": "Construct a 4.0g charge and label it \"DROGUE -- BACKUP\"",
+                    "name": "Construct a 3.5g charge and label it \"DROGUE -- BACKUP\"",
                     "content": [],
                     "signoffs": [
                         {
@@ -735,521 +647,6 @@
                 }
             ],
             "name": "L-1 Ejection Charge Preparation"
-        },
-        {
-            "id": "sctn_m7b4wtAAKw",
-            "steps": [
-                {
-                    "id": "step_zQcyAHLmwm",
-                    "name": "Verify the LiPo battery is free of damage.",
-                    "content": [
-                        {
-                            "type": "alert",
-                            "subtype": "caution",
-                            "text": "Damage to the LiPo battery may result in fires or combustion during charging.",
-                            "id": "ct_zJBq64BfwWRmPCYI3aby",
-                            "tokens": [
-                                {
-                                    "type": "text",
-                                    "value": "Damage to the LiPo battery may result in fires or combustion during charging."
-                                }
-                            ]
-                        }
-                    ],
-                    "signoffs": [
-                        {
-                            "id": "so_JZUCT9HfCA",
-                            "operators": []
-                        }
-                    ],
-                    "dependencies": []
-                },
-                {
-                    "id": "step_54BnIka3OB",
-                    "name": "Charge LiPo battery.",
-                    "content": [],
-                    "signoffs": [
-                        {
-                            "id": "so_tiFrmH6z6I",
-                            "operators": []
-                        }
-                    ],
-                    "dependencies": []
-                },
-                {
-                    "id": "step_prSrem1Mgz",
-                    "name": "Measure and record battery voltage.",
-                    "content": [
-                        {
-                            "type": "input",
-                            "name": "Voltage",
-                            "inputType": "number",
-                            "dateTimeType": "date",
-                            "rule": {
-                                "value": "",
-                                "op": ""
-                            },
-                            "options": [],
-                            "list": "",
-                            "include_in_summary": true,
-                            "external_item_type": "",
-                            "external_search_type": {
-                                "data_type": "",
-                                "filter_options": []
-                            },
-                            "id": "ct_8Kn6graEOsgZCcskBqRA",
-                            "units": "V"
-                        }
-                    ],
-                    "signoffs": [
-                        {
-                            "id": "so_KIwzpOj9UE",
-                            "operators": []
-                        }
-                    ],
-                    "dependencies": []
-                },
-                {
-                    "id": "step_MkYIXU2jsp",
-                    "name": "Secure LiPo Battery in the STEMCRaFT using the 2 hook and loop ties.",
-                    "content": [],
-                    "signoffs": [
-                        {
-                            "id": "so_zDGYGkSMxP",
-                            "operators": []
-                        }
-                    ],
-                    "dependencies": []
-                },
-                {
-                    "id": "step_9v4xbg3vrA",
-                    "name": "Verify the nose cone bulkhead is secured to the threaded rod using a 1/4-20 nut and washer on both sides.",
-                    "content": [
-                        {
-                            "type": "alert",
-                            "subtype": "caution",
-                            "text": "Improper axial alignment along the threaded rod will make integration impossible.",
-                            "id": "ct_v5jPSdDD7kBGmX9UwUe5",
-                            "tokens": [
-                                {
-                                    "type": "text",
-                                    "value": "Improper axial alignment along the threaded rod will make integration impossible."
-                                }
-                            ]
-                        }
-                    ],
-                    "signoffs": [
-                        {
-                            "id": "so_0AK7hLpOz3",
-                            "operators": []
-                        }
-                    ],
-                    "dependencies": []
-                },
-                {
-                    "id": "step_fKdlANnxM6",
-                    "name": "Verify that the STEMCRaFT is secured to the threaded rod using an additional 1/4-20 nut and washer on its forward end.",
-                    "content": [
-                        {
-                            "type": "alert",
-                            "subtype": "caution",
-                            "text": "Improper axial alignment along the threaded rod will make integration impossible.",
-                            "id": "ct_yG01maYPaY7SY3Jr8710",
-                            "tokens": [
-                                {
-                                    "type": "text",
-                                    "value": "Improper axial alignment along the threaded rod will make integration impossible."
-                                }
-                            ]
-                        }
-                    ],
-                    "signoffs": [
-                        {
-                            "id": "so_pUYrfcteNK",
-                            "operators": []
-                        }
-                    ],
-                    "dependencies": []
-                },
-                {
-                    "id": "step_Ke5f6VAOoj",
-                    "name": "Connect LiPo battery connector to the STEMCRaFT PCB.",
-                    "content": [
-                        {
-                            "type": "alert",
-                            "subtype": "caution",
-                            "text": "Once the battery is connected, the STEMCRaFT will be powered on until payload preparation is complete.",
-                            "id": "ct_MaW7UOGe5AqKFsFkgL10",
-                            "tokens": [
-                                {
-                                    "type": "text",
-                                    "value": "Once the battery is connected, the STEMCRaFT will be powered on until payload preparation is complete."
-                                }
-                            ]
-                        }
-                    ],
-                    "signoffs": [
-                        {
-                            "id": "so_zUp92bIRZX",
-                            "operators": []
-                        }
-                    ],
-                    "dependencies": []
-                },
-                {
-                    "id": "step_2X00uGn9dN",
-                    "name": "Preform the IMU calibration sequence until the buzzer indicates that calibration is complete.",
-                    "content": [],
-                    "signoffs": [
-                        {
-                            "id": "so_5loEubmNfl",
-                            "operators": []
-                        }
-                    ],
-                    "dependencies": []
-                },
-                {
-                    "id": "step_1qfvpgJghB",
-                    "name": "Slide the STEMCRaFT assembly into the nose cone until the bulkhead lip makes contact with the end of the coupler.",
-                    "content": [],
-                    "signoffs": [
-                        {
-                            "id": "so_SEbWx6P3c3",
-                            "operators": []
-                        }
-                    ],
-                    "dependencies": []
-                },
-                {
-                    "id": "step_Uu2n2TiwaD",
-                    "name": "Power off the STEMCRaFT by inserting the RBF tag and twisting the subassembly as necessary.",
-                    "content": [],
-                    "signoffs": [
-                        {
-                            "id": "so_npo5SoII1B",
-                            "operators": []
-                        }
-                    ],
-                    "dependencies": []
-                },
-                {
-                    "id": "step_1tk22QZ8Fp",
-                    "name": "Attach the nose cone tip to the forward end of the threaded rod until it bottoms out.",
-                    "content": [],
-                    "signoffs": [
-                        {
-                            "id": "so_oXC9NyDjka",
-                            "operators": []
-                        }
-                    ],
-                    "dependencies": []
-                },
-                {
-                    "id": "step_97WwXkZ5Db",
-                    "name": "Set the STEMCRaFT Payload aside to await vehicle integration.",
-                    "content": [],
-                    "signoffs": [
-                        {
-                            "id": "so_JVnxSRg0Fc",
-                            "operators": [
-                                "PESTL",
-                                "PMSTL",
-                                "CE"
-                            ]
-                        },
-                        {
-                            "id": "so_eduzhzpI9o",
-                            "operators": [
-                                "SO"
-                            ]
-                        }
-                    ],
-                    "dependencies": []
-                }
-            ],
-            "name": "L-1 STEMCRaFT Payload Preparation"
-        },
-        {
-            "id": "sctn_YXIfgSbv80",
-            "steps": [
-                {
-                    "id": "step_HZIsTuRlYB",
-                    "name": "Verify the LiPo battery is free of damage.",
-                    "content": [
-                        {
-                            "type": "alert",
-                            "subtype": "caution",
-                            "text": "Damage to the LiPo battery may result in fires or combustion during charging.",
-                            "id": "ct_vcyK82MWDbtJAGSAS0IH",
-                            "tokens": [
-                                {
-                                    "type": "text",
-                                    "value": "Damage to the LiPo battery may result in fires or combustion during charging."
-                                }
-                            ]
-                        }
-                    ],
-                    "signoffs": [
-                        {
-                            "id": "so_JZUCT9HfCA",
-                            "operators": []
-                        }
-                    ],
-                    "dependencies": []
-                },
-                {
-                    "id": "step_EiQpHnHSpP",
-                    "name": "Charge LiPo battery.",
-                    "content": [],
-                    "signoffs": [
-                        {
-                            "id": "so_aqTmEmVxQt",
-                            "operators": []
-                        }
-                    ],
-                    "dependencies": []
-                },
-                {
-                    "id": "step_hMAgf0cuXd",
-                    "name": "Measure and record the LiPo voltage.",
-                    "content": [
-                        {
-                            "type": "input",
-                            "name": "LiPo Voltage",
-                            "inputType": "number",
-                            "units": "Volts",
-                            "dateTimeType": "date",
-                            "rule": {
-                                "value": "",
-                                "op": ""
-                            },
-                            "options": [],
-                            "list": "",
-                            "include_in_summary": true,
-                            "external_item_type": "",
-                            "external_search_type": {
-                                "data_type": "",
-                                "filter_options": []
-                            },
-                            "id": "ct_p3BhqOKSMmx7M5MoUer4"
-                        }
-                    ],
-                    "signoffs": [
-                        {
-                            "id": "so_n7EnFEqlrK",
-                            "operators": []
-                        }
-                    ],
-                    "dependencies": []
-                },
-                {
-                    "id": "step_X0Y0wtlTPD",
-                    "name": "Secure LiPo Battery in the ADS using the 2 hook and loop ties.",
-                    "content": [],
-                    "signoffs": [
-                        {
-                            "id": "so_eYosOZuVpZ",
-                            "operators": []
-                        }
-                    ],
-                    "headers": [],
-                    "dependencies": []
-                },
-                {
-                    "id": "step_mcfavUKoZ6",
-                    "name": "Verify that the forward u-bolt is secured to the forward bulkhead.",
-                    "content": [],
-                    "signoffs": [
-                        {
-                            "id": "so_X5nne8VpWr",
-                            "operators": []
-                        }
-                    ],
-                    "dependencies": []
-                },
-                {
-                    "id": "step_COiAlS5OfW",
-                    "name": "Verify that the threaded rods are secured to the aft bulkhead using 10-32 nuts and washers on both sides",
-                    "content": [
-                        {
-                            "type": "alert",
-                            "subtype": "caution",
-                            "text": "Improper axial alignment along the threaded rods will make integration impossible.",
-                            "id": "ct_pecZazh2erAoGM2Ev1b2",
-                            "tokens": [
-                                {
-                                    "type": "text",
-                                    "value": "Improper axial alignment along the threaded rods will make integration impossible."
-                                }
-                            ]
-                        }
-                    ],
-                    "signoffs": [
-                        {
-                            "id": "so_fvYzX6DkpO",
-                            "operators": []
-                        }
-                    ],
-                    "dependencies": []
-                },
-                {
-                    "id": "step_QG6qtLacZf",
-                    "name": "Verify that the ADS mechanical and electronics mounting plates are secured to the threaded rods using 10-32 hardware.",
-                    "content": [
-                        {
-                            "type": "alert",
-                            "subtype": "caution",
-                            "text": "Improper axial alignment along the threaded rods will make integration impossible.",
-                            "id": "ct_VRzq1LQlIvarZfA4mBPe",
-                            "tokens": [
-                                {
-                                    "type": "text",
-                                    "value": "Improper axial alignment along the threaded rods will make integration impossible."
-                                }
-                            ]
-                        }
-                    ],
-                    "signoffs": [
-                        {
-                            "id": "so_KaTNx106Pp",
-                            "operators": []
-                        }
-                    ],
-                    "dependencies": []
-                },
-                {
-                    "id": "step_vN9CF9S8ew",
-                    "name": "Verify that the aft stud is secured to the aft bulkhead assembly.",
-                    "content": [],
-                    "signoffs": [
-                        {
-                            "id": "so_mPS630lKNZ",
-                            "operators": []
-                        }
-                    ],
-                    "dependencies": []
-                },
-                {
-                    "id": "step_fkHgQ7ndiN",
-                    "name": "Connect LiPo battery connector to the ADS PCB.",
-                    "content": [
-                        {
-                            "type": "alert",
-                            "subtype": "caution",
-                            "text": "Once the battery is connected, the ADS will be powered on until payload preparation is complete.",
-                            "id": "ct_OkFJ6ID102Hzd1iYpQxJ",
-                            "tokens": [
-                                {
-                                    "type": "text",
-                                    "value": "Once the battery is connected, the ADS will be powered on until payload preparation is complete."
-                                }
-                            ]
-                        }
-                    ],
-                    "signoffs": [
-                        {
-                            "id": "so_fKAYKrZq1E",
-                            "operators": []
-                        }
-                    ],
-                    "dependencies": []
-                },
-                {
-                    "id": "step_HN9Rsw4Piz",
-                    "name": "Preform the IMU calibration sequence until the buzzer indicates that calibration is complete.",
-                    "content": [],
-                    "signoffs": [
-                        {
-                            "id": "so_eKZYiz0YbE",
-                            "operators": []
-                        }
-                    ],
-                    "dependencies": []
-                },
-                {
-                    "id": "step_zglSy7kQb9",
-                    "name": "Slide aft bulkhead assembly into the ADS coupler until the bulkhead lip makes contact with the end of the coupler. ",
-                    "content": [],
-                    "signoffs": [
-                        {
-                            "id": "so_N6OHmHs2qa",
-                            "operators": []
-                        }
-                    ],
-                    "dependencies": []
-                },
-                {
-                    "id": "step_f7e7ZyjpNG",
-                    "name": "Power off the ADS by inserting the RBF tag and twisting the subassembly as necessary.",
-                    "content": [],
-                    "signoffs": [
-                        {
-                            "id": "so_24Oh4ukyOt",
-                            "operators": []
-                        }
-                    ],
-                    "dependencies": []
-                },
-                {
-                    "id": "step_0aMvNi7rm1",
-                    "name": "Insert 4x 1/4-20 locating hardware.",
-                    "content": [],
-                    "signoffs": [
-                        {
-                            "id": "so_TlwdmKaRNV",
-                            "operators": []
-                        }
-                    ],
-                    "dependencies": []
-                },
-                {
-                    "id": "step_CrCAix9b9G",
-                    "name": "Cap the coupler using the forward bulkhead and secure it to the threaded rods using 10-32 nuts and washers.",
-                    "content": [],
-                    "signoffs": [
-                        {
-                            "id": "so_vJr30bFJ4J",
-                            "operators": []
-                        }
-                    ],
-                    "dependencies": []
-                },
-                {
-                    "id": "step_SJFZrQ8paC",
-                    "name": "Verify that the forward nuts are secured.",
-                    "content": [],
-                    "signoffs": [
-                        {
-                            "id": "so_Jo6fM2ehD7",
-                            "operators": []
-                        }
-                    ],
-                    "dependencies": []
-                },
-                {
-                    "id": "step_UY7VGkmAAn",
-                    "name": "Set the ADS payload aside to await vehicle integration.",
-                    "content": [],
-                    "signoffs": [
-                        {
-                            "id": "so_JVnxSRg0Fc",
-                            "operators": [
-                                "PMSTL",
-                                "PESTL",
-                                "CE"
-                            ]
-                        },
-                        {
-                            "id": "so_6nw8gvdiV8",
-                            "operators": [
-                                "SO"
-                            ]
-                        }
-                    ],
-                    "dependencies": []
-                }
-            ],
-            "name": "L-1 ADS Payload Preparation"
         },
         {
             "id": "sctn_ZPnMmHccRK",
@@ -1472,7 +869,7 @@
                     "dependencies": []
                 }
             ],
-            "name": "L-1 Electronics Checkout"
+            "name": "L-1 Avionics Checkout"
         },
         {
             "id": "sctn_agRe1g2ak5",
@@ -1641,7 +1038,895 @@
             "name": "L-1 Vehicle Inspection"
         },
         {
-            "id": "sctn_sKP1gfrPGq",
+            "id": "sctn_m7b4wtAAKw",
+            "steps": [
+                {
+                    "id": "step_zQcyAHLmwm",
+                    "name": "Verify the LiPo battery is free of damage.",
+                    "content": [
+                        {
+                            "type": "alert",
+                            "subtype": "caution",
+                            "text": "Damage to the LiPo battery may result in fires or combustion during charging.",
+                            "id": "ct_zJBq64BfwWRmPCYI3aby",
+                            "tokens": [
+                                {
+                                    "type": "text",
+                                    "value": "Damage to the LiPo battery may result in fires or combustion during charging."
+                                }
+                            ]
+                        }
+                    ],
+                    "signoffs": [
+                        {
+                            "id": "so_JZUCT9HfCA",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_54BnIka3OB",
+                    "name": "Charge LiPo battery.",
+                    "content": [],
+                    "signoffs": [
+                        {
+                            "id": "so_tiFrmH6z6I",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_prSrem1Mgz",
+                    "name": "Measure and record battery voltage.",
+                    "content": [
+                        {
+                            "type": "input",
+                            "name": "Voltage",
+                            "inputType": "number",
+                            "dateTimeType": "date",
+                            "rule": {
+                                "value": "",
+                                "op": ""
+                            },
+                            "options": [],
+                            "list": "",
+                            "include_in_summary": true,
+                            "external_item_type": "",
+                            "external_search_type": {
+                                "data_type": "",
+                                "filter_options": []
+                            },
+                            "id": "ct_8Kn6graEOsgZCcskBqRA",
+                            "units": "V"
+                        },
+                        {
+                            "type": "alert",
+                            "subtype": "note",
+                            "text": "The expected range is 7.2-7.4V.",
+                            "id": "ct_TXKBFwMDe0BKkvYiskkE",
+                            "tokens": [
+                                {
+                                    "type": "text",
+                                    "value": "The expected range is 7.2-7.4V."
+                                }
+                            ]
+                        }
+                    ],
+                    "signoffs": [
+                        {
+                            "id": "so_KIwzpOj9UE",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_MkYIXU2jsp",
+                    "name": "Secure LiPo Battery in the STEMCRaFT using the hooks and loop ties.",
+                    "content": [],
+                    "signoffs": [
+                        {
+                            "id": "so_zDGYGkSMxP",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_9v4xbg3vrA",
+                    "name": "Verify the nose cone bulkhead is secured to the threaded rod using a 1/4-20 nut and washer on both sides.",
+                    "content": [
+                        {
+                            "type": "alert",
+                            "subtype": "caution",
+                            "text": "Improper axial alignment along the threaded rod will make integration impossible.",
+                            "id": "ct_v5jPSdDD7kBGmX9UwUe5",
+                            "tokens": [
+                                {
+                                    "type": "text",
+                                    "value": "Improper axial alignment along the threaded rod will make integration impossible."
+                                }
+                            ]
+                        }
+                    ],
+                    "signoffs": [
+                        {
+                            "id": "so_0AK7hLpOz3",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_fKdlANnxM6",
+                    "name": "Verify that the STEMCRaFT is secured to the threaded rod using an additional 1/4-20 nut and washer on its forward end.",
+                    "content": [
+                        {
+                            "type": "alert",
+                            "subtype": "caution",
+                            "text": "Improper axial alignment along the threaded rod will make integration impossible.",
+                            "id": "ct_yG01maYPaY7SY3Jr8710",
+                            "tokens": [
+                                {
+                                    "type": "text",
+                                    "value": "Improper axial alignment along the threaded rod will make integration impossible."
+                                }
+                            ]
+                        }
+                    ],
+                    "signoffs": [
+                        {
+                            "id": "so_pUYrfcteNK",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_Ke5f6VAOoj",
+                    "name": "Connect LiPo battery connector to the STEMCRaFT PCB. Listen for buzzer.",
+                    "content": [
+                        {
+                            "type": "alert",
+                            "subtype": "caution",
+                            "text": "Once the battery is connected, the STEMCRaFT will be powered on until payload preparation is complete.",
+                            "id": "ct_MaW7UOGe5AqKFsFkgL10",
+                            "tokens": [
+                                {
+                                    "type": "text",
+                                    "value": "Once the battery is connected, the STEMCRaFT will be powered on until payload preparation is complete."
+                                }
+                            ]
+                        }
+                    ],
+                    "signoffs": [
+                        {
+                            "id": "so_zUp92bIRZX",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_2X00uGn9dN",
+                    "name": "Preform the IMU calibration sequence until the buzzer indicates that calibration is STORED and complete.",
+                    "content": [
+                        {
+                            "type": "alert",
+                            "subtype": "note",
+                            "text": "1. Pick up the PCB and wave it around and turn it in a circular motion for 5-7 seconds\n\n2. Place the IMU on a flat surface making the direction on top 'up'\n     - Leave for 5 seconds\n     - Make sure the left side of the PCB stays on the table and tilt the right side is lifted 45 degrees (rocking the boat)\n     - Leave for 5 seconds\n     - Make sure the right side of the PCB stays on the table and tilt the left side is lifted 45 degrees (rocking the boat)\n     - Leave for 5 seconds\n     - Make sure the back side (side closest to you) of the PCB stays on the table and tilt the front side (furthest away) is lifted 45 degrees (rocking the boat)\n     - Leave for 5 seconds\n\n3. Now flip the PCB upside down and start the tilting procedure again (rocking the Australian boat)\n     - Leave for 5 seconds\n     - Make sure the left side of the PCB stays on the table and tilt the right side is lifted 45 degrees (rocking the boat)\n     - Leave for 5 seconds\n     - Make sure the right side of the PCB stays on the table and tilt the left side is lifted 45 degrees (rocking the boat)\n     - Leave for 5 seconds\n     - Make sure the back side (side closest to you) of the PCB stays on the table and tilt the front side (furthest away) is lifted 45 degrees (rocking the boat)\n     - Leave for 5 seconds\n\n4. Flip the PCB again so that the IMU is in the 'up' position and leave on a flat surface for 5 seconds",
+                            "id": "ct_9nkTMp74MH9OF8HwmeT8",
+                            "tokens": [
+                                {
+                                    "type": "text",
+                                    "value": "1. Pick up the PCB and wave it around and turn it in a circular motion for 5-7 seconds\n\n2. Place the IMU on a flat surface making the direction on top 'up'\n     - Leave for 5 seconds\n     - Make sure the left side of the PCB stays on the table and tilt the right side is lifted 45 degrees (rocking the boat)\n     - Leave for 5 seconds\n     - Make sure the right side of the PCB stays on the table and tilt the left side is lifted 45 degrees (rocking the boat)\n     - Leave for 5 seconds\n     - Make sure the back side (side closest to you) of the PCB stays on the table and tilt the front side (furthest away) is lifted 45 degrees (rocking the boat)\n     - Leave for 5 seconds\n\n3. Now flip the PCB upside down and start the tilting procedure again (rocking the Australian boat)\n     - Leave for 5 seconds\n     - Make sure the left side of the PCB stays on the table and tilt the right side is lifted 45 degrees (rocking the boat)\n     - Leave for 5 seconds\n     - Make sure the right side of the PCB stays on the table and tilt the left side is lifted 45 degrees (rocking the boat)\n     - Leave for 5 seconds\n     - Make sure the back side (side closest to you) of the PCB stays on the table and tilt the front side (furthest away) is lifted 45 degrees (rocking the boat)\n     - Leave for 5 seconds\n\n4. Flip the PCB again so that the IMU is in the 'up' position and leave on a flat surface for 5 seconds"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "alert",
+                            "subtype": "caution",
+                            "text": "The flat surface should be as flat as possible and undisturbed when calibrating.",
+                            "id": "ct_JgiWm3wioBgd76jjE9Am",
+                            "tokens": [
+                                {
+                                    "type": "text",
+                                    "value": "The flat surface should be as flat as possible and undisturbed when calibrating."
+                                }
+                            ]
+                        }
+                    ],
+                    "signoffs": [
+                        {
+                            "id": "so_5loEubmNfl",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_1qfvpgJghB",
+                    "name": "Slide the STEMCRaFT assembly into the nose cone until the bulkhead lip makes contact with the end of the coupler.",
+                    "content": [],
+                    "signoffs": [
+                        {
+                            "id": "so_SEbWx6P3c3",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_Uu2n2TiwaD",
+                    "name": "Power off the STEMCRaFT by inserting the RBF tag and twisting the subassembly as necessary.",
+                    "content": [],
+                    "signoffs": [
+                        {
+                            "id": "so_npo5SoII1B",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_1tk22QZ8Fp",
+                    "name": "Attach the nose cone tip to the forward end of the threaded rod.",
+                    "content": [],
+                    "signoffs": [
+                        {
+                            "id": "so_oXC9NyDjka",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_97WwXkZ5Db",
+                    "name": "Set the STEMCRaFT Payload aside to await vehicle integration.",
+                    "content": [],
+                    "signoffs": [
+                        {
+                            "id": "so_JVnxSRg0Fc",
+                            "operators": [
+                                "PESTL",
+                                "PMSTL",
+                                "CE"
+                            ]
+                        },
+                        {
+                            "id": "so_eduzhzpI9o",
+                            "operators": [
+                                "SO"
+                            ]
+                        }
+                    ],
+                    "dependencies": []
+                }
+            ],
+            "name": "L-0 STEMCRaFT Payload Integration"
+        },
+        {
+            "id": "sctn_YXIfgSbv80",
+            "steps": [
+                {
+                    "id": "step_HZIsTuRlYB",
+                    "name": "Verify the LiPo battery is free of damage.",
+                    "content": [
+                        {
+                            "type": "alert",
+                            "subtype": "caution",
+                            "text": "Damage to the LiPo battery may result in fires or combustion during charging.",
+                            "id": "ct_vcyK82MWDbtJAGSAS0IH",
+                            "tokens": [
+                                {
+                                    "type": "text",
+                                    "value": "Damage to the LiPo battery may result in fires or combustion during charging."
+                                }
+                            ]
+                        }
+                    ],
+                    "signoffs": [
+                        {
+                            "id": "so_JZUCT9HfCA",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_EiQpHnHSpP",
+                    "name": "Charge LiPo battery.",
+                    "content": [],
+                    "signoffs": [
+                        {
+                            "id": "so_aqTmEmVxQt",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_hMAgf0cuXd",
+                    "name": "Measure and record the LiPo voltage.",
+                    "content": [
+                        {
+                            "type": "input",
+                            "name": "LiPo Voltage",
+                            "inputType": "number",
+                            "units": "Volts",
+                            "dateTimeType": "date",
+                            "rule": {
+                                "value": "",
+                                "op": ""
+                            },
+                            "options": [],
+                            "list": "",
+                            "include_in_summary": true,
+                            "external_item_type": "",
+                            "external_search_type": {
+                                "data_type": "",
+                                "filter_options": []
+                            },
+                            "id": "ct_p3BhqOKSMmx7M5MoUer4"
+                        },
+                        {
+                            "type": "alert",
+                            "subtype": "note",
+                            "text": "The expected range is 7.2-7.4 V.",
+                            "id": "ct_TnHT6NxpYj7ix6MpFjYU",
+                            "tokens": [
+                                {
+                                    "type": "text",
+                                    "value": "The expected range is 7.2-7.4 V."
+                                }
+                            ]
+                        }
+                    ],
+                    "signoffs": [
+                        {
+                            "id": "so_n7EnFEqlrK",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_X0Y0wtlTPD",
+                    "name": "Secure LiPo Battery in the ADS using the hooks and loop ties.",
+                    "content": [],
+                    "signoffs": [
+                        {
+                            "id": "so_eYosOZuVpZ",
+                            "operators": []
+                        }
+                    ],
+                    "headers": [],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_mcfavUKoZ6",
+                    "name": "Verify that the forward u-bolt is secured to the forward bulkhead.",
+                    "content": [],
+                    "signoffs": [
+                        {
+                            "id": "so_X5nne8VpWr",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_COiAlS5OfW",
+                    "name": "Verify that the threaded rods are secured to the aft bulkhead using 10-32 nuts and washers on both sides.",
+                    "content": [
+                        {
+                            "type": "alert",
+                            "subtype": "caution",
+                            "text": "Improper axial alignment along the threaded rods will make integration impossible.",
+                            "id": "ct_pecZazh2erAoGM2Ev1b2",
+                            "tokens": [
+                                {
+                                    "type": "text",
+                                    "value": "Improper axial alignment along the threaded rods will make integration impossible."
+                                }
+                            ]
+                        }
+                    ],
+                    "signoffs": [
+                        {
+                            "id": "so_fvYzX6DkpO",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_QG6qtLacZf",
+                    "name": "Verify that the ADS mechanical and electronics mounting plates are secured to the threaded rods using 10-32 hardware.",
+                    "content": [
+                        {
+                            "type": "alert",
+                            "subtype": "caution",
+                            "text": "Improper axial alignment along the threaded rods will make integration impossible.",
+                            "id": "ct_VRzq1LQlIvarZfA4mBPe",
+                            "tokens": [
+                                {
+                                    "type": "text",
+                                    "value": "Improper axial alignment along the threaded rods will make integration impossible."
+                                }
+                            ]
+                        }
+                    ],
+                    "signoffs": [
+                        {
+                            "id": "so_KaTNx106Pp",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_vN9CF9S8ew",
+                    "name": "Verify that the aft stud is secured to the aft bulkhead assembly.",
+                    "content": [],
+                    "signoffs": [
+                        {
+                            "id": "so_mPS630lKNZ",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_fkHgQ7ndiN",
+                    "name": "Connect LiPo battery connector to the ADS PCB. Listen for buzzer.",
+                    "content": [
+                        {
+                            "type": "alert",
+                            "subtype": "caution",
+                            "text": "Once the battery is connected, the ADS will be powered on until payload preparation is complete.",
+                            "id": "ct_OkFJ6ID102Hzd1iYpQxJ",
+                            "tokens": [
+                                {
+                                    "type": "text",
+                                    "value": "Once the battery is connected, the ADS will be powered on until payload preparation is complete."
+                                }
+                            ]
+                        }
+                    ],
+                    "signoffs": [
+                        {
+                            "id": "so_fKAYKrZq1E",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_HN9Rsw4Piz",
+                    "name": "Preform the IMU calibration sequence until the buzzer indicates that calibration is STORED and complete.",
+                    "content": [
+                        {
+                            "type": "alert",
+                            "subtype": "note",
+                            "text": "1. Pick up the PCB and wave it around and turn it in a circular motion for 5-7 seconds\n\n2. Place the IMU on a flat surface making the direction on top 'up'\n     - Leave for 5 seconds\n     - Make sure the left side of the PCB stays on the table and tilt the right side is lifted 45 degrees (rocking the boat)\n     - Leave for 5 seconds\n     - Make sure the right side of the PCB stays on the table and tilt the left side is lifted 45 degrees (rocking the boat)\n     - Leave for 5 seconds\n     - Make sure the back side (side closest to you) of the PCB stays on the table and tilt the front side (furthest away) is lifted 45 degrees (rocking the boat)\n     - Leave for 5 seconds\n\n3. Now flip the PCB upside down and start the tilting procedure again (rocking the Australian boat)\n     - Leave for 5 seconds\n     - Make sure the left side of the PCB stays on the table and tilt the right side is lifted 45 degrees (rocking the boat)\n     - Leave for 5 seconds\n     - Make sure the right side of the PCB stays on the table and tilt the left side is lifted 45 degrees (rocking the boat)\n     - Leave for 5 seconds\n     - Make sure the back side (side closest to you) of the PCB stays on the table and tilt the front side (furthest away) is lifted 45 degrees (rocking the boat)\n     - Leave for 5 seconds\n\n4. Flip the PCB again so that the IMU is in the 'up' position and leave on a flat surface for 5 seconds",
+                            "id": "ct_PxTlQeWddGIdALujnLuT",
+                            "tokens": [
+                                {
+                                    "type": "text",
+                                    "value": "1. Pick up the PCB and wave it around and turn it in a circular motion for 5-7 seconds\n\n2. Place the IMU on a flat surface making the direction on top 'up'\n     - Leave for 5 seconds\n     - Make sure the left side of the PCB stays on the table and tilt the right side is lifted 45 degrees (rocking the boat)\n     - Leave for 5 seconds\n     - Make sure the right side of the PCB stays on the table and tilt the left side is lifted 45 degrees (rocking the boat)\n     - Leave for 5 seconds\n     - Make sure the back side (side closest to you) of the PCB stays on the table and tilt the front side (furthest away) is lifted 45 degrees (rocking the boat)\n     - Leave for 5 seconds\n\n3. Now flip the PCB upside down and start the tilting procedure again (rocking the Australian boat)\n     - Leave for 5 seconds\n     - Make sure the left side of the PCB stays on the table and tilt the right side is lifted 45 degrees (rocking the boat)\n     - Leave for 5 seconds\n     - Make sure the right side of the PCB stays on the table and tilt the left side is lifted 45 degrees (rocking the boat)\n     - Leave for 5 seconds\n     - Make sure the back side (side closest to you) of the PCB stays on the table and tilt the front side (furthest away) is lifted 45 degrees (rocking the boat)\n     - Leave for 5 seconds\n\n4. Flip the PCB again so that the IMU is in the 'up' position and leave on a flat surface for 5 seconds"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "alert",
+                            "subtype": "caution",
+                            "text": "The flat surface should be as flat as possible and undisturbed when calibrating.",
+                            "id": "ct_EZFNgtvL6mPKjIi4PTnl",
+                            "tokens": [
+                                {
+                                    "type": "text",
+                                    "value": "The flat surface should be as flat as possible and undisturbed when calibrating."
+                                }
+                            ]
+                        }
+                    ],
+                    "signoffs": [
+                        {
+                            "id": "so_eKZYiz0YbE",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_zglSy7kQb9",
+                    "name": "Slide aft bulkhead assembly into the ADS coupler until the bulkhead lip makes contact with the end of the coupler. ",
+                    "content": [],
+                    "signoffs": [
+                        {
+                            "id": "so_N6OHmHs2qa",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_f7e7ZyjpNG",
+                    "name": "Power off the ADS by inserting the RBF tag.",
+                    "content": [],
+                    "signoffs": [
+                        {
+                            "id": "so_24Oh4ukyOt",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_0aMvNi7rm1",
+                    "name": "Insert 4x 1/4-20 locating hardware if not in place already.",
+                    "content": [],
+                    "signoffs": [
+                        {
+                            "id": "so_TlwdmKaRNV",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_CrCAix9b9G",
+                    "name": "Cap the coupler using the forward bulkhead and secure it to the threaded rods using 10-32 nuts and washers.",
+                    "content": [],
+                    "signoffs": [
+                        {
+                            "id": "so_vJr30bFJ4J",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_PndmUPw5V9",
+                    "name": "Connect the break-away cable to the bulkhead passthrough.",
+                    "content": [],
+                    "signoffs": [
+                        {
+                            "id": "so_HR2nxOdidd",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_SJFZrQ8paC",
+                    "name": "Verify that the forward nuts are secured.",
+                    "content": [],
+                    "signoffs": [
+                        {
+                            "id": "so_Jo6fM2ehD7",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_qFnJaBSPbF",
+                    "name": "Turn on the ADS payload. Listen for buzzer to indicate continuity on barometer.",
+                    "content": [],
+                    "signoffs": [
+                        {
+                            "id": "so_xrWfSB8aaC",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_TtksvZWklv",
+                    "name": "Turn off ADS payload.",
+                    "content": [],
+                    "signoffs": [
+                        {
+                            "id": "so_wPNbXEBtQM",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_UY7VGkmAAn",
+                    "name": "Set the ADS payload aside to await vehicle integration.",
+                    "content": [],
+                    "signoffs": [
+                        {
+                            "id": "so_JVnxSRg0Fc",
+                            "operators": [
+                                "PMSTL",
+                                "PESTL",
+                                "CE"
+                            ]
+                        },
+                        {
+                            "id": "so_6nw8gvdiV8",
+                            "operators": [
+                                "SO"
+                            ]
+                        }
+                    ],
+                    "dependencies": []
+                }
+            ],
+            "name": "L-0 ADS Payload Preparation"
+        },
+        {
+            "id": "sctn_FUylcRmJi1",
+            "steps": [
+                {
+                    "id": "step_onKnnDLhSg",
+                    "name": "Build the motor following manufacturer guidelines.",
+                    "content": [
+                        {
+                            "type": "alert",
+                            "subtype": "warning",
+                            "text": "Energetics present. These steps shall be completed by the team mentor.",
+                            "id": "ct_ZlGDlCvBbg3cMGGRlUn3",
+                            "tokens": [
+                                {
+                                    "type": "text",
+                                    "value": "Energetics present. These steps shall be completed by the team mentor."
+                                }
+                            ]
+                        }
+                    ],
+                    "signoffs": [
+                        {
+                            "id": "so_xxX8WDOS1e",
+                            "operators": [
+                                "CE",
+                                "LVSTL"
+                            ]
+                        },
+                        {
+                            "id": "so_xeTYb59D2u",
+                            "operators": [
+                                "SO"
+                            ]
+                        }
+                    ],
+                    "dependencies": []
+                }
+            ],
+            "name": "L-0 Motor Assembly"
+        },
+        {
+            "id": "sctn_ZQvxuHyF2E",
+            "steps": [
+                {
+                    "id": "step_3WXeClpcuv",
+                    "name": "Connect the primary battery to the primary computer.",
+                    "content": [
+                        {
+                            "type": "alert",
+                            "subtype": "note",
+                            "text": "These steps will be repeated on L-0 during vehicle integration.",
+                            "id": "ct_VvcO658TmtZ5cTuQVUw2",
+                            "tokens": [
+                                {
+                                    "type": "text",
+                                    "value": "These steps will be repeated on L-0 during vehicle integration."
+                                }
+                            ]
+                        }
+                    ],
+                    "signoffs": [
+                        {
+                            "id": "so_3tS8gbJpKv",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_4fpDxG5HX3",
+                    "name": "Connect the backup battery to the backup computer.",
+                    "content": [],
+                    "signoffs": [
+                        {
+                            "id": "so_gUFOVp9UvI",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_GzazR4R0Ez",
+                    "name": "Connect the aft bulkhead e-match passthroughs to their labeled mates.",
+                    "content": [],
+                    "signoffs": [
+                        {
+                            "id": "so_yoYUf3zF5q",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_Id81auSXKW",
+                    "name": "Insert the avionics sled subassembly into the avionics coupler.",
+                    "content": [],
+                    "signoffs": [
+                        {
+                            "id": "so_lI98KuKpJq",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_HwLqkwrcmD",
+                    "name": "Rotate sled until RBF flight tag holes are aligned. Both computers should be disarmed.",
+                    "content": [],
+                    "signoffs": [
+                        {
+                            "id": "so_rvNFTS5DQa",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_iqTDbUNzYi",
+                    "name": "Connect the forward bulkhead e-match passthroughs to their labeled mates.",
+                    "content": [],
+                    "signoffs": [
+                        {
+                            "id": "so_L7IHeFWSch",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_SwIXeeoGRG",
+                    "name": "Secure the forward bulkhead with 2x 1/4-20 nuts and washers.",
+                    "content": [],
+                    "signoffs": [
+                        {
+                            "id": "so_yIS17EtkkR",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_RNNwQteG2h",
+                    "name": "Connect jumper wires to 4x e-match passthroughs on the avionics stack.",
+                    "content": [],
+                    "signoffs": [
+                        {
+                            "id": "so_QFTJaEpyke",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_16mHAWvx4M",
+                    "name": "Place the avionics stack in a vertical flight-like configuration.",
+                    "content": [],
+                    "signoffs": [
+                        {
+                            "id": "so_xMadZJTuD2",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_NbBsmjNLum",
+                    "name": "Power on the backup computer.",
+                    "content": [],
+                    "signoffs": [
+                        {
+                            "id": "so_jeiVBKXMBN",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_T2dPz0QXLu",
+                    "name": "Verify 3x beeps to indicate nominal continuity.",
+                    "content": [],
+                    "signoffs": [
+                        {
+                            "id": "so_HfdlKeueZg",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_t84HQRXOcU",
+                    "name": "Power off the backup computer.",
+                    "content": [],
+                    "signoffs": [
+                        {
+                            "id": "so_pgcmwXVeYm",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_IkGIMYVSYR",
+                    "name": "Power on the primary computer.",
+                    "content": [],
+                    "signoffs": [
+                        {
+                            "id": "so_UIHeqanx27",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_wbWZbxStyl",
+                    "name": "Verify 3x beeps to indicate nominal continuity.",
+                    "content": [],
+                    "signoffs": [
+                        {
+                            "id": "so_Ig16ZhY242",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_GRdy21Znqv",
+                    "name": "Verify signal acquisition by TeleBT ground station.",
+                    "content": [],
+                    "signoffs": [
+                        {
+                            "id": "so_R0IaRXpZOr",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_tW3JDz9L7B",
+                    "name": "Power off primary computer.",
+                    "content": [],
+                    "signoffs": [
+                        {
+                            "id": "so_sQY8QoISi6",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_fdjGNmy833",
+                    "name": "Remove 4x jumper wires.",
+                    "content": [],
+                    "signoffs": [
+                        {
+                            "id": "so_bSZB96W9IQ",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                }
+            ],
+            "name": "L-0 Avionics Checkout"
+        },
+        {
+            "id": "sctn_KyYXo85dgG",
             "steps": [
                 {
                     "id": "step_MTBvf9oknf",
@@ -1773,6 +2058,30 @@
                     "dependencies": []
                 },
                 {
+                    "id": "step_qRlzDStl6X",
+                    "name": "Verify the parachute quick link is tight by checking with a friend. ",
+                    "content": [],
+                    "signoffs": [
+                        {
+                            "id": "so_upjG2REogQ",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_ax4YPKpyJX",
+                    "name": "Verify there are no tape or rubber band restriction on the parachute.",
+                    "content": [],
+                    "signoffs": [
+                        {
+                            "id": "so_pxRyAJJVGV",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
                     "id": "step_RaH6ip7wUi",
                     "name": "Push the main parachute into the forward airframe.",
                     "content": [
@@ -1879,7 +2188,7 @@
                 },
                 {
                     "id": "step_FhHFkCcOva",
-                    "name": "Rotate the ADS mechanism to the clocked orientation.",
+                    "name": "Slide the ADS coupler into the booster airframe.",
                     "content": [],
                     "signoffs": [
                         {
@@ -1915,7 +2224,7 @@
                 },
                 {
                     "id": "step_UN5vvFTd1a",
-                    "name": "Connect the recovery harness to the ADS forward bulkhead.",
+                    "name": "Connect the recovery harness to the ADS static harness.",
                     "content": [],
                     "signoffs": [
                         {
@@ -1987,6 +2296,30 @@
                     "dependencies": []
                 },
                 {
+                    "id": "step_npEKLIoIE6",
+                    "name": "Verify the parachute quick link is tight by checking with a friend. ",
+                    "content": [],
+                    "signoffs": [
+                        {
+                            "id": "so_bYP0iibnZl",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_8991sHW7mN",
+                    "name": "Verify there are no tape or rubber band restriction on the parachute.",
+                    "content": [],
+                    "signoffs": [
+                        {
+                            "id": "so_zzqr2tkVtA",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
                     "id": "step_2rsQHBIDqo",
                     "name": "Push the drogue parachute into the aft airframe.",
                     "content": [],
@@ -2029,197 +2362,6 @@
                     "signoffs": [
                         {
                             "id": "so_MJ5dUi1IDo",
-                            "operators": []
-                        }
-                    ],
-                    "dependencies": []
-                },
-                {
-                    "id": "step_c6Mt2oqRaE",
-                    "name": "Sign-off for vehicle readiness.",
-                    "content": [],
-                    "signoffs": [
-                        {
-                            "id": "so_4qKW84LP7w",
-                            "operators": [
-                                "CE",
-                                "LVSTL"
-                            ]
-                        },
-                        {
-                            "id": "so_oxW0UbQsc9",
-                            "operators": [
-                                "SO"
-                            ]
-                        }
-                    ],
-                    "dependencies": []
-                }
-            ],
-            "name": "L-1 Preliminary Vehicle Integration"
-        },
-        {
-            "id": "sctn_KyYXo85dgG",
-            "steps": [
-                {
-                    "id": "step_Y6bnxJCZc9",
-                    "name": "Connect jumper wires to 4x e-match passthroughs on the avionics stack.",
-                    "content": [],
-                    "signoffs": [
-                        {
-                            "id": "so_4hO8OgDe1P",
-                            "operators": []
-                        }
-                    ],
-                    "headers": [
-                        {
-                            "id": "sh_t3JGLrwyqFfDldwjiPsJL8",
-                            "name": "Avionics Checkout",
-                            "content": []
-                        }
-                    ],
-                    "dependencies": []
-                },
-                {
-                    "id": "step_p9sVjzY3n0",
-                    "name": "Place the avionics stack in a vertical flight-like configuration.",
-                    "content": [],
-                    "signoffs": [
-                        {
-                            "id": "so_UpO8NneEXC",
-                            "operators": []
-                        }
-                    ],
-                    "dependencies": []
-                },
-                {
-                    "id": "step_yKFn1cIkoZ",
-                    "name": "Power on the backup computer by removing its RBF tag.",
-                    "content": [],
-                    "signoffs": [
-                        {
-                            "id": "so_f2UJzgRkSI",
-                            "operators": []
-                        }
-                    ],
-                    "dependencies": []
-                },
-                {
-                    "id": "step_Sf8NLQM6Qh",
-                    "name": "Verify 3x beeps to indicate nominal continuity.",
-                    "content": [],
-                    "signoffs": [
-                        {
-                            "id": "so_zV2o64Ed9a",
-                            "operators": []
-                        }
-                    ],
-                    "dependencies": []
-                },
-                {
-                    "id": "step_ntOtgZrWI2",
-                    "name": "Power off the backup computer by inserting its RBF tag.",
-                    "content": [],
-                    "signoffs": [
-                        {
-                            "id": "so_52x39i6xZt",
-                            "operators": []
-                        }
-                    ],
-                    "dependencies": []
-                },
-                {
-                    "id": "step_F7FLoIboDW",
-                    "name": "Power on the primary computer by removing its RBF tag.",
-                    "content": [],
-                    "signoffs": [
-                        {
-                            "id": "so_2ww7ymMbKk",
-                            "operators": []
-                        }
-                    ],
-                    "dependencies": []
-                },
-                {
-                    "id": "step_lUKvxPctPk",
-                    "name": "Verify 3x beeps to indicate nominal continuity.",
-                    "content": [],
-                    "signoffs": [
-                        {
-                            "id": "so_PFhal71ZwQ",
-                            "operators": []
-                        }
-                    ],
-                    "dependencies": []
-                },
-                {
-                    "id": "step_tZqHjjjg8B",
-                    "name": "Verify signal acquisition by TeleBT ground station.",
-                    "content": [],
-                    "signoffs": [
-                        {
-                            "id": "so_VNZKiEA12m",
-                            "operators": []
-                        }
-                    ],
-                    "dependencies": []
-                },
-                {
-                    "id": "step_nw8jvJWrMt",
-                    "name": "Power off primary computer by inserting its RBF tag.",
-                    "content": [],
-                    "signoffs": [
-                        {
-                            "id": "so_UY0UPRdkcT",
-                            "operators": []
-                        }
-                    ],
-                    "dependencies": []
-                },
-                {
-                    "id": "step_tWin7ZX7nr",
-                    "name": "Remove 4x jumper wires.",
-                    "content": [
-                        {
-                            "type": "alert",
-                            "subtype": "warning",
-                            "text": "Failure to remove all current-passing wires may reduce reliability of ejection charges e-matches.",
-                            "id": "ct_A9er4yiRN0i4mwchJKA2",
-                            "tokens": [
-                                {
-                                    "type": "text",
-                                    "value": "Failure to remove all current-passing wires may reduce reliability of ejection charges e-matches."
-                                }
-                            ]
-                        }
-                    ],
-                    "signoffs": [
-                        {
-                            "id": "so_e4fvg0tFma",
-                            "operators": []
-                        }
-                    ],
-                    "dependencies": []
-                },
-                {
-                    "id": "step_LYUu45oV2Q",
-                    "name": "Verify that the 1/4-20 nuts fastening the threaded rods are secure.",
-                    "content": [],
-                    "signoffs": [
-                        {
-                            "id": "so_jsNUczgb2L",
-                            "operators": []
-                        }
-                    ],
-                    "dependencies": []
-                },
-                {
-                    "id": "step_zQRtT3UFpH",
-                    "name": "Verify that the u-bolts on both ends are secure.",
-                    "content": [],
-                    "signoffs": [
-                        {
-                            "id": "so_knaDiZy8JZ",
                             "operators": []
                         }
                     ],
@@ -2356,7 +2498,7 @@
                 },
                 {
                     "id": "step_g9jW1dPabf",
-                    "name": "Place the charge in its respective charge well and secure using a rubber band.",
+                    "name": "Place the charge in its respective charge well and secure using 2x 4-40 machine screw.",
                     "content": [],
                     "signoffs": [
                         {
@@ -2421,6 +2563,54 @@
                     "signoffs": [
                         {
                             "id": "so_ol8JhfVoN9",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_NGdHN3XNH3",
+                    "name": "Conduct ballast simulations.",
+                    "content": [],
+                    "signoffs": [
+                        {
+                            "id": "so_gW9gijLeu8",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_TGayi6PJiD",
+                    "name": "Attach the appropriate amount of ballast to the ADS forward bulkhead.",
+                    "content": [],
+                    "signoffs": [
+                        {
+                            "id": "so_lECS4zYMWy",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_ZKMGo8pzyh",
+                    "name": "Secure ballast washers using 4x 10-32 flange nuts.",
+                    "content": [],
+                    "signoffs": [
+                        {
+                            "id": "so_10dTTRMc0s",
+                            "operators": []
+                        }
+                    ],
+                    "dependencies": []
+                },
+                {
+                    "id": "step_pOLAwZ2pus",
+                    "name": "Verify flange nuts are tightened with a wrench.",
+                    "content": [],
+                    "signoffs": [
+                        {
+                            "id": "so_s5ReiyVpT1",
                             "operators": []
                         }
                     ],
@@ -2976,7 +3166,7 @@
             "steps": [
                 {
                     "id": "step_NOKqGaQpV6",
-                    "name": "Turn off radio transmission from the STEMCRaFT using the LoRa base station once desired.",
+                    "name": "When commanded, turn off radio transmission from the STEMCRaFT using the LoRa base station.",
                     "content": [],
                     "signoffs": [
                         {
@@ -3000,7 +3190,7 @@
                 },
                 {
                     "id": "step_zS4nk67s0Z",
-                    "name": "Check surroundings around vehicle to ensure no part has landed in a hazardous environment",
+                    "name": "Check surroundings around vehicle to ensure no part has landed in a hazardous environment.",
                     "content": [
                         {
                             "type": "alert",
@@ -3020,28 +3210,7 @@
                 {
                     "id": "step_3BX5oa0ucZ",
                     "name": "Take photos of each section of the vehicle.",
-                    "content": [
-                        {
-                            "type": "input",
-                            "name": "Main Parachute",
-                            "inputType": "attachment",
-                            "units": "",
-                            "dateTimeType": "date",
-                            "rule": {
-                                "value": "",
-                                "op": ""
-                            },
-                            "options": [],
-                            "list": "",
-                            "include_in_summary": true,
-                            "external_item_type": "",
-                            "external_search_type": {
-                                "data_type": "",
-                                "filter_options": []
-                            },
-                            "id": "ct_OZrWyyHnPrMSoktJ95oG"
-                        }
-                    ],
+                    "content": [],
                     "signoffs": [
                         {
                             "id": "so_rtb8jOHJHQ",
@@ -3052,7 +3221,7 @@
                 },
                 {
                     "id": "step_G7bOuEBIhI",
-                    "name": "Wait 5:00 minutes before making contact with vehicle.",
+                    "name": "Wait 3:00 minutes before making contact with vehicle.",
                     "content": [],
                     "signoffs": [
                         {
@@ -3215,7 +3384,7 @@
             "steps": [
                 {
                     "id": "step_nNt9AHV3q9",
-                    "name": "Troubleshooting: Ignition Failure",
+                    "name": "Wait for all launch vehicles remaining on the pad to launch or cycle.",
                     "content": [],
                     "signoffs": [
                         {
@@ -3223,16 +3392,11 @@
                             "operators": []
                         }
                     ],
-                    "dependencies": []
-                },
-                {
-                    "id": "step_ukZSHR3P73",
-                    "name": "Wait for all launch vehicles remaining on the pad to launch or cycle.",
-                    "content": [],
-                    "signoffs": [
+                    "headers": [
                         {
-                            "id": "so_qTIuinlGG6",
-                            "operators": []
+                            "id": "sh_ed1U0FeHLLvImVWw6GxJgK",
+                            "name": "Troubleshooting: Ignition Failure",
+                            "content": []
                         }
                     ],
                     "dependencies": []
@@ -3269,7 +3433,7 @@
                 },
                 {
                     "id": "step_hEhFSPNVWF",
-                    "name": "Troubleshooting: Motor Failure",
+                    "name": "Wait for all launch vehicles remaining on the pad to launch or cycle.",
                     "content": [],
                     "signoffs": [
                         {
@@ -3277,16 +3441,11 @@
                             "operators": []
                         }
                     ],
-                    "dependencies": []
-                },
-                {
-                    "id": "step_mAW3V4x0Ht",
-                    "name": "Wait for all launch vehicles remaining on the pad to launch or cycle.",
-                    "content": [],
-                    "signoffs": [
+                    "headers": [
                         {
-                            "id": "so_BJV29gd4Go",
-                            "operators": []
+                            "id": "sh_3R4uXSaJRBipjkYVI5VCTg",
+                            "name": "Troubleshooting: Motor Failure",
+                            "content": []
                         }
                     ],
                     "dependencies": []
@@ -3397,31 +3556,34 @@
                 },
                 {
                     "id": "step_NPKJthOTin",
-                    "name": "Troubleshooting: Fin Failure",
-                    "content": [],
+                    "name": "Remove damaged fin(s) and replace with fin(s)",
+                    "content": [
+                        {
+                            "type": "procedure_link",
+                            "id": "ct_qNL0Z5zfdulDhcFJeTj1",
+                            "procedure": "zXpyGHRlJSGR2H70eNVqlB",
+                            "run": "",
+                            "section": "sctn_KyYXo85dgG"
+                        }
+                    ],
                     "signoffs": [
                         {
                             "id": "so_LGi88MFoUW",
                             "operators": []
                         }
                     ],
-                    "dependencies": []
-                },
-                {
-                    "id": "step_ehjUY51cuC",
-                    "name": "Remove damaged fin(s) and replace with fin(s)",
-                    "content": [],
-                    "signoffs": [
+                    "headers": [
                         {
-                            "id": "so_sOHQYpbbaS",
-                            "operators": []
+                            "id": "sh_j8GvPfGjqj1lc9am1IkMF7",
+                            "name": "Troubleshooting: Fin Failure",
+                            "content": []
                         }
                     ],
                     "dependencies": []
                 },
                 {
                     "id": "step_TT58GIk2Lu",
-                    "name": "Troubleshooting: STEMCRaFT Electronic Failure",
+                    "name": "Remove the STEMCRaFT payload.",
                     "content": [],
                     "signoffs": [
                         {
@@ -3429,16 +3591,11 @@
                             "operators": []
                         }
                     ],
-                    "dependencies": []
-                },
-                {
-                    "id": "step_XI8JLB5fh4",
-                    "name": "Remove the STEMCRaFT payload.",
-                    "content": [],
-                    "signoffs": [
+                    "headers": [
                         {
-                            "id": "so_9Bim2j5gf0",
-                            "operators": []
+                            "id": "sh_GAgUJ8d4Nq7xaKS6D9xq1L",
+                            "name": "Troubleshooting: STEMCRaFT Electronic Failure",
+                            "content": []
                         }
                     ],
                     "dependencies": []
@@ -3487,7 +3644,7 @@
                 },
                 {
                     "id": "step_k1uTqVt5LR",
-                    "name": "Troubleshooting: ADS Electronic Failure",
+                    "name": "Remove the ADS payload.",
                     "content": [],
                     "signoffs": [
                         {
@@ -3495,16 +3652,11 @@
                             "operators": []
                         }
                     ],
-                    "dependencies": []
-                },
-                {
-                    "id": "step_yNv2zfaaE0",
-                    "name": "Remove the ADS payload.",
-                    "content": [],
-                    "signoffs": [
+                    "headers": [
                         {
-                            "id": "so_tuiZYFg5zl",
-                            "operators": []
+                            "id": "sh_W2SZrMYwmqvmhYh6fGb4dd",
+                            "name": "Troubleshooting: ADS Electronic Failure",
+                            "content": []
                         }
                     ],
                     "dependencies": []
@@ -3558,8 +3710,69 @@
     "owner": "andywehmeyer2025@u.northwestern.edu",
     "reviewer_groups": [
         {
-            "reviewers": [],
-            "actions": [],
+            "reviewers": [
+                {
+                    "reviewer_ids": [
+                        {
+                            "type": "operator_role",
+                            "value": "CE"
+                        },
+                        {
+                            "type": "operator_role",
+                            "value": "PM"
+                        },
+                        {
+                            "type": "operator_role",
+                            "value": "SO"
+                        }
+                    ],
+                    "id": "reviewer_mSvWNSN2PMQ88uuK41W0lZ"
+                },
+                {
+                    "reviewer_ids": [
+                        {
+                            "type": "operator_role",
+                            "value": "LVSTL"
+                        },
+                        {
+                            "type": "operator_role",
+                            "value": "PMSTL"
+                        },
+                        {
+                            "type": "operator_role",
+                            "value": "PESTL"
+                        },
+                        {
+                            "type": "user_id",
+                            "value": "tarasaxena2025@u.northwestern.edu"
+                        }
+                    ],
+                    "id": "reviewer_qi39mp3dRjayOWtl8Y4rjG"
+                }
+            ],
+            "actions": [
+                {
+                    "type": "approval",
+                    "reviewer_id": "reviewer_qi39mp3dRjayOWtl8Y4rjG",
+                    "user_id": "joshuahershey2026@u.northwestern.edu",
+                    "operator_role": "PMSTL",
+                    "approved_at": "2025-03-02T18:17:27.177Z"
+                },
+                {
+                    "type": "approval",
+                    "reviewer_id": "reviewer_NaqJ5hKU6x8Ic17yH3x50O",
+                    "user_id": "andywehmeyer2025@u.northwestern.edu",
+                    "operator_role": "SO",
+                    "approved_at": "2025-03-16T02:57:47.738Z"
+                },
+                {
+                    "type": "approval",
+                    "reviewer_id": "reviewer_mSvWNSN2PMQ88uuK41W0lZ",
+                    "user_id": "andywehmeyer2025@u.northwestern.edu",
+                    "operator_role": "SO",
+                    "approved_at": "2025-03-16T02:57:59.111Z"
+                }
+            ],
             "id": "rg_rBrh6dX2SceYaVZQ5HKuLK"
         }
     ],
@@ -3584,15 +3797,72 @@
             "user_id": "andywehmeyer2025@u.northwestern.edu",
             "operator_role": "SO",
             "approved_at": "2025-01-07T22:38:02.634Z"
+        },
+        {
+            "type": "approval",
+            "reviewer_id": "reviewer_NaqJ5hKU6x8Ic17yH3x50O",
+            "user_id": "andywehmeyer2025@u.northwestern.edu",
+            "operator_role": "SO",
+            "approved_at": "2025-01-23T00:28:58.689Z"
+        },
+        {
+            "type": "approval",
+            "reviewer_id": "reviewer_OlnF32FvRoHNDhEaBJyuB7",
+            "user_id": "berniewaldman2027@u.northwestern.edu",
+            "operator_role": "LVSTL",
+            "approved_at": "2025-01-26T18:19:22.724Z"
+        },
+        {
+            "type": "approval",
+            "reviewer_id": "reviewer_NaqJ5hKU6x8Ic17yH3x50O",
+            "user_id": "andywehmeyer2025@u.northwestern.edu",
+            "operator_role": "SO",
+            "approved_at": "2025-02-05T15:19:32.678Z"
+        },
+        {
+            "type": "approval",
+            "reviewer_id": "reviewer_983sfjaf43r3DE0wI9zAWE",
+            "user_id": "joshuahershey2026@u.northwestern.edu",
+            "operator_role": "PMSTL",
+            "approved_at": "2025-02-05T16:00:03.602Z"
+        },
+        {
+            "type": "approval",
+            "reviewer_id": "reviewer_5fA7aqgyv3dXiBp79fd7ry",
+            "user_id": "prestonshin2026@u.northwestern.edu",
+            "operator_role": "PM",
+            "approved_at": "2025-02-05T19:37:41.721Z"
+        },
+        {
+            "type": "approval",
+            "reviewer_id": "reviewer_bV2lbmW5fQgkRBr5X5jwFY",
+            "user_id": "eliottlacommeruiz2027@u.northwestern.edu",
+            "operator_role": "PESTL",
+            "approved_at": "2025-02-06T19:25:56.784Z"
+        },
+        {
+            "type": "approval",
+            "reviewer_id": "reviewer_NaqJ5hKU6x8Ic17yH3x50O",
+            "user_id": "andywehmeyer2025@u.northwestern.edu",
+            "operator_role": "SO",
+            "approved_at": "2025-02-07T00:36:15.642Z"
+        },
+        {
+            "type": "approval",
+            "reviewer_id": "reviewer_NaqJ5hKU6x8Ic17yH3x50O",
+            "user_id": "andywehmeyer2025@u.northwestern.edu",
+            "operator_role": "SO",
+            "approved_at": "2025-02-07T03:25:48.022Z"
         }
     ],
     "end_run_signoffs_groups": [],
     "state": "released",
-    "editedAt": "2025-01-08T08:02:39.185Z",
+    "editedAt": "2025-03-16T02:57:59.938Z",
     "skip_step_enabled": true,
     "repeat_step_enabled": true,
     "step_suggest_edits_enabled": true,
-    "procedure_rev_num": 584,
+    "procedure_rev_num": 792,
+    "default_view_mode": "LIST_CARDS",
     "comments": [],
     "project_name": "NASA Student Launch 2024-2025",
     "project_code": "USLI25",
