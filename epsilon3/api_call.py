@@ -14,7 +14,7 @@ print(f"Using API Key: {api_key[:5]}... (hidden for security)")
 
 # API details
 # procedure_id = 'LF2oRIWnNAVLb0OUztiom4' # subscale
-procedure_id = 'zXpyGHRlJSGR2H70eNVqlB' # fullscale
+procedure_id = 'zXpyGHRlJSGR2H70eNVqlB' # comes from url in browser
 
 base_url = 'https://api.epsilon3.io/v1' 
 endpoint = f"{base_url}/procedures/{procedure_id}"
